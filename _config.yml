@@ -18,7 +18,7 @@ abbrlink:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.fomal.cc/
+url: https://github.com/1405720461/1405720461.github.io
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
