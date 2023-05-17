@@ -92,7 +92,7 @@
     position: absolute;
     top: 0;
     content: '';
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .d1,
@@ -119,7 +119,7 @@
 
 .d1::after {
     text-align: center;
-    line-height: 90px;
+    line-height: 72px;
     color: #ffe31d;
     font-weight: 600;
     top: -5px;
@@ -227,13 +227,23 @@
 /* 自定义背景图片 */
 
 .d2::after {
+    text-align: center;
+    line-height: 120px;
+    color: #ffe31d;
+    font-size: 18px;
+    font-weight: 900;
     top: -8px;
     right: 51px;
     width: 75px;
     border-radius: 57px/89px;
-    background: url(https://lskypro.acozycotage.net/LightPicture/2023/01/344a784cc876953a.webp) no-repeat;
-    background-position: center;
-    background-size: 105px auto;
+}
+
+.d-box .d2::after {
+    content: '万事如意';
+}
+
+.d-box1 .d2::after {
+    content: '新年快乐';
 }
 
 .d2 span {
