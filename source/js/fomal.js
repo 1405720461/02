@@ -2849,13 +2849,13 @@ let seovx = "url(https://cdn.seovx.com/?mom=302)";
 // picsum随机
 let picsum = "url(https://picsum.photos/1920/1080.webp)";
 // 小歪二次元
-// let waiDongman = "url(https://api.ixiaowai.cn/api/api.php)";
+let waiDongman = "url(https://api.ixiaowai.cn/api/api.php)";
 //  小歪高清壁纸
 let waiBizhi = "url(https://api.ixiaowai.cn/gqapi/gqapi.php)";
 // 博天随机
 let btstu = "url(http://api.btstu.cn/sjbz/?lx=suiji)";
 // tuapi 动漫
-// let tuapi = "url(https://tuapi.eees.cc/api.php?category=dongman)";
+let tuapi = "url(https://tuapi.eees.cc/api.php?category=dongman)";
 // unsplash随机 https://source.unsplash.com/random/1920x1080/daily (weekly)
 let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 
@@ -3042,12 +3042,6 @@ function createWinbox() {
   <p class="rang_width" id="rang_trans" style="width:${curTransMini}%"></p>
 </div>
 
-<div class="blurValue" style="font-weight:bold;padding-left:10px">模糊半径 (开启模糊生效 0px-100px): ${curBlur} px</div>
-<div class="range">
-  <input id="blurSet" type="range" min="0" max="100" step="1" value="${curBlur}" oninput="setBlurNum()">
-  <p class="rang_width" id="rang_blur" style="width:${miniBlur}%"></p>
-</div>
-
 
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 星空特效 (夜间模式) </div><input type="checkbox" id="universeSet" onclick="setUniverse()">
@@ -3055,13 +3049,12 @@ function createWinbox() {
 </div>
 
 <div class="content" style="display:flex">
-  <div class="content-text" style="font-weight:bold; padding-left:10px"> 模糊效果 (消耗性能) </div><input type="checkbox" id="blur" onclick="setBlur()">
+  <div class="content-text" style="font-weight:bold; padding-left:10px"> 雪花特效 (白天模式) </div><input type="checkbox" id="snowSet" onclick="setSnow()">
   <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
 </div>
 
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 帧率监测 (刷新生效) </div><input type="checkbox" id="fpson" onclick="fpssw()">
-  <div class="content-text" style="font-weight:bold; padding-left:10px"> 雪花特效 (白天模式) </div><input type="checkbox" id="snowSet" onclick="setSnow()">
 </div>
 
 
