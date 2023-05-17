@@ -1,6 +1,6 @@
 ---
 title: 友人帐
-date: 2022-08-10 15:39:15
+date: 2023-05-15
 type: "link"
 ---
 
@@ -12,10 +12,10 @@ type: "link"
 
 ```yml
 - name: 你好可爱
-  link: https://www.fomal.cc/
-  avatar: https://www.fomal.cc/assets/avatar.webp
+  link: https://wjldarling/
+  avatar: https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg
   descr: Future is now 🍭🍭🍭
-  siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+  siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.png
 ```
 
 <!-- endtab -->
@@ -25,9 +25,9 @@ type: "link"
 ```JSON
 {
   "title": "你好可爱",
-  "screenshot": "https://source.fomal.cc/siteshot/www.fomal.cn.jpg",
-  "url": "https://www.fomal.cc/",
-  "avatar": "https://www.fomal.cc/assets/avatar.webp",
+  "screenshot": "https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.png",
+  "url": "https://wjldarling/",
+  "avatar": "https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg",
   "description": "Future is now 🍭🍭🍭",
   "keywords": "你好可爱"
 }
@@ -37,14 +37,14 @@ type: "link"
 
 <!-- tab 🌴General -->
 
-| 名称       | 数值                                              |
-| ---------- | ------------------------------------------------- |
-| 站点名称   | 你好可爱                                          |
-| 站点截图   | https://source.fomal.cc/siteshot/www.fomal.cn.jpg |
-| 站点链接   | https://www.fomal.cc/                             |
-| 站长头像   | https://www.fomal.cc/assets/avatar.webp           |
-| 站点描述   | Future is now🍭🍭🍭                               |
-| 站点关键词 | 你好可爱,个人博客,代码                            |
+| 名称       | 数值                                                                     |
+| ---------- | ------------------------------------------------------------------------ |
+| 站点名称   | 你好可爱                                                                 |
+| 站点截图   | https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.png |
+| 站点链接   | https://wjldarling/                                                      |
+| 站长头像   | https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg        |
+| 站点描述   | Future is now🍭🍭🍭                                                      |
+| 站点关键词 | 你好可爱,个人博客,代码                                                   |
 
 <!-- endtab -->
 
@@ -76,8 +76,6 @@ https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://<你的域
 🎉 本站支持交换友链，在您提出申请之前，请将本站添加至友链
 🥗 为了保障本站用户，本站仅支持个人网站的友链申请
 🍧 申请本站友链需要拥有独立域名（非免费域名），建议开启全站 HTTPS
-🥫 如果友情链接已经添加，请保持网站的正常访问，会定期清理僵尸网站
-🍖 网站有一定的实质性内容和主题，不能是空壳网站和练手网站
 💕 感谢您对本站的支持，如果您已经满足上述要求，请在下方表单提交友链申请~~~
 {% endnote %}
 
