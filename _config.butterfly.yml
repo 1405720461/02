@@ -705,22 +705,26 @@ aside:
       link: https://github.com/1405720461
   card_announcement:
     enable: true
-    content: <center><>--- 主域名 ---<br><a href="https://wjldarling.top/" class="anno_content"><font color="#5ea6e5">wjldarling.top</font></a><br>--- 备用域名 ---<br><a href="https://wjldarling.netlify.app" class="anno_content"><font color="#5ea6e5">wjldarling.netlify.app</font></a></center>
+    content: <center>--- 主域名 ---<br><a href="https://wjldarling.top/" class="anno_content"><font color="#5ea6e5">wjldarling.top</font></a><br>--- 备用域名 ---<br><a href="https://wjldarling.netlify.app" class="anno_content"><font color="#5ea6e5">wjldarling.netlify.app</font></a></center>
+    # 最新文章模块
   card_recent_post:
     enable: false
     limit: 3 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
+    # 分类模块
   card_categories:
     enable: false
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
+    # 标签模块
   card_tags:
     enable: false
     limit: 20 # if set 0 will show all
     color: true
     sort_order: # Don't modify the setting unless you know how it works
+    # 归档模块
   card_archives:
     enable: false
     type: monthly # yearly or monthly
@@ -735,7 +739,7 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
   # 微博侧边栏
   card_weibo:
-    enable: false
+    enable: true
   card_friend_link: #友链通讯录
     enable: false
     sort_order: # Don't modify the setting unless you know
@@ -932,6 +936,7 @@ inject:
     - <canvas id="universe"></canvas> # 星空画布
     - <canvas id="snow"></canvas> # 雪花画布
     - <script defer src="/js/fomal.js"></script> # 主模块js
+    - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -951,7 +956,7 @@ CDN:
   version: false
 
   # 微博模块
-  card_weibo: /js/fomal.js
+  card_weibo: /js/card_weibo.js
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
