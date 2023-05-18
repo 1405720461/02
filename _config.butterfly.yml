@@ -156,7 +156,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://source.fomal.cc/img/default_cover_14.webp
+    - /assets/16.jpg
     # ...
 
 # A simple 404 page
@@ -543,13 +543,13 @@ tag_ui: # 留空或 index
 # "#e4f4f6" "#efefef"
 background:
   #【必选】默认背景  var(--default-bg)
-  default: url(https://cdn.staticaly.com/gh/1405720461/images@master/Arknights2/9.jpg)
+  default: url(/assets/home_bg/9.jpg)
   #【可选】PC端夜间模式背景
-  darkmode: url(https://cdn.staticaly.com/gh/1405720461/images@master/Arknights/152.jpg)
+  darkmode: url(/assets/home_bg/152.jpg)
   #【可选】移动端日间默认背景
-  mobileday: url(https://cdn.staticaly.com/gh/1405720461/images@master/Darling/172.jpg)
+  mobileday: url(/assets/home_bg/172.jpg)
   #【可选】移动端夜间模式背景
-  mobilenight: url(https://cdn.staticaly.com/gh/1405720461/images@master/Darling/62.jpg)
+  mobilenight: url(/assets/home_bg/62.jpg)
 
 # Footer Background
 footer_bg: false

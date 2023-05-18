@@ -1086,7 +1086,7 @@ button#go-up:hover #percent {
 .bgbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .pimgbox,

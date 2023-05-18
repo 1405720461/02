@@ -1,6 +1,6 @@
 ---
 title: 八音盒
-date: 2022-08-10 18:54:31
+date: 2023-05-14 21:30:00
 background: url(https://data-static.netdun.net/Fomalhaut/img/music.webp)
 aplayer: true
 comments: false
