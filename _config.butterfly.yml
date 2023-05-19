@@ -739,7 +739,7 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
   # 微博侧边栏
   card_weibo:
-    enable: true
+    enable: false
   card_friend_link: #友链通讯录
     enable: false
     sort_order: # Don't modify the setting unless you know
