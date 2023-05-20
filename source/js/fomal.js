@@ -2710,24 +2710,24 @@ function reload() {
 }
 
 // 侧边栏开关
-if (localStorage.getItem("rs") == undefined) {
-  localStorage.setItem("rs", "block");
-}
-if (localStorage.getItem("rs") == "block") {
-  document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
-} else {
-  document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
-}
-function toggleRightside() {
-  // 先设置localStorage变量
-  if (document.getElementById("rightSideSet").checked) {
-    localStorage.setItem("rs", "block");
-    document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
-  } else {
-    localStorage.setItem("rs", "none");
-    document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
-  }
-}
+// if (localStorage.getItem("rs") == undefined) {
+//   localStorage.setItem("rs", "block");
+// }
+// if (localStorage.getItem("rs") == "block") {
+//   document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
+// } else {
+//   document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
+// }
+// function toggleRightside() {
+//   // 先设置localStorage变量
+//   if (document.getElementById("rightSideSet").checked) {
+//     localStorage.setItem("rs", "block");
+//     document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
+//   } else {
+//     localStorage.setItem("rs", "none");
+//     document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
+//   }
+// }
 
 
 // 透明度调节滑块
@@ -2751,44 +2751,44 @@ function setTrans() {
 
 
 // 模糊度调节滑块
-if (localStorage.getItem("blurRad") == undefined) {
-  localStorage.setItem("blurRad", 20);
-}
-var curBlur = localStorage.getItem("blurRad"); // 当前模糊半径
-var miniBlur = curBlur * 0.95;
-document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
-function setBlurNum() {
-  var elem = document.getElementById("blurSet");
-  var newBlur = elem.value;
-  var target = document.querySelector('.blurValue');
-  target.innerHTML = "模糊半径 (开启模糊生效 0px-100px): " + newBlur + "px";
-  localStorage.setItem("blurRad", newBlur);
-  curBlur = newBlur;
-  miniBlur = curBlur * 0.95;
-  // var max = elem.getAttribute("max");
-  document.querySelector('#rang_blur').style.width = miniBlur + "%";
-  document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
-};
+// if (localStorage.getItem("blurRad") == undefined) {
+//   localStorage.setItem("blurRad", 20);
+// }
+// var curBlur = localStorage.getItem("blurRad"); // 当前模糊半径
+// var miniBlur = curBlur * 0.95;
+// document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
+// function setBlurNum() {
+//   var elem = document.getElementById("blurSet");
+//   var newBlur = elem.value;
+//   var target = document.querySelector('.blurValue');
+//   target.innerHTML = "模糊半径 (开启模糊生效 0px-100px): " + newBlur + "px";
+//   localStorage.setItem("blurRad", newBlur);
+//   curBlur = newBlur;
+//   miniBlur = curBlur * 0.95;
+//   // var max = elem.getAttribute("max");
+//   document.querySelector('#rang_blur').style.width = miniBlur + "%";
+//   document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
+// };
 
 
-// 模糊效果开关
-if (localStorage.getItem("blur") == undefined) {
-  localStorage.setItem("blur", 0);
-}
-if (localStorage.getItem("blur") == 0) {
-  document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
-} else {
-  document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
-}
-function setBlur() {
-  if (document.getElementById("blur").checked) {
-    localStorage.setItem("blur", 1);
-    document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
-  } else {
-    localStorage.setItem("blur", 0);
-    document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
-  }
-}
+// // 模糊效果开关
+// if (localStorage.getItem("blur") == undefined) {
+//   localStorage.setItem("blur", 0);
+// }
+// if (localStorage.getItem("blur") == 0) {
+//   document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
+// } else {
+//   document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
+// }
+// function setBlur() {
+//   if (document.getElementById("blur").checked) {
+//     localStorage.setItem("blur", 1);
+//     document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
+//   } else {
+//     localStorage.setItem("blur", 0);
+//     document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
+//   }
+// }
 
 // 更换背景(原来Leonus的代码)
 // 存数据
@@ -2865,16 +2865,16 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(/assets/Arknights/133.jpg);
+    --darkmode-bg:url(/assets/Arknights/133.jpg);
+    --mobileday-bg: url(/assets/Arknights/133.jpg);
+    --mobilenight-bg: url(/assets/Arknights/133.jpg);
   }`;
 }
 // 切换背景主函数
 function changeBg(s) {
   // 自定义颜色框
-  defineColor = s.charAt(0) == "#" ? s : '#F4D88A';
+  // defineColor = s.charAt(0) == "#" ? s : '#F4D88A';
   setBg(s);
   localStorage.setItem("blogbg", s);
 }
@@ -2979,27 +2979,27 @@ function changeLight(flag) {
 
 
 // 解决开启Pjax的问题
-// function whenDOMReady() {
-//   try {
-//     let data = loadData('blogbg', 1440)
-//     if (data) changeBg_noWindow(data, 0)
-//     else localStorage.removeItem('blogbg');
-//   } catch (error) { localStorage.removeItem('blogbg'); }
-// }
-// whenDOMReady()
-// document.addEventListener("pjax:success", whenDOMReady)
+function whenDOMReady() {
+  try {
+    let data = loadData('blogbg', 1440)
+    if (data) changeBg_noWindow(data, 0)
+    else localStorage.removeItem('blogbg');
+  } catch (error) { localStorage.removeItem('blogbg'); }
+}
+whenDOMReady()
+document.addEventListener("pjax:success", whenDOMReady)
 
 // 无弹窗提醒更换背景
-// function changeBg_noWindow(s, flag) {
-//   let bg = document.getElementById("web_bg");
-//   if (s.charAt(0) == "#") {
-//     bg.style.backgroundColor = s;
-//     bg.style.backgroundImage = "none";
-//   } else bg.style.backgroundImage = s;
-//   if (!flag) {
-//     saveData("blogbg", s);
-//   }
-// }
+function changeBg_noWindow(s, flag) {
+  let bg = document.getElementById("web_bg");
+  if (s.charAt(0) == "#") {
+    bg.style.backgroundColor = s;
+    bg.style.backgroundImage = "none";
+  } else bg.style.backgroundImage = s;
+  if (!flag) {
+    saveData("blogbg", s);
+  }
+}
 
 // 创建窗口
 var winbox = "";
@@ -3050,12 +3050,8 @@ function createWinbox() {
 
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 雪花特效 (白天模式) </div><input type="checkbox" id="snowSet" onclick="setSnow()">
-  <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
 </div>
 
-<div class="content" style="display:flex">
-  <div class="content-text" style="font-weight:bold; padding-left:10px"> 帧率监测 (刷新生效) </div><input type="checkbox" id="fpson" onclick="fpssw()">
-</div>
 
 
 <h2>二、字体设置</h2>
@@ -3219,8 +3215,9 @@ function createWinbox() {
 </div>
 
 `;
-/* <a id="waiBizhiBox" rel="noopener external nofollow" style="background-image: ${waiBizhi}" class="box apiBox" onclick="changeBg('${waiBizhi}')"></a> */
-/* <a id="btstuBox" rel="noopener external nofollow" style="background-image: ${btstu}" class="box apiBox" onclick="changeBg('${btstu}')"></a> */
+//<div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
+// <a id="waiBizhiBox" rel="noopener external nofollow" style="background-image: ${waiBizhi}" class="box apiBox" onclick="changeBg('${waiBizhi}')"></a> 
+// <a id="btstuBox" rel="noopener external nofollow" style="background-image: ${btstu}" class="box apiBox" onclick="changeBg('${btstu}')"></a> 
 // <a id="seovxBox" rel="noopener external nofollow" style="background-image: ${seovx}" class="box apiBox" onclick="changeBg('${seovx}')"></a>
 }
 

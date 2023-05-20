@@ -477,7 +477,7 @@ microsoft_clarity:
 # Advertisement
 # --------------------------------------
 
-# Google Adsense (谷歌廣告)
+# Google Adsense (谷歌广告)
 google_adsense:
   enable: false
   auto_ads: true
@@ -537,19 +537,19 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
-# Website Background (設置網站背景)
+# Website Background (设置网站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # "#e4f4f6" "#efefef"
 background:
   #【必选】默认背景  var(--default-bg)
-  default: url(/assets/home_bg/9.jpg)
+  default: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights1/9.jpg)
   #【可选】PC端夜间模式背景
-  darkmode: url(/assets/home_bg/152.jpg)
+  darkmode: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights2/152.jpg)
   #【可选】移动端日间默认背景
-  mobileday: url(/assets/home_bg/172.jpg)
+  mobileday: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/172.jpg)
   #【可选】移动端夜间模式背景
-  mobilenight: url(/assets/home_bg/62.jpg)
+  mobilenight: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/62.jpg)
 
 # Footer Background
 footer_bg: false
@@ -714,7 +714,7 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
     # 分类模块
   card_categories:
-    enable: false
+    enable: true
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
@@ -732,6 +732,7 @@ aside:
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
+    # 小站咨询
   card_webinfo:
     enable: true
     post_count: true
@@ -915,9 +916,9 @@ inject:
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
     - <style id="transPercent"></style> # 透明度调节
-    - <style id="blurNum"></style> # 模糊半径调节
-    - <style id="settingStyle"></style> # 模糊效果开关
-    - <span id="fps"></span> # 帧率检测
+    # - <style id="blurNum"></style> # 模糊半径调节
+    # - <style id="settingStyle"></style> # 模糊效果开关
+    # - <span id="fps"></span> # 帧率检测
     - <style id="defineBg"></style> # 自定义背景选项
     - <style id="menu_shadow"></style> # 菜单发光样式
 

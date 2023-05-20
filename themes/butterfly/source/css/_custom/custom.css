@@ -1117,7 +1117,8 @@ button#go-up:hover #percent {
 }
 
 .imgbox {
-  height: 95px;
+  width: 143px;
+  height: 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1732,7 +1733,8 @@ a:hover {
 
 /* 侧边栏 */
 div#rightside {
-  display: var(--rightside-display);
+  /* display: var(--rightside-display); */
+  display: block;
   opacity: 0.98 !important;
   transform: translateX(-58px);
 }
