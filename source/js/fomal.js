@@ -3126,7 +3126,6 @@ function createWinbox() {
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-1363038.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-1363038.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-4359874.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-4359874.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-12502634.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-12502634.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-13356251.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-13356251.jpg)')"></a>
 
 </div>
@@ -3137,10 +3136,9 @@ function createWinbox() {
 
 {% folding cyan, 查看风景背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/6381f14f1be65.webp)" class="imgbox" onclick="changeBg('url(/assets/scenery/6381f14f1be65.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/default_cover_14.webp)" class="imgbox" onclick="changeBg('url(/assets/scenery/default_cover_14.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/106922955_p0.png)" class="imgbox" onclick="changeBg('url(/assets/scenery/106922955_p0.png)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/106986233_p0.png)" class="imgbox" onclick="changeBg('url(/assets/scenery/106986233_p0.png)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/42143e394194.png)" class="imgbox" onclick="changeBg('url(/assets/scenery/42143e394194.png)')"></a>
 
 
 </div>

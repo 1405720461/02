@@ -12,14 +12,14 @@ menu:
     八音盒: /box/music/ ||icon-yinle || faa-tada
     画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
     动画: /box/animation/ || icon-nvwumao || faa-tada
-  网站 || icon-wangye || faa-tada || hide:
-    网站统计: /site/census/ || icon--tongjibiao || faa-tada
-    文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
-    旧时光: /site/time/ || icon-xianxingshalou || faa-tada
+  # 网站 || icon-wangye || faa-tada || hide:
+  #   网站统计: /site/census/ || icon--tongjibiao || faa-tada
+  #   文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     # 朋友圈: /social/fcircle/ || icon-pengyouquan || faa-tada
     留言板: /comments/ || icon-liuyan || faa-tada
     友人帐: /social/link/ || icon-lianjie || faa-tada
+    旧时光: /site/time/ || icon-xianxingshalou || faa-tada
     # 恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
   # 八宝箱 || icon-xiangzi || faa-tada || hide:
   # 影院: /life/movies/ ||icon-dianying1 || faa-tada
@@ -705,13 +705,13 @@ aside:
     content: <center>--- 主域名 ---<br><a href="https://wjldarling.top/" class="anno_content"><font color="#5ea6e5">wjldarling.top</font></a><br>--- 备用域名 ---<br><a href="https://wjldarling.netlify.app" class="anno_content"><font color="#5ea6e5">wjldarling.netlify.app</font></a></center>
     # 最新文章模块
   card_recent_post:
-    enable: false
+    enable: true
     limit: 3 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
     # 分类模块
   card_categories:
-    enable: true
+    enable: false
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
