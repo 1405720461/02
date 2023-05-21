@@ -2692,22 +2692,22 @@ function setSnow() {
 
 
 // 帧率监测开关
-if (localStorage.getItem("fpson") == undefined) {
-  localStorage.setItem("fpson", "1");
-}
-function fpssw() {
-  if (document.getElementById("fpson").checked) {
-    localStorage.setItem("fpson", "1");
-  } else {
-    localStorage.setItem("fpson", "0");
-  }
-  setTimeout(reload, 600);
-}
+// if (localStorage.getItem("fpson") == undefined) {
+//   localStorage.setItem("fpson", "1");
+// }
+// function fpssw() {
+//   if (document.getElementById("fpson").checked) {
+//     localStorage.setItem("fpson", "1");
+//   } else {
+//     localStorage.setItem("fpson", "0");
+//   }
+//   setTimeout(reload, 600);
+// }
 
-// 刷新窗口
-function reload() {
-  window.location.reload();
-}
+// // 刷新窗口
+// function reload() {
+//   window.location.reload();
+// }
 
 // 侧边栏开关
 // if (localStorage.getItem("rs") == undefined) {
@@ -2865,26 +2865,26 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(/assets/Arknights/133.jpg);
-    --darkmode-bg:url(/assets/Arknights/133.jpg);
-    --mobileday-bg: url(/assets/Arknights/133.jpg);
-    --mobilenight-bg: url(/assets/Arknights/133.jpg);
+    --default-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights1/9.jpg);
+    --darkmode-bg:url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights2/152.jpg);
+    --mobileday-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/172.jpg);
+    --mobilenight-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/62.jpg);
   }`;
 }
 // 切换背景主函数
 function changeBg(s) {
   // 自定义颜色框
-  // defineColor = s.charAt(0) == "#" ? s : '#F4D88A';
+  defineColor = s.charAt(0) == "#" ? s : '#F4D88A';
   setBg(s);
   localStorage.setItem("blogbg", s);
 }
 // 设置背景属性
+// --mobileday-bg: ${s};
+// --mobilenight-bg: ${s};
 function setBg(s) {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: ${s};
     --darkmode-bg: ${s};
-    --mobileday-bg: ${s};
-    --mobilenight-bg: ${s};
   }`;
 }
 
@@ -2979,27 +2979,27 @@ function changeLight(flag) {
 
 
 // 解决开启Pjax的问题
-function whenDOMReady() {
-  try {
-    let data = loadData('blogbg', 1440)
-    if (data) changeBg_noWindow(data, 0)
-    else localStorage.removeItem('blogbg');
-  } catch (error) { localStorage.removeItem('blogbg'); }
-}
-whenDOMReady()
-document.addEventListener("pjax:success", whenDOMReady)
+// function whenDOMReady() {
+//   try {
+//     let data = loadData('blogbg', 1440)
+//     if (data) changeBg_noWindow(data, 0)
+//     else localStorage.removeItem('blogbg');
+//   } catch (error) { localStorage.removeItem('blogbg'); }
+// }
+// whenDOMReady()
+// document.addEventListener("pjax:success", whenDOMReady)
 
 // 无弹窗提醒更换背景
-function changeBg_noWindow(s, flag) {
-  let bg = document.getElementById("web_bg");
-  if (s.charAt(0) == "#") {
-    bg.style.backgroundColor = s;
-    bg.style.backgroundImage = "none";
-  } else bg.style.backgroundImage = s;
-  if (!flag) {
-    saveData("blogbg", s);
-  }
-}
+// function changeBg_noWindow(s, flag) {
+//   let bg = document.getElementById("web_bg");
+//   if (s.charAt(0) == "#") {
+//     bg.style.backgroundColor = s;
+//     bg.style.backgroundImage = "none";
+//   } else bg.style.backgroundImage = s;
+//   if (!flag) {
+//     saveData("blogbg", s);
+//   }
+// }
 
 // 创建窗口
 var winbox = "";
@@ -3071,12 +3071,12 @@ function createWinbox() {
         onclick="setColor('red')"><input type="radio" id="orange" name="colors" value=" "
         onclick="setColor('orange')"><input type="radio" id="yellow" name="colors" value=" "
         onclick="setColor('yellow')"><input type="radio" id="green" name="colors" value=" "
-        onclick="setColor('green')"><input type="radio" id="blue" name="colors" value=" "
+        onclick="setColor('green')" checked="checked"><input type="radio" id="blue" name="colors" value=" "
         onclick="setColor('blue')"><input type="radio" id="heoblue" name="colors" value=" "
         onclick="setColor('heoblue')"><input type="radio" id="darkblue" name="colors" value=" "
         onclick="setColor('darkblue')"><input type="radio" id="purple" name="colors" value=" "
         onclick="setColor('purple')"><input type="radio" id="pink" name="colors" value=" "
-        onclick="setColor('pink')" checked="checked"><input type="radio" id="black" name="colors" value=" "
+        onclick="setColor('pink')" ><input type="radio" id="black" name="colors" value=" "
         onclick="setColor('black')"><input type="radio" id="blackgray" name="colors" value=" "
         onclick="setColor('blackgray')"></div>
 
