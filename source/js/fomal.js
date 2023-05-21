@@ -67,6 +67,272 @@ function scrollToTop() {
 
 //----------------------------------------------------------------
 
+/* 欢迎信息 start */
+//get请求
+$.ajax({
+  type: 'get',
+  url: 'https://apis.map.qq.com/ws/location/v1/ip',
+  data: {
+    key: '',  // 这里要写你的KEY!!!
+    output: 'jsonp',
+  },
+  dataType: 'jsonp',
+  success: function (res) {
+    ipLoacation = res;
+  }
+})
+function getDistance(e1, n1, e2, n2) {
+  const R = 6371
+  const { sin, cos, asin, PI, hypot } = Math
+  let getPoint = (e, n) => {
+    e *= PI / 180
+    n *= PI / 180
+    return { x: cos(n) * cos(e), y: cos(n) * sin(e), z: sin(n) }
+  }
+
+  let a = getPoint(e1, n1)
+  let b = getPoint(e2, n2)
+  let c = hypot(a.x - b.x, a.y - b.y, a.z - b.z)
+  let r = asin(c / 2) * 2 * R
+  return Math.round(r);
+}
+
+function showWelcome() {
+
+  let dist = getDistance(113.34499552, 23.15537143, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let pos = ipLoacation.result.ad_info.nation;
+  let ip;
+  let posdesc;
+  //根据国家、省份、城市信息自定义欢迎语
+  switch (ipLoacation.result.ad_info.nation) {
+    case "日本":
+      posdesc = "よろしく，一起去看樱花吗";
+      break;
+    case "美国":
+      posdesc = "Let us live in peace!";
+      break;
+    case "英国":
+      posdesc = "想同你一起夜乘伦敦眼";
+      break;
+    case "俄罗斯":
+      posdesc = "干了这瓶伏特加！";
+      break;
+    case "法国":
+      posdesc = "C'est La Vie";
+      break;
+    case "德国":
+      posdesc = "Die Zeit verging im Fluge.";
+      break;
+    case "澳大利亚":
+      posdesc = "一起去大堡礁吧！";
+      break;
+    case "加拿大":
+      posdesc = "拾起一片枫叶赠予你";
+      break;
+    case "中国":
+      pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city + " " + ipLoacation.result.ad_info.district;
+      ip = ipLoacation.result.ip;
+      switch (ipLoacation.result.ad_info.province) {
+        case "北京市":
+          posdesc = "北——京——欢迎你~~~";
+          break;
+        case "天津市":
+          posdesc = "讲段相声吧。";
+          break;
+        case "河北省":
+          posdesc = "山势巍巍成壁垒，天下雄关。铁马金戈由此向，无限江山。";
+          break;
+        case "山西省":
+          posdesc = "展开坐具长三尺，已占山河五百余。";
+          break;
+        case "内蒙古自治区":
+          posdesc = "天苍苍，野茫茫，风吹草低见牛羊。";
+          break;
+        case "辽宁省":
+          posdesc = "我想吃烤鸡架！";
+          break;
+        case "吉林省":
+          posdesc = "状元阁就是东北烧烤之王。";
+          break;
+        case "黑龙江省":
+          posdesc = "很喜欢哈尔滨大剧院。";
+          break;
+        case "上海市":
+          posdesc = "众所周知，中国只有两个城市。";
+          break;
+        case "江苏省":
+          switch (ipLoacation.result.ad_info.city) {
+            case "南京市":
+              posdesc = "这是我挺想去的城市啦。";
+              break;
+            case "苏州市":
+              posdesc = "上有天堂，下有苏杭。";
+              break;
+            default:
+              posdesc = "散装是必须要散装的。";
+              break;
+          }
+          break;
+        case "浙江省":
+          posdesc = "东风渐绿西湖柳，雁已还人未南归。";
+          break;
+        case "河南省":
+          switch (ipLoacation.result.ad_info.city) {
+            case "郑州市":
+              posdesc = "豫州之域，天地之中。";
+              break;
+            case "南阳市":
+              posdesc = "臣本布衣，躬耕于南阳。此南阳非彼南阳！";
+              break;
+            case "驻马店市":
+              posdesc = "峰峰有奇石，石石挟仙气。嵖岈山的花很美哦！";
+              break;
+            case "开封市":
+              posdesc = "刚正不阿包青天。";
+              break;
+            case "洛阳市":
+              posdesc = "洛阳牡丹甲天下。";
+              break;
+            default:
+              posdesc = "可否带我品尝河南烩面啦？";
+              break;
+          }
+          break;
+        case "安徽省":
+          posdesc = "蚌埠住了，芜湖起飞。";
+          break;
+        case "福建省":
+          posdesc = "井邑白云间，岩城远带山。";
+          break;
+        case "江西省":
+          posdesc = "落霞与孤鹜齐飞，秋水共长天一色。";
+          break;
+        case "山东省":
+          posdesc = "遥望齐州九点烟，一泓海水杯中泻。";
+          break;
+        case "湖北省":
+          posdesc = "来碗热干面！";
+          break;
+        case "湖南省":
+          posdesc = "74751，长沙斯塔克。";
+          break;
+        case "广东省":
+          posdesc = "老板来两斤福建人。";
+          break;
+        case "广西壮族自治区":
+          posdesc = "桂林山水甲天下。";
+          break;
+        case "海南省":
+          posdesc = "朝观日出逐白浪，夕看云起收霞光。";
+          break;
+        case "四川省":
+          posdesc = "康康川妹子。";
+          break;
+        case "贵州省":
+          posdesc = "茅台，学生，再塞200。";
+          break;
+        case "云南省":
+          posdesc = "玉龙飞舞云缠绕，万仞冰川直耸天。";
+          break;
+        case "西藏自治区":
+          posdesc = "躺在茫茫草原上，仰望蓝天。";
+          break;
+        case "陕西省":
+          posdesc = "来份臊子面加馍。";
+          break;
+        case "甘肃省":
+          posdesc = "羌笛何须怨杨柳，春风不度玉门关。";
+          break;
+        case "青海省":
+          posdesc = "牛肉干和老酸奶都好好吃。";
+          break;
+        case "宁夏回族自治区":
+          posdesc = "大漠孤烟直，长河落日圆。";
+          break;
+        case "新疆维吾尔自治区":
+          posdesc = "驼铃古道丝绸路，胡马犹闻唐汉风。";
+          break;
+        case "台湾省":
+          posdesc = "我在这头，大陆在那头。";
+          break;
+        case "香港特别行政区":
+          posdesc = "永定贼有残留地鬼嚎，迎击光非岁玉。";
+          break;
+        case "澳门特别行政区":
+          posdesc = "性感荷官，在线发牌。";
+          break;
+        default:
+          posdesc = "带我去你的城市逛逛吧！";
+          break;
+      }
+      break;
+    default:
+      posdesc = "带我去你的国家逛逛吧。";
+      break;
+  }
+
+  //根据本地时间切换欢迎语
+  let timeChange;
+  let date = new Date();
+  if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>上午好</span>，一日之计在于晨！";
+  else if (date.getHours() >= 11 && date.getHours() < 13) timeChange = "<span>中午好</span>，该摸鱼吃午饭了。";
+  else if (date.getHours() >= 13 && date.getHours() < 15) timeChange = "<span>下午好</span>，懒懒地睡个午觉吧！";
+  else if (date.getHours() >= 15 && date.getHours() < 16) timeChange = "<span>三点几啦</span>，一起饮茶呀！";
+  else if (date.getHours() >= 16 && date.getHours() < 19) timeChange = "<span>夕阳无限好！</span>";
+  else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>晚上好</span>，夜生活嗨起来！";
+  else timeChange = "夜深了，早点休息，少熬夜。";
+
+  try {
+    //自定义文本和需要放的位置
+    document.getElementById("welcome-info").innerHTML =
+      `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--theme-color)">${pos}</span> 的小伙伴，${timeChange}您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里，当前的IP地址为： <span style="color:var(--theme-color)">${ip}</span>， ${posdesc}</b>`;
+  } catch (err) {
+    // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
+  }
+}
+window.onload = showWelcome;
+// 如果使用了pjax在加上下面这行代码
+document.addEventListener('pjax:complete', showWelcome);
+
+/* 欢迎信息 end */
+
+//----------------------------------------------------------------
+
+/* 微博热搜 start */
+document.addEventListener('pjax:complete', getWeibo);
+document.addEventListener('DOMContentLoaded', getWeibo);
+
+function getWeibo() {
+  fetch('').then(data => data.json()).then(data => {  // 这里要写上你的API!!!
+    let html = '<style>.weibo-new{background:#ff3852}.weibo-hot{background:#ff9406}.weibo-jyzy{background:#ffc000}.weibo-recommend{background:#00b7ee}.weibo-adrecommend{background:#febd22}.weibo-friend{background:#8fc21e}.weibo-boom{background:#bd0000}.weibo-topic{background:#ff6f49}.weibo-topic-ad{background:#4dadff}.weibo-boil{background:#f86400}#weibo-container{overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}#weibo-container::-webkit-scrollbar{display:none}.weibo-list-item{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:nowrap}.weibo-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:auto}.weibo-num{float:right}.weibo-hotness{display:inline-block;padding:0 6px;transform:scale(.8) translateX(-3px);color:#fff;border-radius:8px}</style>'
+    html += '<div class="weibo-list">'
+    let hotness = {
+      '爆': 'weibo-boom',
+      '热': 'weibo-hot',
+      '沸': 'weibo-boil',
+      '新': 'weibo-new',
+      '荐': 'weibo-recommend',
+      '音': 'weibo-jyzy',
+      '影': 'weibo-jyzy',
+      '剧': 'weibo-jyzy',
+      '综': 'weibo-jyzy'
+    }
+    for (let item of data) {
+      html += '<div class="weibo-list-item"><div class="weibo-hotness ' + hotness[(item.hot || '荐')] + '">' + (item.hot || '荐') + '</div>'
+        + '<span class="weibo-title"><a title="' + item.title + '"href="' + item.url + '" target="_blank" rel="external nofollow noreferrer" style="color:#a08ed5">' + item.title + '</a></span>'
+        + '<div class="weibo-num"><span>' + item.num + '</span></div></div>'
+    }
+    html += '</div>'
+    document.getElementById('weibo-container').innerHTML = html
+  }).catch(function (error) {
+    console.log(error);
+  });
+}
+
+/* 微博热搜 end */
+
+//----------------------------------------------------------------
+
 /* 禁用f12与按键防抖 start */
 // 防抖全局计时器
 let TT = null;    //time用来控制事件的触发
@@ -2213,15 +2479,15 @@ if (m == 12 && dd == 25) {//圣诞节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 5 && dd == 25) {//站长生日
+if (m == 8 && dd == 11) {//站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝站长" + (y - 2002).toString() + "岁生日快乐！");
+    Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐！🥝");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 5 && dd == 26) {//小猫咪生日
+if (m == 6 && dd == 30) {//小猫咪生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝小猫咪" + (y - 2023).toString() + "岁生日快乐！🐱");
+    Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2479,11 +2745,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("05/14/2023 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("05/14/2023 00:00:00");
+  var grt = new Date("08/09/2022 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -2497,8 +2763,8 @@ function createtime() {
   1 == String(snum).length && (snum = "0" + snum);
   let currentTimeHtml = "";
   (currentTimeHtml =`<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
-    document.getElementById("workboard") &&
-    (document.getElementById("workboard").innerHTML = currentTimeHtml);
+  document.getElementById("workboard") &&
+  (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
 // 设置重复执行函数，周期1000ms
 setInterval(() => {
@@ -2692,42 +2958,42 @@ function setSnow() {
 
 
 // 帧率监测开关
-// if (localStorage.getItem("fpson") == undefined) {
-//   localStorage.setItem("fpson", "1");
-// }
-// function fpssw() {
-//   if (document.getElementById("fpson").checked) {
-//     localStorage.setItem("fpson", "1");
-//   } else {
-//     localStorage.setItem("fpson", "0");
-//   }
-//   setTimeout(reload, 600);
-// }
+if (localStorage.getItem("fpson") == undefined) {
+  localStorage.setItem("fpson", "1");
+}
+function fpssw() {
+  if (document.getElementById("fpson").checked) {
+    localStorage.setItem("fpson", "1");
+  } else {
+    localStorage.setItem("fpson", "0");
+  }
+  setTimeout(reload, 600);
+}
 
-// // 刷新窗口
-// function reload() {
-//   window.location.reload();
-// }
+// 刷新窗口
+function reload() {
+  window.location.reload();
+}
 
 // 侧边栏开关
-// if (localStorage.getItem("rs") == undefined) {
-//   localStorage.setItem("rs", "block");
-// }
-// if (localStorage.getItem("rs") == "block") {
-//   document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
-// } else {
-//   document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
-// }
-// function toggleRightside() {
-//   // 先设置localStorage变量
-//   if (document.getElementById("rightSideSet").checked) {
-//     localStorage.setItem("rs", "block");
-//     document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
-//   } else {
-//     localStorage.setItem("rs", "none");
-//     document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
-//   }
-// }
+if (localStorage.getItem("rs") == undefined) {
+  localStorage.setItem("rs", "block");
+}
+if (localStorage.getItem("rs") == "block") {
+  document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
+} else {
+  document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
+}
+function toggleRightside() {
+  // 先设置localStorage变量
+  if (document.getElementById("rightSideSet").checked) {
+    localStorage.setItem("rs", "block");
+    document.getElementById("rightSide").innerText = `:root{--rightside-display: block}`;
+  } else {
+    localStorage.setItem("rs", "none");
+    document.getElementById("rightSide").innerText = `:root{--rightside-display: none}`;
+  }
+}
 
 
 // 透明度调节滑块
@@ -2751,44 +3017,44 @@ function setTrans() {
 
 
 // 模糊度调节滑块
-// if (localStorage.getItem("blurRad") == undefined) {
-//   localStorage.setItem("blurRad", 20);
-// }
-// var curBlur = localStorage.getItem("blurRad"); // 当前模糊半径
-// var miniBlur = curBlur * 0.95;
-// document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
-// function setBlurNum() {
-//   var elem = document.getElementById("blurSet");
-//   var newBlur = elem.value;
-//   var target = document.querySelector('.blurValue');
-//   target.innerHTML = "模糊半径 (开启模糊生效 0px-100px): " + newBlur + "px";
-//   localStorage.setItem("blurRad", newBlur);
-//   curBlur = newBlur;
-//   miniBlur = curBlur * 0.95;
-//   // var max = elem.getAttribute("max");
-//   document.querySelector('#rang_blur').style.width = miniBlur + "%";
-//   document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
-// };
+if (localStorage.getItem("blurRad") == undefined) {
+  localStorage.setItem("blurRad", 20);
+}
+var curBlur = localStorage.getItem("blurRad"); // 当前模糊半径
+var miniBlur = curBlur * 0.95;
+document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
+function setBlurNum() {
+  var elem = document.getElementById("blurSet");
+  var newBlur = elem.value;
+  var target = document.querySelector('.blurValue');
+  target.innerHTML = "模糊半径 (开启模糊生效 0px-100px): " + newBlur + "px";
+  localStorage.setItem("blurRad", newBlur);
+  curBlur = newBlur;
+  miniBlur = curBlur * 0.95;
+  // var max = elem.getAttribute("max");
+  document.querySelector('#rang_blur').style.width = miniBlur + "%";
+  document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
+};
 
 
-// // 模糊效果开关
-// if (localStorage.getItem("blur") == undefined) {
-//   localStorage.setItem("blur", 0);
-// }
-// if (localStorage.getItem("blur") == 0) {
-//   document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
-// } else {
-//   document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
-// }
-// function setBlur() {
-//   if (document.getElementById("blur").checked) {
-//     localStorage.setItem("blur", 1);
-//     document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
-//   } else {
-//     localStorage.setItem("blur", 0);
-//     document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
-//   }
-// }
+// 模糊效果开关
+if (localStorage.getItem("blur") == undefined) {
+  localStorage.setItem("blur", 0);
+}
+if (localStorage.getItem("blur") == 0) {
+  document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
+} else {
+  document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
+}
+function setBlur() {
+  if (document.getElementById("blur").checked) {
+    localStorage.setItem("blur", 1);
+    document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
+  } else {
+    localStorage.setItem("blur", 0);
+    document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
+  }
+}
 
 // 更换背景(原来Leonus的代码)
 // 存数据
@@ -2879,12 +3145,12 @@ function changeBg(s) {
   localStorage.setItem("blogbg", s);
 }
 // 设置背景属性
-// --mobileday-bg: ${s};
-// --mobilenight-bg: ${s};
 function setBg(s) {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: ${s};
     --darkmode-bg: ${s};
+    --mobileday-bg: ${s};
+    --mobilenight-bg: ${s};
   }`;
 }
 
@@ -2917,7 +3183,7 @@ function getPicture_() {
     new Vue({
       data: function () {
         this.$notify({
-          title: "链接不对😊",
+          title: "链接不对🤣",
           message: "请输入有效的图片链接！",
           position: 'top-left',
           offset: 50,
@@ -3028,6 +3294,12 @@ function createWinbox() {
   window.addEventListener("resize", winResize);
 
   // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
+//<div class="content" style="display:flex">
+//  <div class="content-text" style="font-weight:bold; padding-left:10px"> 模糊效果 (消耗性能) </div><input type="checkbox" id="blur" onclick="setBlur()">
+//  <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
+//</div>
+
+
   winbox.body.innerHTML = `
 <div class="settings" style="display: block;">
 <div id="article-container" style="padding:12px;">
@@ -3043,15 +3315,18 @@ function createWinbox() {
 </div>
 
 
+
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 星空特效 (夜间模式) </div><input type="checkbox" id="universeSet" onclick="setUniverse()">
   <div class="content-text" style="font-weight:bold; padding-left:20px"> 霓虹灯 (夜间模式) </div><input type="checkbox" id="lightSet" onclick="setLight()">
 </div>
 
+
+
 <div class="content" style="display:flex">
+  <div class="content-text" style="font-weight:bold; padding-left:10px"> 帧率监测 (刷新生效) </div><input type="checkbox" id="fpson" onclick="fpssw()">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 雪花特效 (白天模式) </div><input type="checkbox" id="snowSet" onclick="setSnow()">
 </div>
-
 
 
 <h2>二、字体设置</h2>
@@ -3076,7 +3351,7 @@ function createWinbox() {
         onclick="setColor('heoblue')"><input type="radio" id="darkblue" name="colors" value=" "
         onclick="setColor('darkblue')"><input type="radio" id="purple" name="colors" value=" "
         onclick="setColor('purple')"><input type="radio" id="pink" name="colors" value=" "
-        onclick="setColor('pink')" ><input type="radio" id="black" name="colors" value=" "
+        onclick="setColor('pink')"><input type="radio" id="black" name="colors" value=" "
         onclick="setColor('black')"><input type="radio" id="blackgray" name="colors" value=" "
         onclick="setColor('blackgray')"></div>
 
@@ -3087,20 +3362,13 @@ function createWinbox() {
 
 {% folding cyan, 查看明日方舟背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/8.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/8.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/13.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/13.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/14.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/14.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/38.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/38.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/57.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/57.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/85.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/85.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/99.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/99.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/114.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/114.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/115.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/115.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/125.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/125.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/133.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/133.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/136.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/136.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/149.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/149.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/156.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/159.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/199.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/199.jpg)')"></a>
 
 </div>
@@ -3110,16 +3378,9 @@ function createWinbox() {
 
 {% folding cyan, 查看海贼王背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/7.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/7.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/78.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/78.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/86.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/86.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/89.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/89.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/92.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/92.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/93.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/93.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/95.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/95.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/96.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/96.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/98.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/98.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/99.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/99.jpg)')"></a>
 
 </div>
 {% endfolding %}
@@ -3129,7 +3390,6 @@ function createWinbox() {
 {% folding cyan, 查看二次元背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-1363038.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-1363038.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-4314529.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-4314529.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-4359874.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-4359874.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-12502634.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-12502634.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-13356251.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-13356251.jpg)')"></a>
@@ -3142,7 +3402,6 @@ function createWinbox() {
 
 {% folding cyan, 查看风景背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/6381f14e17186.webp)" class="imgbox" onclick="changeBg('url(/assets/scenery/6381f14e17186.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/6381f14f1be65.webp)" class="imgbox" onclick="changeBg('url(/assets/scenery/6381f14f1be65.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/default_cover_14.webp)" class="imgbox" onclick="changeBg('url(/assets/scenery/default_cover_14.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/106922955_p0.png)" class="imgbox" onclick="changeBg('url(/assets/scenery/106922955_p0.png)')"></a>
@@ -3215,21 +3474,14 @@ function createWinbox() {
 </div>
 
 `;
-//<div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
-// <a id="waiBizhiBox" rel="noopener external nofollow" style="background-image: ${waiBizhi}" class="box apiBox" onclick="changeBg('${waiBizhi}')"></a> 
-// <a id="btstuBox" rel="noopener external nofollow" style="background-image: ${btstu}" class="box apiBox" onclick="changeBg('${btstu}')"></a> 
-// <a id="seovxBox" rel="noopener external nofollow" style="background-image: ${seovx}" class="box apiBox" onclick="changeBg('${seovx}')"></a>
-}
 
-
-{
   // 打开小窗时候初始化
   $("#" + localStorage.getItem("themeColor")).attr("checked", true);
-  if (localStorage.getItem("blur") == 1) {
-    document.getElementById("blur").checked = true;
-  } else {
-    document.getElementById("blur").checked = false;
-  }
+  // if (localStorage.getItem("blur") == 1) {
+  //   document.getElementById("blur").checked = true;
+  // } else {
+  //   document.getElementById("blur").checked = false;
+  // }
   if (localStorage.getItem("universe") == "block") {
     document.getElementById("universeSet").checked = true;
   } else if (localStorage.getItem("universe") == "none") {
@@ -3240,11 +3492,11 @@ function createWinbox() {
   } else {
     document.getElementById("fpson").checked = false;
   }
-  if (localStorage.getItem("rs") == "block") {
-    document.getElementById("rightSideSet").checked = true;
-  } else if (localStorage.getItem("rs") == "none") {
-    document.getElementById("rightSideSet").checked = false;
-  }
+  // if (localStorage.getItem("rs") == "block") {
+  //   document.getElementById("rightSideSet").checked = true;
+  // } else if (localStorage.getItem("rs") == "none") {
+  //   document.getElementById("rightSideSet").checked = false;
+  // }
   if (localStorage.getItem("light") == "true") {
     document.getElementById("lightSet").checked = true;
   } else {

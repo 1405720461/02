@@ -57,9 +57,6 @@ social:
   B站: https://space.bilibili.com/392071577 || icon-bilibili || faa-tada
   QQ邮箱: mailto:1405720461@qq.com || icon-youxiang || faa-tada
   力扣: https://leetcode.cn/u/SmarxeCtAT/ || icon-leetcode || faa-tada
-  # 微博: https://weibo.com/u/6473136435 || icon-weibo || faa-tada
-  # 知乎: https://www.zhihu.com/people/liang-jia-chao-19 || icon-shejiaotubiao-10 || faa-tada
-  # RSS: /atom.xml || icon-RSS || faa-tada
 
   # iconfont icon-github: https://github.com/fomalhaut1998 || Github
   # iconfont icon-youjian: mailto:1174008660@qq.com || QQ邮箱
@@ -542,14 +539,14 @@ tag_ui: # 留空或 index
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # "#e4f4f6" "#efefef"
 background:
-  #【必选】默认背景  var(--default-bg)
-  default: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights1/9.jpg)
-  #【可选】PC端夜间模式背景
-  darkmode: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights2/152.jpg)
-  #【可选】移动端日间默认背景
-  mobileday: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/172.jpg)
-  #【可选】移动端夜间模式背景
-  mobilenight: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/62.jpg)
+  #【必选】默认背景  var(--default-bg)     fomal.js第3129行
+  default: var(--default-bg)
+  #【可选】PC端夜间模式背景  var(--darkmode-bg)
+  darkmode: var(--darkmode-bg)
+  #【可选】移动端日间默认背景  var(--mobileday-bg)
+  mobileday: var(--mobileday-bg)
+  #【可选】移动端夜间模式背景  var(--mobilenight-bg)
+  mobilenight: var(--mobilenight-bg)
 
 # Footer Background
 footer_bg: false
@@ -916,9 +913,9 @@ inject:
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
     - <style id="transPercent"></style> # 透明度调节
-    # - <style id="blurNum"></style> # 模糊半径调节
-    # - <style id="settingStyle"></style> # 模糊效果开关
-    # - <span id="fps"></span> # 帧率检测
+    - <style id="blurNum"></style> # 模糊半径调节
+    - <style id="settingStyle"></style> # 模糊效果开关
+    - <span id="fps"></span> # 帧率检测
     - <style id="defineBg"></style> # 自定义背景选项
     - <style id="menu_shadow"></style> # 菜单发光样式
 

@@ -1117,8 +1117,8 @@ button#go-up:hover #percent {
 }
 
 .imgbox {
-  width: 143px;
-  height: 80px;
+  width: 184;
+  height: 103;
 }
 
 @media screen and (max-width: 768px) {
