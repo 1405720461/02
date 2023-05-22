@@ -3097,14 +3097,14 @@ function createWinbox() {
 
 {% folding cyan, 查看明日方舟背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/38.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/38.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/57.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/57.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/23.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/23.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/102.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/102.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/115.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/115.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/125.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/125.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/133.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/133.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/136.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/136.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/149.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/149.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/199.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/199.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/270.jpg)" class="imgbox" onclick="changeBg('url(/assets/Arknights/270.jpg)')"></a>
 
 </div>
 {% endfolding %}
@@ -3113,6 +3113,7 @@ function createWinbox() {
 
 {% folding cyan, 查看海贼王背景 %}
 <div class="bgbox">
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/74.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/74.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/86.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/86.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/89.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/89.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/92.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/92.jpg)')"></a>
@@ -3127,56 +3128,28 @@ function createWinbox() {
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-1363038.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-1363038.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-4359874.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-4359874.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/infinity-13356251.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/infinity-13356251.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/57.jpg)" class="imgbox" onclick="changeBg('url(/assets/cartoon/57.jpg)')"></a>
 
 </div>
 {% endfolding %}
 
 
-<h3>4. 风景</h3>
-
-{% folding cyan, 查看风景背景 %}
+<h3>4. 手机壁纸</h3>
+{% folding cyan, 查看适配手机的背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/106922955_p0.png)" class="imgbox" onclick="changeBg('url(/assets/scenery/106922955_p0.png)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/106986233_p0.png)" class="imgbox" onclick="changeBg('url(/assets/scenery/106986233_p0.png)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/scenery/42143e394194.png)" class="imgbox" onclick="changeBg('url(/assets/scenery/42143e394194.png)')"></a>
-
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2231484294.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2231484294.jpeg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2231277148.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2231277148.jpeg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2231369421.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2231369421.jpeg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/1986229006.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/1986229006.jpeg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2231389834.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2231389834.jpeg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2231389833.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2231389833.jpeg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2231351125.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2231351125.jpeg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2231351126.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2231351126.jpeg)')"></a>
 
 </div>
 {% endfolding %}
 
-
-<h3>5. 渐变色</h3>
-{% folding cyan, 查看渐变色背景 %}
-<div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #544a7d, #ffd452)" onclick="changeBg('linear-gradient(to right, #544a7d, #ffd452)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4)" onclick="changeBg('linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to left, #654ea3, #eaafc8)" onclick="changeBg('linear-gradient(to left, #654ea3, #eaafc8)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #feac5e, #c779d0, #4bc0c8)" onclick="changeBg('linear-gradient(to top, #feac5e, #c779d0, #4bc0c8)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #d3959b, #bfe6ba)" onclick="changeBg('linear-gradient(to top, #d3959b, #bfe6ba)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #8360c3, #2ebf91)" onclick="changeBg('linear-gradient(to top, #8360c3, #2ebf91)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #108dc7, #ef8e38)" onclick="changeBg('linear-gradient(to top, #108dc7, #ef8e38)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)" onclick="changeBg('linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)')"></a>
-</div>
-{% endfolding %}
-
-
-<h3>6. 纯色</h3>
-{% folding cyan, 查看纯色背景 %}
-<div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ecb1b1" onclick="changeBg('#ecb1b1')"></a> 
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #d3ebac" onclick="changeBg('#d3ebac')"></a> 
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ace9ce" onclick="changeBg('#ace9ce')"></a>
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #c1ebea" onclick="changeBg('#c1ebea')"></a> 
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #dee7f1" onclick="changeBg('#dee7f1')"></a> 
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #e9e3f2" onclick="changeBg('#e9e3f2')"></a> 
-<a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #f7eff5" onclick="changeBg('#f7eff5')"></a>  
-<input type="color" id="define_colors" href="javascript:;" rel="noopener external nofollow" class="box" autocomplete="on" value="${defineColor}" oninput="changeBgColor()"></input>
-</div>
-{% endfolding %}
-
-
-
-<h3>7. 壁纸API</h3>
+<h3>5. 壁纸API</h3>
 {% folding cyan, 查看壁纸API系列背景 %}
 <div class="bgbox">
 <a id="bingDayBox" rel="noopener external nofollow" style="background-image: ${bingDayBg}" class="box apiBox" onclick="changeBg('${bingDayBg}')"></a>
@@ -3188,7 +3161,7 @@ function createWinbox() {
 {% endfolding %}
 
 
-<h3>8. 自定义背景</h3>
+<h3>6. 自定义背景</h3>
 {% folding cyan, 设置自定义背景 %}
 <p><center>
 <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://source.fomal.cc/img/home_bg.webp">
