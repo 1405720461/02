@@ -2118,7 +2118,7 @@ li.categoryBar-list-item {
   display: none;
 }
 
-.neko::after {
+/* .neko::after {
   display: none;
   width: 100px;
   height: 100px;
@@ -2130,7 +2130,7 @@ li.categoryBar-list-item {
   text-align: center;
   line-height: 106px;
   top: -115%;
-}
+} */
 
 .neko.showMsg::after {
   content: attr(data-msg);
