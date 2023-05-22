@@ -2132,7 +2132,7 @@ li.categoryBar-list-item {
   top: -115%;
 } */
 
-.neko.showMsg::after {
+/* .neko.showMsg::after {
   content: attr(data-msg);
   display: block;
   overflow: hidden;
@@ -2144,7 +2144,7 @@ li.categoryBar-list-item {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} */
 
 .neko.fontColor::after {
   color: #333;
