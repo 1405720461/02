@@ -500,7 +500,7 @@ if (document.body.clientWidth > 992) {
       zoom: 0.9,
       hoverMsg:'', //鼠标浮动到neko上方的对话框信息
       // nekoname:'neko1', //nekoname，相当于id
-      // nekoImg:'img/猫咪.png', //neko的背景图片
+      nekoImg:'/assets/111.png', //neko的背景图片
       // scImg:"img/绳1.png", //绳子的背景图片
       // bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效
       // zoom:0.9, //绳子长度的缩放值
