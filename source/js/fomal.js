@@ -409,7 +409,7 @@ if (document.body.clientWidth > 992) {
         zoom: 0.9,
         borderRadius: 5 + 'px',
         right: 55.6 + 'px',
-        // nekoImg: "/assets/111.png",
+        nekoImg: "https://cdn.staticaly.com/gh/1405720461/images@master/img/111.png",
         hoverMsg: "春天啦~",
         color: "var(--theme-color)",
         during: 500,
@@ -419,7 +419,7 @@ if (document.body.clientWidth > 992) {
       var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +
         this.prop("id") : this.prop("nodeName");
       if ($(".neko").length == 0) {
-        this.after("<div class=\"neko\" id=" + setting.nekoname + " ></div>");
+        this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");
       }
       let basicInfo = getBasicInfo();
       $(getThis)
@@ -471,15 +471,15 @@ if (document.body.clientWidth > 992) {
               'right': setting.right,
               'background-image': 'url(' + setting.nekoImg + ')',
             });
-          // if (basicInfo.ScrollTop == basicInfo.S_V) {
-          //   $("#" + setting.nekoname)
-          //     .addClass("showMsg")
-          // } else {
-          //   $("#" + setting.nekoname)
-          //     .removeClass("showMsg");
-          //   $("#" + setting.nekoname)
-          //     .attr("data-msg", setting.hoverMsg);
-          // }
+          if (basicInfo.ScrollTop == basicInfo.S_V) {
+            $("#" + setting.nekoname)
+              .addClass("showMsg")
+          } else {
+            $("#" + setting.nekoname)
+              .removeClass("showMsg");
+            $("#" + setting.nekoname)
+              .attr("data-msg", setting.hoverMsg);
+          }
         });
       this.click(function (e) {
         btf.scrollToDest(0, 500)
@@ -498,9 +498,9 @@ if (document.body.clientWidth > 992) {
       bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效
       borderRadius: '2em',
       zoom: 0.9,
-      // hoverMsg:'', //鼠标浮动到neko上方的对话框信息
-      nekoname:'neko1', //nekoname，相当于id
-      nekoImg:'/assets/111.png', //neko的背景图片
+      hoverMsg:'', //鼠标浮动到neko上方的对话框信息
+      // nekoname:'neko1', //nekoname，相当于id
+      // nekoImg:'img/猫咪.png', //neko的背景图片
       // scImg:"img/绳1.png", //绳子的背景图片
       // bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效
       // zoom:0.9, //绳子长度的缩放值
