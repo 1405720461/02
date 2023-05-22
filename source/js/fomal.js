@@ -419,7 +419,7 @@ if (document.body.clientWidth > 992) {
       var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +
         this.prop("id") : this.prop("nodeName");
       if ($(".neko").length == 0) {
-        this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");
+        this.after("<div class=\"neko\" id=" + setting.nekoname + " ></div>");
       }
       let basicInfo = getBasicInfo();
       $(getThis)
@@ -477,8 +477,8 @@ if (document.body.clientWidth > 992) {
           } else {
             $("#" + setting.nekoname)
               .removeClass("showMsg");
-            $("#" + setting.nekoname)
-              .attr("data-msg", setting.hoverMsg);
+            // $("#" + setting.nekoname)
+            //   .attr("data-msg", setting.hoverMsg);
           }
         });
       this.click(function (e) {
