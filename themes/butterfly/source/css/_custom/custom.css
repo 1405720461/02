@@ -2120,7 +2120,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* .neko::after {
+.neko::after {
   display: none;
   width: 100px;
   height: 100px;
@@ -2132,9 +2132,9 @@ body::-webkit-scrollbar {
   text-align: center;
   line-height: 106px;
   top: -115%;
-} */
+}
 
-/* .neko.showMsg::after {
+.neko.showMsg::after {
   content: attr(data-msg);
   display: block;
   overflow: hidden;
@@ -2146,7 +2146,7 @@ body::-webkit-scrollbar {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-} */
+}
 
 .neko.fontColor::after {
   color: #333;
