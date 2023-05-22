@@ -2099,23 +2099,25 @@ li.categoryBar-list-item {
 
 /* 右边的小猫咪 */
 /* 滚动条，我设置的不隐藏，为了可以到达任何地方 */
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0;
-} */
+}
 
 .neko {
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  right: 56px !important;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translateX(50%);
-  font-family: var(--global-font);
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--theme-color) !important;
-  display: none;
+    width: 64px;
+    height: 64px;
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/img/111.png");
+    position: absolute;
+    right: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(50%);
+    cursor: pointer;
+    font-family: tzy;
+    font-weight: 600;
+    font-size: 16px;
+    color: #6f42c1;
+    display: none;
 }
 
 /* .neko::after {
