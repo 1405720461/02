@@ -2099,14 +2099,14 @@ li.categoryBar-list-item {
 
 /* 右边的小猫咪 */
 /* 滚动条，我设置的不隐藏，为了可以到达任何地方 */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: 0;
-}
+} */
 
 .neko {
     width: 64px;
     height: 64px;
-    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/img/111.png");
+    background-image: url("/assets/star.png");
     position: absolute;
     right: 32px;
     background-repeat: no-repeat;
@@ -2120,7 +2120,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.neko::after {
+/* .neko::after {
   display: none;
   width: 100px;
   height: 100px;
@@ -2146,11 +2146,11 @@ body::-webkit-scrollbar {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} */
 
-.neko.fontColor::after {
+/* .neko.fontColor::after {
   color: #333;
-}
+} */
 
 /* 小猫咪手机端消失 */
 @media screen and (max-width: 768px) {

@@ -404,13 +404,13 @@ if (document.body.clientWidth > 992) {
       $.fn.nekoScroll = function (option) {
           var defaultSetting = {
               top: '0',
-              scroWidth: 3 + 'px',
+              scroWidth: 6 + 'px',
               z_index: 9999,
               zoom: 0.9,
               borderRadius: 5 + 'px',
               right: 60 + 'px',
               // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图
-              nekoImg: "https://cdn.staticaly.com/gh/1405720461/images@master/img/111.png",
+              nekoImg: "/assets/star.png",
               hoverMsg: "喵喵喵~",
               color: "#6f42c1",
               during: 500,
@@ -434,7 +434,7 @@ if (document.body.clientWidth > 992) {
                   "border-radius": setting.borderRadius,
                   'right': setting.right,
                   'background-image': 'url(' + setting.scImg + ')',
-                  'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',
+                  'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent)', 'border-radius': '2em',
                   'background-size': 'contain'
               });
           $("#" + setting.nekoname)
@@ -461,7 +461,7 @@ if (document.body.clientWidth > 992) {
                           "border-radius": setting.borderRadius,
                           'right': setting.right,
                           'background-image': 'url(' + setting.scImg + ')',
-                          'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',
+                          'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent)', 'border-radius': '2em',
                           'background-size': 'contain'
                       });
                   $("#" + setting.nekoname)
@@ -496,7 +496,7 @@ if (document.body.clientWidth > 992) {
   $(document).ready(function () {
       //部分自定义
       $("#myscoll").nekoScroll({
-          bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效
+          bgcolor: 'rgb(196 233 244 / 1)', //背景颜色，没有绳子背景图片时有效
           borderRadius: '2em',
           zoom: 0.9
       }
