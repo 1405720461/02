@@ -44,7 +44,7 @@ type: "link"
 | 站点链接   | https://wjldarling/                                                      |
 | 站长头像   | https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg        |
 | 站点描述   | Future is now🍭🍭🍭                                                      |
-| 站点关键词 | 你好可爱,个人博客,代码                                                   |
+| 站点关键词 | 你好可爱,JavaScript,个人博客,代码                                        |
 
 <!-- endtab -->
 
@@ -67,10 +67,6 @@ type: "link"
 对于做了反扒措施的站点，API 获取的将是反扒页面，望知悉。
 站点截图建议使用以下 API 获取以匹配本站样式
 有部分朋友的截图体积过大影响加载速度，后面一律采用小体积截图代替望周知
-
-```markdown
-https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://<你的域名>/
-```
 
 {% note primary flat %}
 🎉 本站支持交换友链，在您提出申请之前，请将本站添加至友链

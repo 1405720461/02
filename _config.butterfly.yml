@@ -11,7 +11,7 @@ menu:
   休闲 || icon-pinweishenghuo || faa-tada || hide:
     八音盒: /box/music/ ||icon-yinle || faa-tada
     画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
-    动画: /box/animation/ || icon-nvwumao || faa-tada
+    动漫: /box/animation/ || icon-nvwumao || faa-tada
   # 网站 || icon-wangye || faa-tada || hide:
   #   网站统计: /site/census/ || icon--tongjibiao || faa-tada
   #   文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
@@ -909,6 +909,10 @@ inject:
   head:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"> # 常规css
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
+    # 诗词
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/poem/poem.css">
+
     # 综合美化模块样式引入
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
@@ -1102,7 +1106,7 @@ envelope_comment:
 # 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
 flink_style: volantis # butterfly | volantis | flexcard
 
-# Replace Broken Images (替換無法顯示的圖片)
+# Replace Broken Images (友链头像无法显示)
 error_img:
   flink: /assets/r1.jpg
   post_page: /assets/r2.jpg

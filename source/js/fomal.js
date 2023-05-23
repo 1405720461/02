@@ -855,7 +855,8 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到你好可爱の小家!`,
+    `欢迎来到`,
+    `你好可爱の小家!`,
     `Future is now 🍭🍭🍭`,
     "小站已经苟活",
     dnum,
@@ -867,13 +868,13 @@ function createtime1() {
     console.log.bind(
       console,
       `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "",
       "color:#39c5bb",
+      "",
       "",
       "color:#39c5bb",
       "",
       "color:#39c5bb",
-      "color:#39c5bb",
-      ""
     )
   );
 }
