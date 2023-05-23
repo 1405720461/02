@@ -1092,8 +1092,6 @@ button#go-up:hover #percent {
 .pimgbox,
 .imgbox,
 .box {
-  height: 100px;
-  width: 166px;
   margin: 10px;
   border-radius: 10px !important;
   background-size: cover;
@@ -1113,24 +1111,33 @@ button#go-up:hover #percent {
 }
 
 .pimgbox {
+  width: 166px;
   height: 355px;
 }
 
 .imgbox {
-  width: 184;
-  height: 103;
+  width: 184px;
+  height: 103px;
+}
+
+.box{
+  height: 108px;
+  width: 192px;
 }
 
 @media screen and (max-width: 768px) {
   /* 背景 */
-  .pimgbox,
-  .imgbox,
-  .box {
+  .pimgbox{
+    height: 257px;
+    width: 130px;
+  }
+  .imgbox{
     height: 73px;
     width: 135px;
   }
-  .pimgbox {
-    height: 205px;
+  .box {
+    height: 90px;
+    width: 160px;
   }
 
   /* 2.0新增内容 */
@@ -2953,21 +2960,21 @@ hr:before {
   position: relative;
   color: aliceblue;
   border-radius: 5px;
-  top: 35px;
+  top: 40px;
   padding: 2px 5px;
   background: #00000090;
 }
 
 #bingDayBox::before {
-  left: 34px;
+  left: 47px;
   content: "必应每日壁纸";
 }
 #bingHistoryBox::before {
-  left: 34px;
+  left: 47px;
   content: "必应历史壁纸";
 }
 #EEEDogBox::before {
-  left: 20px;
+  left: 34px;
   content: "EEEDog动漫壁纸";
 }
 #seovxBox::before {
@@ -2975,7 +2982,7 @@ hr:before {
   content: "seovx美女壁纸";
 }
 #picsumBox::before {
-  left: 24px;
+  left: 37px;
   content: "picsum随机壁纸";
 }
 #waiBizhiBox::before {
@@ -2987,10 +2994,49 @@ hr:before {
   content: "博天随机壁纸";
 }
 #unsplashBox::before {
-  left: 15px;
+  left: 28px;
   content: "Unsplash随机壁纸";
 }
 
+
+@media screen and (max-width: 768px) {
+  .apiBox::before {
+    top: 30px;
+  }
+
+  #bingDayBox::before {
+    left: 30px;
+    content: "必应每日壁纸";
+  }
+  #bingHistoryBox::before {
+    left: 30px;
+   content: "必应历史壁纸";
+  }
+#EEEDogBox::before {
+  left: 17px;
+  content: "EEEDog动漫壁纸";
+}
+#seovxBox::before {
+  left: 30px;
+  content: "seovx美女壁纸";
+}
+#picsumBox::before {
+  left: 22px;
+  content: "picsum随机壁纸";
+}
+#waiBizhiBox::before {
+  left: 34px;
+  content: "小歪高清壁纸";
+}
+#btstuBox::before {
+  left: 34px;
+  content: "博天随机壁纸";
+}
+#unsplashBox::before {
+  left: 14px;
+  content: "Unsplash随机壁纸";
+}
+}
 /* 评论区圆角 */
 .tk-meta-input .el-input .el-input-group__prepend {
   border-bottom-left-radius: 6px;
