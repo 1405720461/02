@@ -1128,12 +1128,12 @@ button#go-up:hover #percent {
 @media screen and (max-width: 768px) {
   /* 背景 */
   .pimgbox{
-    height: 200px;
-    width: 100px;
+    height: 165px;
+    width: 80px;
   }
   .imgbox{
-    height: 73px;
-    width: 135px;
+    height: 63px;
+    width: 112px;
   }
   .box {
     height: 90px;
