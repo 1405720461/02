@@ -1099,6 +1099,7 @@ button#go-up:hover #percent {
 
 .pimgbox,
 .imgbox {
+  width: 184px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1111,12 +1112,10 @@ button#go-up:hover #percent {
 }
 
 .pimgbox {
-  width: 166px;
-  height: 355px;
+  height: 368px;
 }
 
 .imgbox {
-  width: 184px;
   height: 103px;
 }
 

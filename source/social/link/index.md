@@ -12,7 +12,7 @@ type: "link"
 
 ```yml
 - name: 你好可爱
-  link: https://wjldarling/
+  link: https://wjldarling.top/
   avatar: https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg
   descr: Future is now 🍭🍭🍭
   siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.png
@@ -26,7 +26,7 @@ type: "link"
 {
   "title": "你好可爱",
   "screenshot": "https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.png",
-  "url": "https://wjldarling/",
+  "url": "https://wjldarling.top/",
   "avatar": "https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg",
   "description": "Future is now 🍭🍭🍭",
   "keywords": "你好可爱"
@@ -41,7 +41,7 @@ type: "link"
 | ---------- | ------------------------------------------------------------------------ |
 | 站点名称   | 你好可爱                                                                 |
 | 站点截图   | https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.png |
-| 站点链接   | https://wjldarling/                                                      |
+| 站点链接   | https://wjldarling.top/                                                  |
 | 站长头像   | https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg        |
 | 站点描述   | Future is now🍭🍭🍭                                                      |
 | 站点关键词 | 你好可爱,JavaScript,个人博客,代码                                        |
