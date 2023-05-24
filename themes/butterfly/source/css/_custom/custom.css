@@ -892,7 +892,7 @@ h6::before {
 /* 适应宽度不同的设备 */
 @media screen and (max-width: 1000px) {
   .gallery-group {
-    width: calc(50% - 8px) !important;
+    width: calc(100% - 8px) !important;
   }
 }
 
