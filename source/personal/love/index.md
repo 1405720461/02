@@ -4,7 +4,7 @@ tags:
   - 作为日记加密
 date: 2020-11-08
 update: 2023-05-16
-comments: true
+comments: false
 password: wangjinglun
 theme: xray
 message: 这里记录我和女朋友的一些事情哦，需要密码才能进入!
