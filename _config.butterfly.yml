@@ -223,10 +223,10 @@ reward:
   enable: true
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: https://cdn.staticaly.com/gh/1405720461/images@master/img/IMG_20230517_180151.png
+    - img: https://cdn.staticaly.com/gh/1405720461/images@master/img/wx.webp
       link:
       text: 微信
-    - img: https://cdn.staticaly.com/gh/1405720461/images@master/img/IMG_20230517_180217.jpg
+    - img: https://cdn.staticaly.com/gh/1405720461/images@master/img/zfb.webp
       link:
       text: 支付宝
 
