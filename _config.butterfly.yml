@@ -12,7 +12,6 @@ menu:
     八音盒: /box/music/ ||icon-yinle || faa-tada
     画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
     动漫: /box/animation/ || icon-nvwumao || faa-tada
-
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     留言板: /comments/ || icon-liuyan || faa-tada
     友人帐: /social/link/ || icon-lianjie || faa-tada
