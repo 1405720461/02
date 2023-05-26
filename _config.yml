@@ -303,9 +303,9 @@ magnet:
     - name: 恋爱
       display_name: 恋爱日常分享
       icon: 🧡
-    # - name: Vue
-    #   display_name: Vue笔记
-    #   icon: 🍉
+    - name: 周记
+      display_name: 每周点点滴滴
+      icon: 📰
     # - name: 数据库
     #   display_name: 数据库笔记
     #   icon: 🍨

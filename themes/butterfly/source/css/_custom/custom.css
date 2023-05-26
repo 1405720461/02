@@ -3061,3 +3061,25 @@ hr:before {
   scale: 1.05;
   transition: all 0.3s ease-in-out;
 }
+
+
+/*更改背景功能手机适应 */
+@media screen and (max-width: 900px) {
+  .btn_bg1{
+    width: 50% !important;
+    padding: 15px 10px !important;
+  }
+
+  .btn_bg2{
+    width: 44% !important;
+    padding: 15px 5px !important;
+  }
+
+  .settings input[type="checkbox"]:checked:before{
+    left:11px
+  }
+
+  .settings input[type="checkbox"]:before{
+    left: 2px;
+  }
+}
