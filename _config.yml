@@ -327,7 +327,7 @@ encrypt: # hexo-blog-encrypt
   abstract: 只有你和我才知道密码!
   message: 这里记录我和女朋友的一些事情哦，需要密码才能进入!
   tags:
-    - { name: 恋爱, password: "123" }
+    - { name: 恋爱, password: "wangjinglun" }
   theme: xray
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.

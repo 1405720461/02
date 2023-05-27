@@ -3082,4 +3082,26 @@ hr:before {
   .settings input[type="checkbox"]:before{
     left: 2px;
   }
+
+
+  /* 手机适配恋爱小屋页面 */
+  .hbe-input{
+    min-width: 80% !important;
+  }
+
+  .hbe-input-xray{
+    padding-bottom: 3em !important;
+  }
+
+  .hbe-input-label-xray{
+    top: 0 !important;
+  }
+
+  .hbe-input-field-xray:focus + .hbe-input-label-xray {
+    top: 1em !important;
+  }
+
+  .hbe-input-label-content{
+    padding: 2em 0 !important;
+  }
 }
