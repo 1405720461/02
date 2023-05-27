@@ -3268,7 +3268,7 @@ var isFirstScroll = true;
 
 window.addEventListener('wheel', function(event) {
   // 检查滚动方向
-  if (event.deltaY > 0 && isFirstScroll) {
+  if (window.location.pathname === '/' && event.deltaY > 0 && isFirstScroll) {
       // 获取视口的高度
       var viewportHeight = window.innerHeight;
 
