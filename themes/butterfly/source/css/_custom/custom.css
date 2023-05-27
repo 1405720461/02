@@ -3062,6 +3062,18 @@ hr:before {
   transition: all 0.3s ease-in-out;
 }
 
+/* 相册实线 */
+#article-container figure.gallery-group .gallery-group-name:after {
+  left: -1px
+}
+
+/* 恋爱下面按钮样式 */
+.hbe-button {
+  text-align: center !important;
+  line-height: 40px;
+  font-size: 15px !important;
+}
+
 
 /*更改背景功能手机适应 */
 @media screen and (max-width: 900px) {
