@@ -25,5 +25,9 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/15.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/16.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/17.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/18.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/19.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/20.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/21.webp)
 
 {% endgallery %}

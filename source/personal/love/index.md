@@ -12,19 +12,13 @@ abstract: 只有你和我才知道密码! #密码框提示信息
 wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试! #密码错误提示信息
 ---
 
-{% tabs love %}
-
-<!-- tab 倒数日 -->
-
 <div>在一起已经 : <span id="day1"></span>天啦</div>
 
 <div>生日还有 : <span id="day2"></span>天</div>
 
 <div>宝宝生日还有 : <span id="day3"></span>天</div>
 
-<!-- endtab -->
-
-<!-- tab 走过点点滴滴 ⌛ -->
+{% folding blue, 走过点点滴滴 %}
 
 {% timeline wjl❤️pxy , pink %}
 
@@ -49,7 +43,11 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试! #密码�
 
 <!-- endtab -->
 
-{% endtabs %}
+{% endfolding %}
+
+<br>
+{% span center logo large gray, 相册 %}
+<br>
 
 <div  class="gallery-group-main">
 {% galleryGroup 'wjl💖pxy' '小笨蛋啊' '/personal/love/love_img/love' /assets/gallery_bg/5.webp %}

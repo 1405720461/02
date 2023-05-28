@@ -295,9 +295,6 @@ magnet:
     - name: 前端
       display_name: 前端笔记
       icon: 🍡
-    - name: 日常
-      display_name: 日常生活碎片
-      icon: 🍼
     - name: 演示
       display_name: 案例演示笔记
       icon: 🍥
@@ -307,9 +304,12 @@ magnet:
     - name: 周记
       display_name: 每周点点滴滴
       icon: 📰
-    # - name: 数据库
-    #   display_name: 数据库笔记
-    #   icon: 🍨
+    - name: 电影
+      display_name: 观影有感
+      icon: 🎥
+    - name: 读书
+      display_name: 读书有感
+      icon: 📖
 
   color_setting:
     text_color: black # 文字默认颜色
