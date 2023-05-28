@@ -12,11 +12,34 @@ abstract: 只有你和我才知道密码! #密码框提示信息
 wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试! #密码错误提示信息
 ---
 
-<div>在一起已经 : <span id="day1"></span>天啦</div>
+<div class="Time">
+  <div class="time time1">
+    <div class="mask">
+      <p class="left_top">在一起已经 :</p>
+      <span id="day1" class="date1"></span>
+      <div class="date2">天啦</div>
+      <p class="right_bottom right_bottom1">起始于2020-11-08 周日</p>
+    </div>
+  </div>
 
-<div>生日还有 : <span id="day2"></span>天</div>
+  <div class="time time2">
+    <div class="mask">
+      <p class="left_top">生日还有 :</p>
+      <span id="day2" class="date1"></span>
+      <div class="date2">天</div>
+      <p class="right_bottom">2023-07-12 周三</p>
+    </div>
+  </div>
 
-<div>宝宝生日还有 : <span id="day3"></span>天</div>
+  <div class="time time3">
+    <div class="mask">
+      <p class="left_top">宝宝生日还有 :</p>
+      <span id="day3" class="date1"></span>
+      <div class="date2">天</div>
+      <p class="right_bottom">2023-10-01 周日</p>
+    </div>
+  </div>
+</div>
 
 {% folding blue, 走过点点滴滴 %}
 
