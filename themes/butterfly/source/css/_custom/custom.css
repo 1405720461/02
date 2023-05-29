@@ -890,7 +890,7 @@ h6::before {
   width: calc(33% - 8px) !important;
 }
 /* 适应宽度不同的设备 */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .gallery-group {
     width: calc(100% - 8px) !important;
   }
