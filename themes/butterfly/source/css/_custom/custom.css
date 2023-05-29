@@ -1677,7 +1677,8 @@ a:hover {
   border-color: var(--theme-color) !important;
 }
 .settings input[type="checkbox"]:checked:before {
-  left: 19px;
+  left: 72%;
+  transform: translateX(-50%);
   background-color: white !important;
 }
 .settings input[type="checkbox"] {
@@ -3157,7 +3158,7 @@ hr:before {
 
 
 /*更改背景功能手机适应 */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .btn_bg1{
     width: 50% !important;
     padding: 15px 10px !important;
@@ -3167,15 +3168,6 @@ hr:before {
     width: 44% !important;
     padding: 15px 5px !important;
   }
-
-  .settings input[type="checkbox"]:checked:before{
-    left:11px
-  }
-
-  .settings input[type="checkbox"]:before{
-    left: 2px;
-  }
-
 
   /* 手机适配恋爱小屋页面 */
   .hbe-input{
