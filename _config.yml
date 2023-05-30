@@ -256,34 +256,6 @@ gitcalendar:
 plugins:
   - hexo-algoliasearch
 
-# 分类磁铁4.0
-# hexo-butterfly-categories-card
-# see https://akilar.top/posts/a9131002/
-categoryBar:
-  enable: false # 开关
-  priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 0
-  column: odd # odd：3列 | even：4列
-  row: 2 #显示行数，默认两行，超过行数切换为滚动显示
-  message:
-    - descr: Ubuntu指南
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-    - descr: 玩转Win10
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
-    - descr: 长篇小说连载
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
-    - descr: 个人日记
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp
-    - descr: 诗词歌赋
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp
-    - descr: 杂谈教程
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
-
 # 小冰分类磁贴
 magnet:
   enable: true
@@ -295,12 +267,6 @@ magnet:
     - name: 前端
       display_name: 前端笔记
       icon: 🍡
-    - name: 演示
-      display_name: 案例演示笔记
-      icon: 🍥
-    - name: 恋爱
-      display_name: 恋爱日常分享
-      icon: 🧡
     - name: 周记
       display_name: 每周点点滴滴
       icon: 📰
@@ -310,6 +276,12 @@ magnet:
     - name: 读书
       display_name: 读书有感
       icon: 📖
+    - name: 演示
+      display_name: 案例演示笔记
+      icon: 🍥
+    - name: 恋爱
+      display_name: 恋爱日常分享
+      icon: 🧡
 
   color_setting:
     text_color: black # 文字默认颜色
