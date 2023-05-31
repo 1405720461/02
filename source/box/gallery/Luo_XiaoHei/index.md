@@ -49,6 +49,5 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Luo_XiaoHei/41.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Luo_XiaoHei/42.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Luo_XiaoHei/43.webp)
-![](https://cdn.staticaly.com/gh/1405720461/images@master/Luo_XiaoHei/44.webp)
 
 {% endgallery %}

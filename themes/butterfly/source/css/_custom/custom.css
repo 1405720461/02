@@ -1127,8 +1127,8 @@ button#go-up:hover #percent {
 @media screen and (max-width: 768px) {
   /* 背景 */
   .pimgbox{
-    height: 165px;
-    width: 80px;
+    height: 175px;
+    width: 100px;
   }
   .imgbox{
     height: 63px;
@@ -3167,6 +3167,11 @@ hr:before {
   .btn_bg2{
     width: 44% !important;
     padding: 15px 5px !important;
+  }
+
+  /* 切换背景按钮 */
+  .custom_bg{
+    width: 50% !important;
   }
 
   /* 手机适配恋爱小屋页面 */

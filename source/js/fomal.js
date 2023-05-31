@@ -3169,7 +3169,7 @@ function createWinbox() {
 <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.staticaly.com/gh/1405720461/images@master/rem/18.webp">
 </center></p>
 <p><center>
-<button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
+<button type="button" class="custom_bg" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
 </center></p>
 {% endfolding %}
 
