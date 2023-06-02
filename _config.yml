@@ -256,6 +256,19 @@ gitcalendar:
 plugins:
   - hexo-algoliasearch
 
+# 追番模块
+bangumi:
+  enable: true 
+  vmid: 392071577
+  title: '追番'
+  quote: '看番看番，都是爷喜欢的动漫！！！'
+  show: 1
+  loading:
+  metaColor:
+  color:
+  webp:
+
+
 # 小冰分类磁贴
 magnet:
   enable: true

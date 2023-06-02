@@ -184,6 +184,7 @@ center#name-container {
 #nav .menus_items .menus_item {
   padding: 0 0 0 8px !important;
 }
+
 /* 子菜单横向展示 */
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: flex !important;
@@ -193,16 +194,16 @@ center#name-container {
   left: -95px;
 }
 .menus_items .menus_item:nth-child(3) .menus_item_child {
-  left: -103px;
+  left: -108px;
 }
 .menus_items .menus_item:nth-child(4) .menus_item_child {
-  left: -102px;
+  left: -40px;
 }
 .menus_items .menus_item:nth-child(5) .menus_item_child {
-  left: -117px;
+  left: -118px;
 }
 .menus_items .menus_item:nth-child(6) .menus_item_child {
-  left: -133px;
+  left: -54px;
 }
 .menus_items .menus_item:nth-child(7) .menus_item_child {
   left: -105px;
