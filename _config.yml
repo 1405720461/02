@@ -4,7 +4,7 @@
 
 # Site
 title: 你好可爱
-subtitle:
+subtitle: ''
 description: "Future is now 🍭🍭🍭"
 keywords: "javascript,Vue,代码,博客"
 author: 你好可爱
@@ -261,12 +261,8 @@ bangumi:
   enable: true 
   vmid: 392071577
   title: '追番'
-  quote: '看番看番，都是爷喜欢的动漫！！！'
+  quote: '都是爷喜欢的动漫！！！'
   show: 1
-  loading:
-  metaColor:
-  color:
-  webp:
 
 
 # 小冰分类磁贴

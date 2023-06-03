@@ -8,11 +8,9 @@ menu:
     归档: /archives/ || icon-guidang1 || faa-tada
     标签: /tags/ || icon-sekuaibiaoqian || faa-tada
     分类: /categories/ || icon-fenlei || faa-tada
-  休闲 || icon-pinweishenghuo || faa-tada || hide:
+  百宝箱 || icon-xiangzi || faa-tada || hide:
     八音盒: /life/music/ ||icon-yinle || faa-tada
     追番: /bangumis/ || icon-nvwumao || faa-tada
-    影院: /life/movies/ ||icon-dianying1 || faa-tada
-  百宝箱 || icon-xiangzi || faa-tada || hide:
     画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
     游戏: /box/games/ || icon-youxishoubing || faa-tada
   社交 || icon-shejiaoxinxi || faa-tada || hide:
@@ -22,6 +20,8 @@ menu:
   个人 || icon-maoliang || faa-tada || hide:
     关于: /personal/about/ || icon-paperplane || faa-tada
     恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
+  # 休闲 || icon-pinweishenghuo || faa-tada || hide:
+    # 影院: /life/movies/ ||icon-dianying1 || faa-tada
   # 网站 || icon-wangye || faa-tada || hide:
   #   网站统计: /site/census/ || icon--tongjibiao || faa-tada
   #   文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
