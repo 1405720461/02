@@ -263,6 +263,7 @@ bangumi:
   title: '追番'
   quote: '都是爷喜欢的动漫！！！'
   show: 1
+  lazyload: false
 
 
 # 小冰分类磁贴

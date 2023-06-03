@@ -6,25 +6,31 @@ comments: false
 
 {% timeline 小站建设进程 %}
 
-<!-- timeline 2023-5-25-->
+<!-- timeline 2023-06-03-->
+
+追番页面完成，懒加载适配，博客封面修改
+
+<!-- endtimeline -->
+
+<!-- timeline 2023-05-25-->
 
 🎉🎉🎉 站长生日啦！！！🎂🎂🎂
 
 <!-- endtimeline -->
 
-<!-- timeline 2023-5-23-->
+<!-- timeline 2023-05-23-->
 
 相册功能完善
 
 <!-- endtimeline -->
 
-<!-- timeline 2023-5-21-->
+<!-- timeline 2023-05-21-->
 
 美化设置完成
 
 <!-- endtimeline -->
 
-<!-- timeline 2023-5-14-->
+<!-- timeline 2023-05-14-->
 
 博客搭建起来啦
 
