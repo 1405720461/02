@@ -8,7 +8,6 @@ tags:
 categories:
   - 前端
 swiper_index: 4
-cover: /assets/blog_bg/2.webp
 abbrlink: f8e09374
 date: 2023-06-01 05:20:00
 updated: 2023-06-01 05:20:00

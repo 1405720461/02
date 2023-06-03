@@ -3099,14 +3099,14 @@ function createWinbox() {
 
 {% folding cyan, 查看明日方舟背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/23.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/23.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/102.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/102.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/109.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/109.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/117.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/117.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/124.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/124.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/137.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/137.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/178.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/178.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/Arknights/199.webp)" class="imgbox" onclick="changeBg('url(/assets/Arknights/199.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/2.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/2.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/3.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/3.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/4.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/4.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/5.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/5.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/6.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/6.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/7.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/7.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/8.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/8.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/9.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/9.webp)')"></a>
 
 </div>
 {% endfolding %}
@@ -3115,10 +3115,10 @@ function createWinbox() {
 
 {% folding cyan, 查看海贼王背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/1.webp)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/1.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/74.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/74.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/86.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/86.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/One_Piece/89.jpg)" class="imgbox" onclick="changeBg('url(/assets/One_Piece/89.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/1.webp)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/1.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/2.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/2.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/3.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/3.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/4.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/4.jpg)')"></a>
 
 </div>
 {% endfolding %}
@@ -3127,10 +3127,10 @@ function createWinbox() {
 <h3>3. 二次元</h3>
 {% folding cyan, 查看二次元背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/1.webp)" class="imgbox" onclick="changeBg('url(/assets/cartoon/1.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/2.webp)" class="imgbox" onclick="changeBg('url(/assets/cartoon/2.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/3.webp)" class="imgbox" onclick="changeBg('url(/assets/cartoon/3.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/cartoon/4.webp)" class="imgbox" onclick="changeBg('url(/assets/cartoon/4.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/cartoon/1.webp)" class="imgbox" onclick="changeBg('url(/assets/images/cartoon/1.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/cartoon/2.webp)" class="imgbox" onclick="changeBg('url(/assets/images/cartoon/2.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/cartoon/3.webp)" class="imgbox" onclick="changeBg('url(/assets/images/cartoon/3.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/cartoon/4.webp)" class="imgbox" onclick="changeBg('url(/assets/images/cartoon/4.webp)')"></a>
 
 </div>
 {% endfolding %}

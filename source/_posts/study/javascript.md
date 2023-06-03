@@ -6,7 +6,7 @@ tags:
   - js
 categories:
   - 前端
-cover: /assets/blog_bg/2.webp
+cover: 
 abbrlink: cc1b9611
 date: 2023-06-01 19:54:00
 updated: 2023-06-01 19:54:00

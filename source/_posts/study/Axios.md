@@ -7,13 +7,12 @@ tags:
 categories:
   - 前端
 swiper_index: 1
-cover: /assets/blog_bg/2.webp
 abbrlink: 6155a9d6
 date: 2023-06-01 00:00:00
 updated: 2023-06-01 00:00:00
 ---
 
-# axios
+# Axios
 
 [【axios】使用 json-server 搭建 REST API - 使用 axios - 自定义 axios - 取消请求 - 拦截器\_YK 菌的博客-CSDN 博客](https://blog.csdn.net/weixin_44972008/article/details/114368528)
 

@@ -6,8 +6,10 @@ comments: false
 
 {% gallery %}
 
-![](/assets/cartoon/3.webp)
-![](/assets/cartoon/4.webp)
+![](/assets/images/cartoon/3.webp)
+![](/assets/images/cartoon/4.webp)
+![](/assets/images/cartoon/5.webp)
+![](/assets/images/cartoon/6.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/1.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/2.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/3.webp)

@@ -146,7 +146,47 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - /assets/16.jpg
+    - /assets/images/blog_bg/1.webp
+    - /assets/images/blog_bg/2.webp
+    - /assets/images/blog_bg/3.webp
+    - /assets/images/blog_bg/4.webp
+    - /assets/images/blog_bg/5.webp
+    - /assets/images/blog_bg/6.webp
+    - /assets/images/blog_bg/7.webp
+    - /assets/images/blog_bg/8.webp
+    - /assets/images/blog_bg/9.webp
+    - /assets/images/blog_bg/10.webp
+    - /assets/images/blog_bg/11.webp
+    - /assets/images/blog_bg/12.webp
+    - /assets/images/blog_bg/13.webp
+    - /assets/images/blog_bg/14.webp
+    - /assets/images/blog_bg/15.webp
+    - /assets/images/blog_bg/16.webp
+    - /assets/images/blog_bg/17.webp
+    - /assets/images/blog_bg/18.webp
+    - /assets/images/blog_bg/19.webp
+
+
+    # - /assets/images/Darling/2.webp
+    # - /assets/images/Darling/3.webp
+    # - /assets/images/Darling/4.webp
+    # - /assets/images/One_Piece/5.webp
+    # - /assets/images/One_Piece/6.webp
+    # - /assets/images/One_Piece/7.webp
+    # - /assets/images/One_Piece/8.webp
+    # - /assets/images/rem/2.webp
+    # - /assets/images/Fox_Spirit_Matchmaker/1.webp
+    # - /assets/images/SPY×FAMILY/2.webp
+    # - /assets/images/Luo_XiaoHei/1.webp
+    # - /assets/images/Luo_XiaoHei/2.webp
+    # - /assets/images/Luo_XiaoHei/3.webp
+    # - /assets/images/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/1.webp
+    # - /assets/images/Violet_Evergarden/2.webp
+    # - /assets/images/Violet_Evergarden/3.webp
+    # - /assets/images/Violet_Evergarden/4.webp
+    # - /assets/images/Violet_Evergarden/5.webp
+    # - /assets/images/Violet_Evergarden/6.webp
+
     # ...
 
 # A simple 404 page

@@ -7,7 +7,6 @@ tags:
   - promise
 categories:
   - 前端
-cover: /assets/blog_bg/2.webp
 abbrlink: 54b11a0c
 date: 2023-06-01 19:57:00
 updated: 2023-06-01 19:57:00
