@@ -1,8 +1,23 @@
-- class_name: 友链
-  class_desc: 这里是最熟悉的小伙伴，前排前排
+- class_name: 朋友
+  class_desc: 这里是最熟悉的小伙伴，前排前排✨
   link_list:
     - name: 你好可爱
       link: https://wjldarling.top/
       avatar: https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg
-      descr: Future is now 🍭🍭🍭
+      descr: 山水一程，三生有幸✨
       siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp
+
+- class_name: 群友
+  class_desc: 都是群里的技术大佬们🏅
+  link_list:
+    - name: Cartafi
+      link: https://www.startly.cn
+      avatar: https://startly.s3.bitiful.net/links/avatar/avatar.webp
+      descr: 互联网中的寂静之地
+      siteshot: https://startly.s3.bitiful.net/links/avatar/siteshot.webp 
+      
+    - name: Ethan.Tzy
+      link: https://fe32.top/
+      avatar: https://bu.dusays.com/2022/05/02/626f92e193879.jpg
+      descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志
+      screenshot: https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg

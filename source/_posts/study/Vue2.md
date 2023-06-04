@@ -23,9 +23,9 @@ updated: 2023-06-01 05:20:00
 
 ### [vue diff 算法](https://www.bilibili.com/video/BV1JR4y1R7Ln/?spm_id_from=333.788&vd_source=e754d95b996bf636e1256b88397221dd)
 
-# Vue 核心
+## Vue 核心
 
-## **初识 Vue**
+### **初识 Vue**
 
 1.想让 Vue 工作,就必须创建一个 Vue 实例,且要传入一个配置对象;
 
@@ -41,7 +41,7 @@ updated: 2023-06-01 05:20:00
 
 7.一旦 data 中的数据发生改变，那么页面中用到该数据的地方也会自动更新;
 
-## **模板语法**
+### **模板语法**
 
 1.插值语法:
 功能:用于解析标签体内容。
@@ -55,7 +55,7 @@ updated: 2023-06-01 05:20:00
 
 ---
 
-## 数据绑定
+### 数据绑定
 
 单向数据绑定 (v-bind)
 
@@ -76,7 +76,7 @@ updated: 2023-06-01 05:20:00
 
 ---
 
-## el 与 data 的两种写法
+### el 与 data 的两种写法
 
 1.el 有 2 种写法
 (1). new Vue 时候配置 el 属性。
@@ -89,7 +89,7 @@ updated: 2023-06-01 05:20:00
 
 ---
 
-## MVVM 模型
+### MVVM 模型
 
 1. M：模型(Model) ：对应 data 中的数据
 2. V：视图(View) ：模板
@@ -102,7 +102,7 @@ vm 身上所有的属性及 Vue 原型上所有属性，在 Vue 模板中都可�
 
 **MVVM 的核心**是 ViewModel 层面 他就像是一个中转站 负责转换 Model 中的数据对象来让数据变得更容易管理和使用，该层向上的与视图进行双向绑定 向下与 Model 层通过接口请求请求进行数据交互，起承上启下作用。View 层展现的不是 Model 的数据，而是 ViewModel 层的数 由 ViewModel 负责与 Model 层交互，这就完全解耦了 View 层和 Model 层，这个解耦是至关重要的，它是前后端分离方案实施的最重要一环。
 
-### Object.defineProperty 方法
+#### Object.defineProperty 方法
 
 ```js
 <script>
@@ -131,11 +131,11 @@ vm 身上所有的属性及 Vue 原型上所有属性，在 Vue 模板中都可�
 </script>
 ```
 
-### [vue 双向绑定原理及实现](https://www.cnblogs.com/canfoo/p/6891868.html)\*
+#### [vue 双向绑定原理及实现](https://www.cnblogs.com/canfoo/p/6891868.html)\*
 
 ---
 
-## 数据代理
+### 数据代理
 
 https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;vd_source=e754d95b996bf636e1256b88397221dd
 
@@ -153,9 +153,9 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ---
 
-## 事件处理
+### 事件处理
 
-### 事件的基本使用
+#### 事件的基本使用
 
 1.使用 v-on:xxx 或@xxx 绑定事件，其中 xxx 是事件名;
 
@@ -167,7 +167,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 5.@click="demo”和@click="demo($event)”效果一致，但后者可以传参;
 
-### 事件修饰符
+#### 事件修饰符
 
 1.prevent: 阻止默认事件（常用）;
 
@@ -181,7 +181,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 6.passive: 事件的默认行为立即执行，无需等待事件回调执行完毕;
 
-### 键盘事件
+#### 键盘事件
 
 1.Vue 中常用的按键别名:
 
@@ -210,7 +210,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ---
 
-## 计算属性与监视
+### 计算属性与监视
 
 1.定义:要用的属性不存在，要通过已有属性计算得来。
 
@@ -226,7 +226,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
   (1).计算属性最终会出现在 vm 上，直接读取使用即可。 
   (2).如果计算属性要被修改，那必须写 set 函数去响应修改，且 set 中要引起计算时依赖的数据发生改变。
 
-### 监视属性 watch
+#### 监视属性 watch
 
 1.当被监视的属性变化时,回调函数自动调用，进行相关操作
 
@@ -238,7 +238,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ​ (2).通过 vm.$watch 监视
 
-### 深度监视
+#### 深度监视
 
 ​ (1).vue 中的 watch 默认不监测对象内部值的改变（一层）。
 
@@ -250,7 +250,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ​ (2).使用 watch 时根据数据的具体结构，决定是否采用深度监视。
 
-### computed 和 watch 之间的区别
+#### computed 和 watch 之间的区别
 
 ​ 1.computed 能完成的功能,watch 都可以完成。
 ​ 2.watch 能完成的功能，computed 不一定能完成，例如: watch 可以进行异步操作。
@@ -263,16 +263,16 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ---
 
-## 绑定样式
+### 绑定样式
 
-### class 样式
+#### class 样式
 
 写法：class=" xxx" xxx 可以是字符串、对象、数组。
 字符串写法适用于：类名不确定,要动态获取。
 对象写法适用于：要绑定多个样式，个数不确定，名字也不确定。
 数组写法适用于：要绑定多个样式，个数确定，名字也确定，但不确定用不用。
 
-### style 样式
+#### style 样式
 
 :style="{fontsize: xxx}" 其中 xxx 是动态值。
 
@@ -280,9 +280,9 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ---
 
-## 条件渲染
+### 条件渲染
 
-### v-if
+#### v-if
 
 写法:
   (1).v-if="表达式"
@@ -297,7 +297,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 注意: v-if 可以和: v-else-if、v-else 一起使用，但要求结构不能被“打断”。
 
-### v-show
+#### v-show
 
 写法: v-show="表达式"
 
@@ -314,15 +314,15 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ---
 
-## 列表渲染
+### 列表渲染
 
-### v-for 指令
+#### v-for 指令
 
 1.用于展示列表数据
 2.语法: v-for=" (item,index) in xxx" :key="yyy"
 3.可遍历: 数组、对象、字符串（用的很少）、指定次数（用的很少)
 
-### key 作用与原理
+#### key 作用与原理
 
 面试题: react、vue 中的 key 有什么作用?（key 的内部原理)
 
@@ -347,7 +347,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ---
 
-## 监测数据
+### 监测数据
 
 1.vue 会监视 data 中所有层次的数据。
 
@@ -381,7 +381,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ---
 
-## 收集表单数据
+### 收集表单数据
 
 若:`<input type="text"/>`, 则 v-model 收集的是 value 值。用户输入的就是 value 值。
 
@@ -405,7 +405,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;
 
 ​           ​trim: 输入首尾空格过滤
 
-## 内置指令
+### 内置指令
 
 v-bind : 单向绑定解析表达式，可简写为:xxx
 
@@ -463,13 +463,13 @@ v-show : 条件渲染(动态控制节点是否展示)
 
 ---
 
-## 自定义指令
+### 自定义指令
 
 <img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/5.webp" style="zoom: 80%;" />
 
 ---
 
-## 生命周期
+### 生命周期
 
 1.又名: 生命周期回调函数、生命周期函数、生命周期钩子。
 
@@ -497,7 +497,7 @@ v-show : 条件渲染(动态控制节点是否展示)
 
 3.一般不会再 beforeDestroy 操作数据，因为即便操作数据，也不会再触发更新流程了。
 
-# Vue 组件化编程
+## Vue 组件化编程
 
 Vue 中使用组件的三大步骤:
 
@@ -506,7 +506,6 @@ Vue 中使用组件的三大步骤:
 ​   2. 注册组件
 
 ​   3. 使用组件(写组件标签)
-
 
 
 
@@ -531,7 +530,7 @@ Vue 中使用组件的三大步骤:
 三、编写组件标签:
 `<school></school>`
 
-## 非单文件组件
+### 非单文件组件
 
 几个注意点:
 
@@ -565,7 +564,7 @@ Vue 中使用组件的三大步骤:
 
 ​ const school = Vue.extend(options）可简写为: const school = options
 
-### VueComponent
+#### VueComponent
 
 1. school 组件本质是一个名为 VueComponent 的构造函数，且不是程序员定义的，是 Vue.extend 生成的.
 
@@ -591,7 +590,7 @@ Vue 中使用组件的三大步骤:
 
 ---
 
-### \*内置关系
+#### \*内置关系
 
 一个重要的内置关系:
 
@@ -603,19 +602,19 @@ Vue 中使用组件的三大步骤:
 
 > **实例的隐式原型属性永远指向自己缔造者的原型对象。**
 
-## 单文件组件
+### 单文件组件
 
 [单文件组件](https://www.bilibili.com/video/BV1Zy4y1K7SH/?p=60)
 
-# 使用 Vue 脚手架
+## 使用 Vue 脚手架
 
-## 初始化脚手架
+### 初始化脚手架
 
 **创建脚手架**
 
 https://www.bilibili.com/video/BV1Zy4y1K7SH?p=61&amp;vd_source=e754d95b996bf636e1256b88397221dd
 
-### 脚手架文件结构
+#### 脚手架文件结构
 
 ```
 ├── node_modules
@@ -636,7 +635,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=61&amp;vd_source=e754d95b996bf636e
 ├── package-lock.json：包版本控制文件
 ```
 
-### 关于不同版本的 Vue:
+#### 关于不同版本的 Vue:
 
 1.vue.js vue.runtime.xxx.js 的区别:
 
@@ -645,15 +644,15 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=61&amp;vd_source=e754d95b996bf636e
 
 2.因为 vue.runtime.xxx.js 没有模板解析器，所以不能使用 template 配置项，需要使用 render 函数接收到的 createElement 函数去指定具体内容。
 
-### vue.config.js 配置文件
+#### vue.config.js 配置文件
 
 使用`vue inspect > output.js`可以查看到 Vue 脚手架的默认配置。
 
 使用 vue.config.js 可以对脚手架进行个性化定制，详情见: https://cli.vuejs.org/zh
 
-## ref 与 props
+### ref 与 props
 
-### ref 属性
+#### ref 属性
 
 1.被用来给元素或子组件注册引用信息（id 的替代者)
 
@@ -665,17 +664,17 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=61&amp;vd_source=e754d95b996bf636e
 
 ​ 获取: this.$refs.xxx
 
-### 配置项 props
+#### 配置项 props
 
 <img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/7.webp" style="zoom: 80%;" />
 
-## 父子组件间的三种通信方式\*
+### 父子组件间的三种通信方式\*
 
-### 通过 props 实现通信
+#### 通过 props 实现通信
 
 子组件的 props 选项能够接收来自父组件的数据。props 是单项绑定的
 
-#### props 静态传递
+##### props 静态传递
 
 子组件通过 props 选项来声明一个自定义的属性，然后父组件就可以再嵌套标签的时候，通过这个属性往子组件传递数据了！
 
@@ -723,7 +722,7 @@ export default {
 
 ---
 
-#### props 动态传递
+##### props 动态传递
 
 更多的时候我们需要传送一个动态的数据。这时候就可以用==v-bind(:)==实现。通过 v-bind 绑定 props 的自定义的属性，传递过去的就不是静态的字符串了，它可以是一个表达式，布尔值，对象等等任何类型的值
 
@@ -765,9 +764,9 @@ export default {
 
 ---
 
-## **child_props.vue 子组件不变**
+**child_props.vue 子组件不变**
 
-### 通过$ref 实现通信
+#### 通过$ref 实现通信
 
 对于 ref 官方的解释是：ref 是被用来给元素或子组件注册引用信息的。引用信息将会注册在父组件的$refs 对象上。
 
@@ -830,7 +829,7 @@ export default {
 </style>
 ```
 
-### props 和$ref 的对比
+#### props 和$ref 的对比
 
 1.前者着重于数据的传递，它并不能调用子组件里的属性和方法 
 
@@ -838,7 +837,7 @@ export default {
 
 ---
 
-### $emit 实现通信
+#### $emit 实现通信
 
 上面两种方法主要都是父组件为主，给子组件信息，调用子组件的信息。
 那么，第三种方法就是以子组件为主。
@@ -897,7 +896,7 @@ export default {
 </style>
 ```
 
-### 三种方法区别
+#### 三种方法区别
 
 1.对于 props，就是子组件设置一个 props，父组件给这个 props 赋值就可以通信，动态赋值可以用 v-bind（是主要的通信方式）
 
@@ -905,7 +904,7 @@ export default {
 
 3.对于$emit，子组件绑定一个方法和参数，父组件可以绑定子组件这个绑定方法的监听，获得子组件返回的参数。第三种方法少见一些。有些逆思维了。 目前不懂它存在的意义。
 
-## 混入 mixin
+### 混入 mixin
 
 **解释**
 
@@ -936,7 +935,7 @@ export default {
 
 ​ (2).局部混入: mixins: ['xxx']
 
-## 插件
+### 插件
 
 功能:用于增强 Vue
 本质:包含 install 方法的一个对象，install 的第一个参数是 Vue，第二个以后的参数是插件使用者传递的数据。
@@ -959,13 +958,13 @@ export default {
 
 **使用插件**: `Vue.use()`
 
-### scoped 样式
+#### scoped 样式
 
 作用: 让样式在局部生效，防止冲突。
 
 写法: `<style scoped>`
 
-## TodoList 案例总结
+### TodoList 案例总结
 
 1.组件化编码流程:
 
@@ -989,7 +988,7 @@ export default {
 
 4.props 传过来的若是对象类型的值，修改对象中的属性时 Vue 不会报错，但不推荐这样做。
 
-## webStorage
+### webStorage
 
 1.存储内容太小一般支持 5MB 左右(不同浏览器可能还不一样)
 
@@ -1015,7 +1014,7 @@ export default {
 
 ​ 4.`JSON.parse(nul1)`的结果依然是 null。
 
-## 组件自定义事件
+### 组件自定义事件
 
 1.子种组件间通信的方式，适用于:**子组件**===>**父组件**
 
@@ -1041,7 +1040,7 @@ export default {
 
 7.**注意**:通过`this.refs.xxx.$on('atguigu' ,回调)`绑定自定义事件时，回调**要么配置在 methods 中，要么用箭头函数**，否则 this 指向会出问题！！！
 
-## 全局事件总线
+### 全局事件总线
 
 1.—种组件间通信的方式，适用于**任意组件间通信**。
 
@@ -1075,7 +1074,7 @@ mounted() {
 
 4.最好在 beforeDestroy 钩子中，用$off 去解绑**当前组件所用到的事件\***。
 
-## 消息订阅与发布（pubsub）
+### 消息订阅与发布（pubsub）
 
 1.—种组件间通信的方式，适用于**任意组件间通信**。
 
@@ -1099,7 +1098,7 @@ mounted() {
 
 5.最好在 beforeDestroy 钩子中，用`PubSub.unsubscribe(pid)`去<span style="color: red">取消订阅。</span>
 
-### nextTick（生命周期钩子）
+#### nextTick（生命周期钩子）
 
 1.语法: `this.$nextTick(回调函数)`
 
@@ -1109,7 +1108,7 @@ mounted() {
 
 [vue.nextTick()方法的使用详解（简单明了）](https://blog.csdn.net/zhouzuoluo/article/details/84752280)
 
-## 过渡与动画
+### 过渡与动画
 
 1.作用: 在插入、更新或移除 DOM 元素时，在合适的时候给元素添加样式类名。
 
@@ -1145,9 +1144,9 @@ mounted() {
 
 ​ 3.**备注**: 若有多个元素需要过度，则需要使用:`<transition-group>`，且每个元素都要指定 key 值。
 
-# Vue 中的 ajax
+## Vue 中的 ajax
 
-## vue 脚手架配置代理(开发环境 Ajax 跨域问题)
+### vue 脚手架配置代理(开发环境 Ajax 跨域问题)
 
 **方法一**
 
@@ -1203,7 +1202,7 @@ module.exports = {
 
 ​ 2.缺点: 配置略微繁琐，请求资源时必须加前缀。
 
-## slot 插槽
+### slot 插槽
 
 1.作用: 让父组件可以向子组件指定位置插入 html 结构，也是一种组件间通信的方式，适用于**父组件===>子组件**。
 
@@ -1298,9 +1297,9 @@ export default {
 </script>
 ```
 
-# vuex
+## vuex
 
-## 概念
+### 概念
 
 专门在 Vue 中实现集中式状态（数据）管理的一个 Vue 插件，对 vue 应 用中多个组件的共享状态进行集中式的管理（读/写），也是一种组件间通信的方
 
@@ -1315,7 +1314,7 @@ export default {
 1. 多个组件依赖于同一状态
 2. 来自不同组件的行为需要变更同一状态
 
-### vuex 工作原理图
+#### vuex 工作原理图
 
 <img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/8.webp" alt="vuex" style="zoom: 33%;" />
 
@@ -1323,7 +1322,7 @@ export default {
 - **操作（Actions）**，响应在**视图**上的用户输入导致的状态变化
 - **状态（State）**，驱动应用的数据源
 
-## 搭建 vuex 环境(store)
+### 搭建 vuex 环境(store)
 
 1.创建文件:`src/store/index.js`
 
@@ -1366,7 +1365,7 @@ new Vue({
 })
 ```
 
-## 基本使用
+### 基本使用
 
 1. 初始化数据、配置`actions` 、配置`mutations`，操作文件`store.js`
 
@@ -1413,7 +1412,7 @@ export default new Vuex.Store({
 
 > **备注**:若没有网络请求或其他业务逻辑，组件中也可以越过 actions，即不写`dispatch`，直接编写`commit`
 
-## getters 的使用
+### getters 的使用
 
 1. 概念: 当 state 中的数据需要经过加正后再使用时，可以使用 getters 加工。
 
@@ -1436,7 +1435,7 @@ export default new Vuex.Store({
 
 3. 组件中读取数据:`$store.getters.bigSum`
 
-## 四个 map 方法的使用
+### 四个 map 方法的使用
 
 1.**mapState 方法**: 用于帮助我们映射`state`中的数据为计算属性
 
@@ -1485,7 +1484,7 @@ methods:{
 }
 ```
 
-## 模块化+命名空间\*
+### 模块化+命名空间\*
 
 1.目的: 让代码更好维护，让多种数据分类更加明确。
 
@@ -1555,11 +1554,11 @@ this.$store.commit('personAbout/ADD_PERSON' ,person)
 ...mapMutations('countAbout',{increment:'JIA',decrement:'JIAN'}),
 ```
 
-## vuex 核心概念和 API
+### vuex 核心概念和 API
 
 各个类型的 API 各司其职，mutation 只管存，你给我（dispatch）我就存；action 只管中间处理，处理完我就给你，你怎么存我不管；Getter 我只管取，我不改的。action 放在了 methods 里面，说明我们应该把它当成函数来用（讲道理，钩子函数也应该可以的） mutation 是写在 store 里面的，这说明，它就是个半成品，中间量，我们不应该在外面去操作它。getter 写在了 computed 里面，这说明虽然 getter 我们写的是函数，但是我们应该把它当成计算属性来用。
 
-### state
+#### state
 
 1.vuex 管理的状态对象
 
@@ -1575,7 +1574,7 @@ const state = {
 }
 ```
 
-### actions
+#### actions
 
 1.值为一个对象，包含多个响应用户动作的回调函数
 
@@ -1597,7 +1596,7 @@ const actions = {
 };
 ```
 
-### mutations
+#### mutations
 
 1.值是一个对象，包含多个直接更新 state 的方法
 
@@ -1617,7 +1616,7 @@ const mutations = {
 }
 ```
 
-### modules
+#### modules
 
 1.包含多个 module
 
@@ -1625,30 +1624,30 @@ const mutations = {
 
 3.与一个组件（包含有共享数据）对应
 
-### model\*
+#### model\*
 
 [Module | Vuex (vuejs.org)](https://vuex.vuejs.org/zh/guide/modules.html)
 
 https://www.jianshu.com/p/a0c11ae01991
 
-# vue-router
+## vue-router
 
-## 相关理解
+### 相关理解
 
-### vue-router 的理解
+#### vue-router 的理解
 
 vue 的一个插件库，专门用来实现 SPA 应用
 
-### 对 SPA 应用的理解
+#### 对 SPA 应用的理解
 
 1. 单页 Web 应用（single page web application，SPA）。
 2. 整个应用只有**一个完整的页面**。
 3. 点击页面中的导航链接**不会刷新**页面，只会做页面的**局部更新**。
 4. 数据需要通过 ajax 请求获取
 
-## 基本路由
+### 基本路由
 
-### 路由的理解
+#### 路由的理解
 
 1. 什么是路由?
 
@@ -1669,7 +1668,7 @@ vue 的一个插件库，专门用来实现 SPA 应用
 
    2. 工作过程: 当浏览器的路径改变时,对应的组件就会显示。
 
-### 基本使用
+#### 基本使用
 
 1.安装 vue-router，命令:`npm i vue-router` 如果是 vue2 的话,命令后面加@3
 
@@ -1716,7 +1715,7 @@ export default router;
 <router-view></router-view>
 ```
 
-### 几个注意点
+#### 几个注意点
 
 1.路由组件通常存放在`pages`文件夹，一般组件通常存放在`components`文件夹。
 
@@ -1726,7 +1725,7 @@ export default router;
 
 4.整个应用只有一个 router，可以通过组件的`$router`属性获取到。
 
-## 嵌套路由(多级路由)
+### 嵌套路由(多级路由)
 
 1.配置路由规则，使用 children 配置项:
 
@@ -1760,7 +1759,7 @@ routes: [
 <router-link to="/home/news">News</router-link>
 ```
 
-## 路由的 query 参数
+### 路由的 query 参数
 
 1.传递参数
 
@@ -1787,7 +1786,7 @@ $route.query.id;
 $route.query.title;
 ```
 
-## 命名路由
+### 命名路由
 
 1.作用: 可以简化路由的跳转。
 
@@ -1836,7 +1835,7 @@ $route.query.title;
 >跳转</router-link>
 ```
 
-## 路由的 params 参数
+### 路由的 params 参数
 
 1.配置路由，声明接收 params 参数
 
@@ -1890,7 +1889,7 @@ $route.params.id;
 $route.params.title;
 ```
 
-## 路由的 props 配置
+### 路由的 props 配置
 
 作用: 让路由组件更方便的收到参数
 
@@ -1915,9 +1914,9 @@ $route.params.title;
 }
 ```
 
-### [vue 路由传参的三种基本方式](https://www.jianshu.com/p/d276dcde6656)
+#### [vue 路由传参的三种基本方式](https://www.jianshu.com/p/d276dcde6656)
 
-## 路由传参相关面试题
+### 路由传参相关面试题
 
 **如何指定 params 参数可传可不传?**
 如果路由要求传递 params 参数，但是你就不传递 params 参数，发现一件事情，URL 会有问题的
@@ -1944,7 +1943,7 @@ props:($route)=>{
 }
 ```
 
-## `<router-link>`的 replace 属性(无痕浏览 doge)
+### `<router-link>`的 replace 属性(无痕浏览 doge)
 
 1.作用:控制路由跳转时操作浏览器历史记录的模式
 
@@ -1952,7 +1951,7 @@ props:($route)=>{
 
 3.如何开启`replace`模式:`<router-link replace ......>News</router-link>`
 
-## 编程式路由导航
+### 编程式路由导航
 
 1.作用:不借助`<router-link>`实现路由跳转，让路由跳转更加灵活
 
@@ -1981,7 +1980,7 @@ this.$router.back(); //后退
 this.$router.go(); //可前进也可后退
 ```
 
-## 缓存路由组件
+### 缓存路由组件
 
 1.作用:让不展示的路由组件保持挂载，不被销毁。
 
@@ -1993,7 +1992,7 @@ this.$router.go(); //可前进也可后退
 </keep-alive>
 ```
 
-## 两个新的生命周期钩子
+### 两个新的生命周期钩子
 
 1.作用: 路由组件所独有的两个钩子，用于捕获路由组件的激活状态。
 
@@ -2002,11 +2001,11 @@ this.$router.go(); //可前进也可后退
 1. `activated`路由组件被激活时触发。
 2. `deactivated`路由组件失活时触发。
 
-## 路由守卫
+### 路由守卫
 
 作用: 对路由进行权限控制
 
-### 全局守卫
+#### 全局守卫
 
 ```js
 //全局前置守卫:初始化时执行、每次路由切换前执行
@@ -2033,7 +2032,7 @@ router.afterEach((to,from)=>{
 })
 ```
 
-### 独享守卫
+#### 独享守卫
 
 ```js
 beforeEnter(to,from,next){
@@ -2050,7 +2049,7 @@ beforeEnter(to,from,next){
 }
 ```
 
-### 组件内路由守卫
+#### 组件内路由守卫
 
 ```js
 //进入守卫:通过路由规则，进入该组件时被调用
@@ -2061,7 +2060,7 @@ beforeRouteLeave (to,from,next) {
 }
 ```
 
-## 路由器的两种工作模式 hash 与 history
+### 路由器的两种工作模式 hash 与 history
 
 [前端部署]: https://www.bilibili.com/video/BV1Zy4y1K7SH?p=133&spm_id_from=pageDriver&vd_source=e754d95b996bf636e1256b88397221dd
 
@@ -2089,7 +2088,7 @@ beforeRouteLeave (to,from,next) {
 
 ​ (4).当他修改执行时 虽然改变了当前的 URL 但游览器不会立即向后端发送请求
 
-## 前端路由原理解析与实现
+### 前端路由原理解析与实现
 
 **什么是前端路由 ？**
 
@@ -2117,7 +2116,7 @@ history 提供了 pushState（增加状态）和 replaceState（改变状态）�
 
 history 提供类似`hashchange` 事件的 popstate 事件 但 popstate 事件有些不同：通过浏览器前进后退改变 URL 时会触发 popstate 事件，通过`pushState/replaceState`或`<a>`标签改变 URL 不会触发 popstate 事件。好在我们可以拦截 `pushState/replaceState`的调用和标签的点击事件来检测 URL 变化，所以监听 URL 变化可以实现，只是没有 hashchange 那么方便。
 
-# Vue UI 组件库
+## Vue UI 组件库
 
 ### 移动端常用 UI 组件库
 
@@ -2130,7 +2129,7 @@ history 提供类似`hashchange` 事件的 popstate 事件 但 popstate 事件�
 1. Element UI https://element.eleme.cn
 2. IView UI https://www.iviewui.co.
 
-# 组件间通信高级\*
+## 组件间通信高级\*
 
 ### 1.事件注意事项
 
@@ -2287,7 +2286,7 @@ export default{
 </script>
 ```
 
-### 4.`$attrs`与`$listeners`
+### 4. `$attrs` 与 `$listeners`
 
 `$attrs`属于组件的一个属性，可以获取到父组件传递过来的props数据，对于子组件而言，父组件给的数据可以利用props接收，如果子组件通过props接收的属性，在$attrs 属性当中是获取不到的
 

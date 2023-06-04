@@ -4,6 +4,8 @@ date: 2023-05-15
 type: "link"
 ---
 
+---
+
 ## 本站友链添加方式：
 
 {% tabs link %}
@@ -14,7 +16,7 @@ type: "link"
 - name: 你好可爱
   link: https://wjldarling.top/
   avatar: https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg
-  descr: Future is now 🍭🍭🍭
+  descr: 山水一程，三生有幸✨
   siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp
 ```
 
@@ -28,7 +30,7 @@ type: "link"
   "screenshot": "https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp",
   "url": "https://wjldarling.top/",
   "avatar": "https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg",
-  "description": "Future is now 🍭🍭🍭",
+  "description": "山水一程，三生有幸✨",
   "keywords": "你好可爱"
 }
 ```
@@ -43,8 +45,8 @@ type: "link"
 | 站点截图   | https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp |
 | 站点链接   | https://wjldarling.top/                                                   |
 | 站长头像   | https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg         |
-| 站点描述   | Future is now🍭🍭🍭                                                       |
-| 站点关键词 | 你好可爱,JavaScript,个人博客,代码                                         |
+| 站点描述   | 山水一程，三生有幸✨                                                       |
+| 站点关键词 | JavaScript,Vue,个人博客,代码                                         |
 
 <!-- endtab -->
 

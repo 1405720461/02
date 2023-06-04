@@ -1,3 +1,4 @@
+//- 友链界面 link.yml 配置
 #article-container
   if top_img === false
     h1.page-title= page.title
@@ -7,7 +8,8 @@
         if i.class_name
           h2!= i.class_name
         if i.class_desc
-          .flink-desc!="分类描述🎨：" + i.class_desc
+          .flink-desc!= i.class_desc
+          //- .flink-desc!="分类描述🎨：" + i.class_desc
         .site-card-group
           each item in i.link_list
             a.site-card(target='_blank' rel='noopener' href=url_for(item.link))
