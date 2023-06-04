@@ -73,8 +73,8 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试! #密码�
 <br>
 
 <div  class="gallery-group-main">
-{% galleryGroup 'wjl❤️pxy' '小笨蛋啊' '/personal/love/love_img/love' /assets/gallery_bg/5.webp %}
-{% galleryGroup '青岛' '一起去青岛啦' '/personal/love/love_img/Qingdao' /assets/gallery_bg/5.webp %}
+{% galleryGroup 'wjl❤️pxy' '小笨蛋啊' '/personal/love/love_img/love' /assets/images/Violet_Evergarden/1.webp %}
+{% galleryGroup '青岛' '一起去青岛啦' '/personal/love/love_img/Qingdao' /assets/images/Violet_Evergarden/1.webp %}
 </div>
 
 <script defer src="/js/date.js"></script>

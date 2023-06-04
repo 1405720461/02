@@ -3051,14 +3051,10 @@ function createWinbox() {
   <p class="rang_width" id="rang_trans" style="width:${curTransMini}%"></p>
 </div>
 
-
-
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 星空特效 (夜间模式) </div><input type="checkbox" id="universeSet" onclick="setUniverse()">
   <div class="content-text" style="font-weight:bold; padding-left:20px"> 霓虹灯 (夜间模式) </div><input type="checkbox" id="lightSet" onclick="setLight()">
 </div>
-
-
 
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 帧率监测 (刷新生效) </div><input type="checkbox" id="fpson" onclick="fpssw()">
@@ -3079,18 +3075,18 @@ function createWinbox() {
 </p>
 
 <h2>三、主题色设置</h2>
-<div class="content" style="display:flex"><input type="radio" id="red" name="colors" value=" "
-        onclick="setColor('red')"><input type="radio" id="orange" name="colors" value=" "
-        onclick="setColor('orange')"><input type="radio" id="yellow" name="colors" value=" "
-        onclick="setColor('yellow')"><input type="radio" id="green" name="colors" value=" "
-        onclick="setColor('green')" checked="checked"><input type="radio" id="blue" name="colors" value=" "
-        onclick="setColor('blue')"><input type="radio" id="heoblue" name="colors" value=" "
-        onclick="setColor('heoblue')"><input type="radio" id="darkblue" name="colors" value=" "
-        onclick="setColor('darkblue')"><input type="radio" id="purple" name="colors" value=" "
-        onclick="setColor('purple')"><input type="radio" id="pink" name="colors" value=" "
-        onclick="setColor('pink')"><input type="radio" id="black" name="colors" value=" "
-        onclick="setColor('black')"><input type="radio" id="blackgray" name="colors" value=" "
-        onclick="setColor('blackgray')"></div>
+<div class="content" style="display:flex">
+  <input type="radio" id="red" name="colors" value=" " onclick="setColor('red')">
+  <input type="radio" id="orange" name="colors" value=" " onclick="setColor('orange')">
+  <input type="radio" id="yellow" name="colors" value=" " onclick="setColor('yellow')">
+  <input type="radio" id="green" name="colors" value=" " onclick="setColor('green')" checked="checked">
+  <input type="radio" id="blue" name="colors" value=" " onclick="setColor('blue')">
+  <input type="radio" id="heoblue" name="colors" value=" " onclick="setColor('heoblue')">
+  <input type="radio" id="darkblue" name="colors" value=" " onclick="setColor('darkblue')">
+  <input type="radio" id="purple" name="colors" value=" " onclick="setColor('purple')">
+  <input type="radio" id="pink" name="colors" value=" " onclick="setColor('pink')">
+  <input type="radio" id="black" name="colors" value=" " onclick="setColor('black')">
+</div>
 
 <h2>四、背景设置</h2>
 <center><button class="btn_bg2" onclick="resetBg()" style="background:var(--theme-color);display:block;width:35%;padding:15px 0;border-radius:30px;color:white;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认背景</button></center>
@@ -3165,12 +3161,16 @@ function createWinbox() {
 
 <h3>6. 自定义背景</h3>
 {% folding cyan, 设置自定义背景 %}
-<p><center>
-<input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.staticaly.com/gh/1405720461/images@master/rem/18.webp">
-</center></p>
-<p><center>
-<button type="button" class="custom_bg" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
-</center></p>
+<p>
+  <center>
+    <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.staticaly.com/gh/1405720461/images@master/rem/18.webp">
+  </center>
+</p>
+<p>
+  <center>
+    <button type="button" class="custom_bg" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
+  </center>
+</p>
 {% endfolding %}
 
 <br>

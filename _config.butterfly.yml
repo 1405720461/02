@@ -101,7 +101,7 @@ mathjax:
 # Favicon（網站圖標）
 favicon:
 
-# Avatar (頭像)
+# Avatar (头像)
 avatar:
   img: https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg
   effect: false
@@ -137,14 +137,14 @@ category_img:
 category_per_img:
 
 cover:
-  # display the cover or not (是否顯示文章封面)
+  # display the cover or not (是否展示文章封面)
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # the position of cover in home page (封面顯示的位置)
+  # the position of cover in home page (封面展示的位置)
   # left/right/both
   position: both
-  # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
+  # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面展示)
   default_cover:
     - /assets/images/blog_bg/1.webp
     - /assets/images/blog_bg/2.webp

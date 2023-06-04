@@ -1,8 +1,8 @@
 - var htmlClassHideAside = theme.aside.enable && theme.aside.hide ? 'hide-aside' : ''
 - page.aside = is_archive() ? theme.aside.display.archive: is_category() ? theme.aside.display.category : is_tag() ? theme.aside.display.tag : page.aside
 - var hideAside = !theme.aside.enable || page.aside === false ? 'hide-aside' : ''
-//- - var pageType = is_post() ? 'post' : 'page'
-- var pageType = is_home() ? 'page home' : is_post() ? 'post' : 'page'
+
+- var pageType = is_home() ? 'page home' : is_archive() ? 'page wjl_archive' :  is_post() ? 'post' : 'page'
 
 doctype html
 html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)

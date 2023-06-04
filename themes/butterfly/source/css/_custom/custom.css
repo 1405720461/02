@@ -850,13 +850,15 @@ h6::before {
 }
 
 /* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
-#archive,
+/* #archive, */
 #page,
 #category,
 #tag {
   width: 100%;
 }
-.page:not(.page.home) .aside-content {
+
+/* 给需要的页面加侧边栏 */
+.page:not(.page.home,.page.wjl_archive,.page:has(.layout>#page>#article-container>.bangumi-tabs),.page:has(.layout>#page>#article-container>.timeline)) .aside-content {
   display: none;
 }
 
