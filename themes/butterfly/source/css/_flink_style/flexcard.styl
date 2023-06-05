@@ -3,8 +3,8 @@
 .flink-list
   overflow auto
   & > a
-    width calc(25% - 15px)
-    height 130px
+    width 240px
+    height 135px
     position relative
     display block
     margin 15px 7px
@@ -16,12 +16,9 @@
     &:hover
       .info
         transform translateY(-100%)
-      .wrapper
-        img
-          transform scale(1.2)
       &::before
         position: fixed
-        width:inherit
+        width:300px
         margin:auto
         left:0
         right:0
@@ -45,6 +42,7 @@
       img
         height 130px
         pointer-events none
+
     .info
       display flex
       flex-direction column

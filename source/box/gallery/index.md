@@ -28,4 +28,6 @@ comments: false
 {% galleryGroup '青春猪头少年不会梦到兔女郎学姐' '人活着就是为了樱岛麻衣!!!' '/box/gallery/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai' /assets/images/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/1.webp %}
 
 {% galleryGroup '动漫图' '一些杂七杂八的动漫图' '/box/gallery/cartoon' /assets/images/cartoon/3.webp %}
+
+{% galleryGroup '风景' '博客文章封面图片' '/box/gallery/blog_bg' /assets/images/blog_bg/14.webp %}
 </div>
