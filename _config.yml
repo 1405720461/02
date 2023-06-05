@@ -280,7 +280,6 @@ douban:
     quote: ''
   timeout: 10000 
 
-
 # 小冰分类磁贴
 magnet:
   enable: true
