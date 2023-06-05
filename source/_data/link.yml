@@ -15,26 +15,31 @@
       avatar: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/hexo.webp
       descr: 快速、简洁且高效的博客框架
       siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/hexo_bg.webp 
+
     - name: Butterfly
       link: https://butterfly.js.org/
       avatar: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/butterfly.webp
       descr: '🦋 A Hexo Theme: Butterfly'
       siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/butterfly_bg.webp
+
     - name: Fomalhaut🥝
       link: https://www.fomal.cc/
       avatar: https://www.fomal.cc/assets/avatar.webp
       descr: Future is now 🍭🍭🍭
       siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+
     - name: Akilarの糖果屋
       link: https://akilar.top/
       siteshot: https://npm.elemecdn.com/akilar-friends@latest/siteshot/akilar.top.jpg
       avatar: https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg
       descr: 欢迎光临糖果屋
+
     - name: 安知鱼`Blog
       link: https://anzhiy.cn/
       avatar: https://img01.anzhiy.cn/useruploads/90/2023/04/23/6444e85234e51.jpg
       descr: 生活明朗，万物可爱
       siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anzhiy.cn.jpg
+
     - name: 张洪Heo
       link: https://blog.zhheo.com/
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
@@ -49,11 +54,13 @@
       avatar: https://startly.s3.bitiful.net/links/avatar/avatar.webp
       descr: 互联网中的寂静之地
       siteshot: https://startly.s3.bitiful.net/links/avatar/siteshot.webp 
+
     - name: Ethan.Tzy
       link: https://fe32.top/
       avatar: https://bu.dusays.com/2022/05/02/626f92e193879.jpg
       descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志
       screenshot: https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg
+      
     - name: Tianlin_Zz
       link: https://linjiangyu.com
       avatar: https://cdn1.tianli0.top/gh/linjiangyu2/halo/img/fa.jpg
