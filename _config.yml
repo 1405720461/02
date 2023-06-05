@@ -260,10 +260,25 @@ plugins:
 bangumi:
   enable: true 
   vmid: 392071577
+  path: /life/bangumis/index.html
   title: '追番'
   quote: '都是爷喜欢的动漫！！！'
   show: 1
   lazyload: false
+
+# 豆瓣影院模块
+douban:
+  user: 271110737  # 你的豆瓣ID
+  builtin: true
+  movie:
+    path: /life/movies/index.html
+    title: '影院'
+    quote: ''
+  game:
+    path: /box/games/index.html
+    title: '游戏'
+    quote: ''
+  timeout: 10000 
 
 
 # 小冰分类磁贴
