@@ -3071,6 +3071,20 @@ hr:before {
   left: -1px
 }
 
+/* 底部音乐播放器 */
+.aplayer.aplayer-fixed {
+  bottom: 63px !important;
+}
+
+.aplayer.aplayer-fixed .aplayer-body {
+  bottom: 60px !important;
+}
+
+.aplayer.aplayer-fixed .aplayer-list{
+  max-height: 252px !important;
+  margin-bottom: 66px !important;
+}
+
 /* 恋爱下面按钮样式 */
 .hbe-button {
   text-align: center !important;

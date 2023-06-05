@@ -900,7 +900,7 @@ pjax:
 # Inject the css and script (aplayer/meting)
 aplayerInject:
   enable: true
-  per_page: false
+  per_page: true
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -987,6 +987,8 @@ inject:
     # - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script> # 樱花飘落效果
     - <script defer src="/js/fomal.js"></script> # 主模块js
     - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
+    # 底部音乐播放器
+    - <div class="aplayer no-destroy" data-id="2733900165" data-server="netease" data-type="playlist" data-autoplay="true" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" muted></div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1058,7 +1060,7 @@ CDN:
     # flickr_justified_gallery_css: https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.css
     aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
     aplayer_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
-    meting_js: https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js
+    meting_js: /js/Meting.min.js
     # prismjs_js: https://cdn1.tianli0.top/npm/prismjs@1.1.0/prism.js
     # prismjs_lineNumber_js: https://cdn1.tianli0.top/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
     # prismjs_autoloader: https://cdn1.tianli0.top/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
