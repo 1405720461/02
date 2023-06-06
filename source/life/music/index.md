@@ -1,7 +1,7 @@
 ---
 title: 八音盒
 date: 2023-05-14 21:30:00
-background: url(https://data-static.netdun.net/Fomalhaut/img/music.webp)
+background: url(https://cdn.staticaly.com/gh/1405720461/images@master/img/music_bg.webp)
 aplayer: true
 comments: false
 ---
