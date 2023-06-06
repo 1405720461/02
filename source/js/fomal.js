@@ -3256,59 +3256,59 @@ function toggleWinbox() {
 /* 美化模块 end */
 
 
-// 添加鼠标滚轮滚动距离
+// // 添加鼠标滚轮滚动距离
 
-// 定义一个变量来跟踪滚轮事件
-var isFirstScroll = true;
+// // 定义一个变量来跟踪滚轮事件
+// var isFirstScroll = true;
 
- // 定义缓动函数
- function easeInOutCubic(t) {
-  return 1 - Math.pow(1 - t, 3);
-}
+//  // 定义缓动函数
+//  function easeInOutCubic(t) {
+//   return 1 - Math.pow(1 - t, 3);
+// }
 
-window.addEventListener('wheel', function(event) {
-  // 检查滚动方向
-  if (window.location.pathname === '/' && event.deltaY > 0 && isFirstScroll) {
-      // 获取视口的高度
-      var viewportHeight = window.innerHeight;
+// window.addEventListener('wheel', function(event) {
+//   // 检查滚动方向
+//   if (window.location.pathname === '/' && event.deltaY > 0 && isFirstScroll) {
+//       // 获取视口的高度
+//       var viewportHeight = window.innerHeight;
 
-      // 计算滚动距离为100vh
-      var scrollDistance = viewportHeight - 30;
+//       // 计算滚动距离为100vh
+//       var scrollDistance = viewportHeight - 30;
 
-      // 计算滚动时间
-      var duration = 100;
+//       // 计算滚动时间
+//       var duration = 100;
 
-      // 开始时间
-      var startTime = null;
+//       // 开始时间
+//       var startTime = null;
 
-      // 执行滚动动画
-      function animate(currentTime) {
-        if (startTime === null) {
-            startTime = currentTime;
-        }
-        var elapsedTime = currentTime - startTime;
-        var scrollProgress = elapsedTime / duration;
+//       // 执行滚动动画
+//       function animate(currentTime) {
+//         if (startTime === null) {
+//             startTime = currentTime;
+//         }
+//         var elapsedTime = currentTime - startTime;
+//         var scrollProgress = elapsedTime / duration;
 
-        // 应用缓动函数
-        var easing = easeInOutCubic(scrollProgress);
+//         // 应用缓动函数
+//         var easing = easeInOutCubic(scrollProgress);
 
-        // 计算当前滚动位置
-        var currentPosition = scrollDistance * easing;
+//         // 计算当前滚动位置
+//         var currentPosition = scrollDistance * easing;
 
-        // 滚动到当前位置
-        window.scrollTo({
-            top: currentPosition,
-            behavior: 'smooth'
-        });
+//         // 滚动到当前位置
+//         window.scrollTo({
+//             top: currentPosition,
+//             behavior: 'smooth'
+//         });
 
-        // 检查是否完成滚动
-        if (elapsedTime < duration) {
-            requestAnimationFrame(animate);
-        } else {
-            isFirstScroll = false; // 将 isFirstScroll 设置为 false，以便下次滚动时不再触发该条件
-        }
-      }
-      requestAnimationFrame(animate);
-  }
-});
+//         // 检查是否完成滚动
+//         if (elapsedTime < duration) {
+//             requestAnimationFrame(animate);
+//         } else {
+//             isFirstScroll = false; // 将 isFirstScroll 设置为 false，以便下次滚动时不再触发该条件
+//         }
+//       }
+//       requestAnimationFrame(animate);
+//   }
+// });
 
