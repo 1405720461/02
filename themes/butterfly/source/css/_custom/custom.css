@@ -197,7 +197,7 @@ center#name-container {
   left: -100px;
 }
 .menus_items .menus_item:nth-child(4) .menus_item_child {
-  left: -38px;
+  left: -86px;
 }
 .menus_items .menus_item:nth-child(5) .menus_item_child {
   left: -118px;
@@ -857,9 +857,11 @@ h6::before {
   width: 100%;
 }
 
-/* 给需要的页面加侧边栏 */
-.page:not(.page.home,.page.wjl_archive,.page:has(.layout>#page>#article-container>.bangumi-tabs),.page:has(.layout>#page>#article-container>.timeline)) .aside-content {
-  display: none;
+/* 给需要的页面加侧边栏 --- 追番、影院、游戏、旧时光 */
+@media screen and (min-width: 900px) {
+  .page:not(.page.home,.page.wjl_archive,.page:has(.layout>#page>#article-container>.bangumi-tabs),.page:has(.layout>#page>#article-container>.timeline),.page:has(.layout>#page>#article-container>.hexo-douban-tabs)) .aside-content {
+    display: none;
+  }
 }
 
 /* 友链一行显示更多 */
@@ -3344,5 +3346,97 @@ hr:before {
   /* 手机适配音乐播放器 */
   .aplayer.aplayer-fixed {
     display: none;
+  }
+}
+
+#article-container blockquote p{
+  /* display: none; */
+}
+
+/* 影院、游戏上面动画 */
+.wjl_rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+  margin-top: -10px;
+}
+
+.wjl_rating input {
+  appearance: unset;
+}
+
+.wjl_rating label {
+  cursor: pointer;
+}
+
+.wjl_rating svg {
+  width: 3rem;
+  height: 3rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.wjl_rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.wjl_rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
   }
 }
