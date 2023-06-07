@@ -1836,14 +1836,8 @@ li.categoryBar-list-item {
     height: 260px !important;
   }
   .blog-slider__img {
-    width: 240px !important;
+    width: 40% !important;
     height: 100% !important;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .blog-slider__img {
-    width: 350px !important;
   }
 }
 
