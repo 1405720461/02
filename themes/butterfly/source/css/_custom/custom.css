@@ -865,13 +865,13 @@ h6::before {
 }
 
 /* 给需要的页面加侧边栏 --- 追番、影院、游戏、旧时光 */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .page:not(.page.home,.page.wjl_archive,.page:has(.layout>#page>#article-container>.bangumi-tabs),.page:has(.layout>#page>#article-container>.timeline),.page:has(.layout>#page>#article-container>.hexo-douban-tabs)) .aside-content {
     display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .page:not(.page.home) .aside-content {
     display: none;
   }
@@ -1840,6 +1840,13 @@ li.categoryBar-list-item {
     height: 100% !important;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .blog-slider__img {
+    width: 350px !important;
+  }
+}
+
 
 /* 自定义颜色框 */
 #define_colors::before {
