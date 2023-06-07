@@ -33,5 +33,10 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/21.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/22.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/23.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/24.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/25.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/26.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/27.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/28.webp)
 
 {% endgallery %}
