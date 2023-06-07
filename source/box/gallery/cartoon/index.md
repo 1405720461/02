@@ -32,5 +32,6 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/20.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/21.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/22.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/cartoon/23.webp)
 
 {% endgallery %}
