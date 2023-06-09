@@ -171,5 +171,6 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/163.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/164.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/165.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/166.webp)
 
 {% endgallery %}
