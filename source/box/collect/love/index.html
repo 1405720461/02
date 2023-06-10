@@ -310,13 +310,7 @@
 		// 	bgmMusic.play();
 		// }, false);
 		$("audio").prop ("volume", 0.1);
-		
-		// 点击浏览器返回按钮返回到收藏页面
-		function pushHistory() {
-			window.history.pushState({}, "index", "#");
-		}
-		//执行代码
-		pushHistory();
+
 		//添加监听事件，监听后退，前进
 		window.addEventListener("popstate", function (e) {
 			window.location.href = "https://wjldarling.top/box/collect/";
