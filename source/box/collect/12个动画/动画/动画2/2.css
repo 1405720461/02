@@ -1,0 +1,75 @@
+.animation2 {
+    position: relative;
+}
+
+.bear {
+    position: absolute;
+    top: 180px;
+    width: 200px;
+    height: 100px;
+    background: url(./bear.webp) no-repeat;
+    animation: bear 1s steps(8) infinite, move 3s linear forwards;
+    z-index: 3;
+
+}
+
+.bg1 {
+    position: absolute;
+    top: 25px;
+    width: 288px;
+    height: 270px;
+    background: url(./bg1.webp) no-repeat;
+    z-index: 2;
+    animation: bg1 28s linear infinite;
+}
+
+.bg2 {
+    position: absolute;
+    top: 5px;
+    width: 288px;
+    height: 288px;
+    background: url(./bg2.webp) no-repeat;
+    z-index: 1;
+    animation: bg2 100s linear infinite;
+}
+
+
+@keyframes bear {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: -250px;
+    }
+
+    100% {
+        left: 50px;
+    }
+}
+
+@keyframes bg1 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -3540px 0;
+    }
+}
+
+@keyframes bg2 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -3540px 0;
+    }
+}

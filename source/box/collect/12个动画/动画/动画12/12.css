@@ -1,0 +1,165 @@
+.day {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 288px;
+}
+
+.day-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c2e9f6;
+    transition: all 0.25s ease-in;
+}
+
+.day input {
+    display: none;
+    z-index: 2;
+}
+
+.day label {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    border-radius: 100px;
+    z-index: 3;
+    border: 5px solid #72cce3;
+    background-color: #96dcee;
+    transition: all 0.35s ease-in;
+}
+
+.day label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #f5eb71;
+    background-color: #fffaa8;
+    transition: all 0.35s ease-in;
+    animation: switch-reverse 0.35s forwards;
+    cursor: pointer;
+}
+
+.day label::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 143px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: -13px 0 0 2px #e8e8ea, -24px 14px 0 -2px #e8e8ea;
+    transition: all 0.25s ease-in;
+    opacity: 0;
+}
+
+.day label span {
+    position: relative;
+    top: 45px;
+    left: 135px;
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.15s ease-in;
+}
+
+.day label span::before,
+.day label span::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.15s ease-in;
+}
+
+.day label span::before {
+    top: -5px;
+    left: -20px;
+}
+
+.day label span::after {
+    top: 5px;
+    left: -10px;
+}
+
+.day input:checked~.day-background {
+    background-color: #808fc7;
+}
+
+.day input:checked+label {
+    border-color: #5d6baa;
+    background-color: #6b7abb;
+}
+
+.day input:checked+label::before {
+    border-color: #e8e8ea;
+    background-color: #fff;
+    animation: switch 0.35s forwards;
+}
+
+.day input:checked+label::after {
+    opacity: 1;
+    /* 过渡延迟时间 */
+    transition-delay: 0.25s;
+}
+
+.day input:checked+label span {
+    width: 5px;
+    left: 60px;
+}
+
+.day input:checked+label span::before {
+    width: 5px;
+    height: 5px;
+    top: -25px;
+}
+
+.day input:checked+label span::after {
+    width: 5px;
+    height: 5px;
+    top: 20px;
+    left: -30px;
+}
+
+@keyframes switch {
+    0% {
+        left: 4px;
+    }
+
+    60% {
+        left: 4px;
+        width: 112px;
+    }
+
+    100% {
+        left: 96px;
+
+    }
+}
+
+@keyframes switch-reverse {
+    0% {
+        left: 96px;
+    }
+
+    60% {
+        left: 72px;
+        width: 112px;
+    }
+
+    100% {
+        left: 4px;
+    }
+}

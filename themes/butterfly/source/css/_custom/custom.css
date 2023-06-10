@@ -903,16 +903,48 @@ h6::before {
   }
 }
 
-/* Gallery一行显示更多 */
+/* Gallery画廊页面一行显示更多 */
 .gallery-group {
   width: calc(33% - 8px) !important;
 }
 /* 适应宽度不同的设备 */
+@media screen and (max-width: 900px) {
+  .gallery-group {
+    width: calc(50% - 8px) !important;
+  }
+}
 @media screen and (max-width: 600px) {
   .gallery-group {
     width: calc(100% - 8px) !important;
   }
 }
+
+/* 收藏页面手机适配 */
+.wjl_collect .collect_page .gallery-group {
+  width: calc(33% - 10px) !important;
+}
+/* 适应宽度不同的设备 */
+@media screen and (max-width: 1200px) {
+  .wjl_collect .collect_page .gallery-group {
+    width: calc(50% - 8px) !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wjl_collect {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wjl_collect .collect_page .gallery-group {
+    width: calc(100% - 8px) !important;
+  }
+}
+
+.wjl_collect .collect_right{
+  margin-top: 9px;
+}
+
 
 /* 标题增强 */
 #site-name::before {
@@ -2299,9 +2331,24 @@ span.card-clock-weather {
   margin: 5px;
   border: 2px solid #a0a0a0;
 }
+
 [data-theme="dark"] .about_page {
   background: #252525;
 }
+
+/* 收藏页面区块 */
+.collect_page {
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 12px;
+  margin: 5px;
+  border: 2px solid #a0a0a0;
+}
+
+[data-theme="dark"] .collect_page {
+  background: #252525;
+}
+
 /* 首页文章信息彩色图标右边相隔5px */
 .post-ui-icon {
   margin-right: 2px;

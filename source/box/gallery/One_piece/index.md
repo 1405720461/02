@@ -105,7 +105,7 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/97.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/98.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/99.webp)
-![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/100.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/110.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/101.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/102.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/103.webp)

@@ -1,0 +1,54 @@
+.btn-bg {
+    width: 288px;
+    height: 288px;
+    background-color: #000;
+    text-align: center;
+    line-height: 288px;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    background-size: 400%;
+    z-index: 1;
+}
+
+/* 发光效果 */
+a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    background-size: 400%;
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    filter: blur(5px);
+}
+
+a:hover {
+    animation: sun 8s infinite;
+}
+
+a:hover::before {
+    animation: sun 8s infinite;
+}
+
+@keyframes sun {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}

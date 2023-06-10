@@ -35,7 +35,18 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 指定不渲染某些页面
-skip_render:
+skip_render: [
+              'box/collect/龙猫/**',
+              'box/collect/love/**',
+              'box/collect/12个动画/**',
+              'box/collect/todolist/**',
+              'box/collect/点击轮播图/**',
+              'box/collect/太阳系运动/**',
+              'box/collect/滑动登录注册页/**',
+              'box/collect/画图板/**',
+              'box/collect/评价交互特效/**',
+              'box/collect/粘性球球/**',
+             ]
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts

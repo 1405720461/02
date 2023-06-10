@@ -1,0 +1,108 @@
+.container8 {
+    width: 288px;
+    height: 288px;
+}
+
+.container8 ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #fff;
+}
+
+/* 小图片 */
+.container8 ul li {
+    width: 60px;
+    /* 鼠标移入变小手 */
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+.container8 ul li img {
+    width: 100%;
+    border: 2px solid transparent;
+}
+
+/* 大图片 */
+.container8 ul .bigImg {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 288px;
+    height: 140px;
+    border: 2px solid transparent;
+    background: url(./images/1.webp) no-repeat;
+    background-size: contain;
+    transition: all 0.5s;
+}
+
+/* 移动框 */
+.container8 ul .frame {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 56px;
+    height: 22px;
+    border: 2px solid salmon;
+    /* 这里有bug 一直闪烁 这个问题的原因就是 这个移动框虽然没有背景色 但是覆盖了这个图片 */
+    /* 加这个属性就可以了 让这个移动框 不在被鼠标捕捉到 */
+    pointer-events: none;
+    /* 加过渡 */
+    transition: all 0.5s;
+}
+
+/* 用伪元素做三角 */
+.container8 ul .frame::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    /* calc方法自动计算 让三角盒子水平居中 */
+    left: calc(50% - 8px);
+    width: 16px;
+    height: 8px;
+    background-color: salmon;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.container8 ul li:nth-child(1):hover~.bigImg {
+    background-image: url(./images/1.webp);
+}
+
+.container8 ul li:nth-child(1):hover~.frame {
+    left: 0;
+}
+
+.container8 ul li:nth-child(2):hover~.bigImg {
+    background-image: url(./images/2.webp);
+}
+
+.container8 ul li:nth-child(2):hover~.frame {
+    left: 58px;
+}
+
+.container8 ul li:nth-child(3):hover~.bigImg {
+    background-image: url(./images/3.webp);
+}
+
+.container8 ul li:nth-child(3):hover~.frame {
+    left: 116px;
+}
+
+.container8 ul li:nth-child(4):hover~.bigImg {
+    background-image: url(./images/4.webp);
+}
+
+.container8 ul li:nth-child(4):hover~.frame {
+    left: 174px;
+}
+
+.container8 ul li:nth-child(5):hover~.bigImg {
+    background-image: url(./images/5.webp);
+}
+
+.container8 ul li:nth-child(5):hover~.frame {
+    left: 232px;
+}

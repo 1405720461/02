@@ -6,6 +6,12 @@ comments: false
 
 {% timeline 小站建设进程 %}
 
+<!-- timeline 2023-06-10-->
+
+收藏页添加了一些demo
+
+<!-- endtimeline -->
+
 <!-- timeline 2023-06-04-->
 
 首页、归档、追番、游戏、旧时光页面添加侧边栏，其他页面不加
