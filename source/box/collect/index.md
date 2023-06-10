@@ -9,7 +9,7 @@ comments: false
         <h2>一些demo和css动画🪄</h2>
         <div class="collect_page collect1" style="display:flex; flex-wrap:wrap;">
             {% galleryGroup '龙猫' 'Totoro' '/box/collect/龙猫/index.html' /box/collect/collect_bg/1.webp %}
-            {% galleryGroup 'love' '一个爱情的demo' '/box/collect/love' /box/collect/collect_bg/2.webp %}
+            {% galleryGroup 'love' '一个爱情的demo' '/box/collect/love/index.html' /box/collect/collect_bg/2.webp %}
             {% galleryGroup '12个动画' '学习过程中做的小动画' '/box/collect/12个动画/index.html' /box/collect/collect_bg/5.webp %}
             {% galleryGroup 'todolist' 'todolist作品' '/box/collect/todolist/todo.html' /box/collect/collect_bg/6.webp %}
             {% galleryGroup '点击轮播图' '轮播图' '/box/collect/点击轮播图/index.html' /box/collect/collect_bg/8.webp %}

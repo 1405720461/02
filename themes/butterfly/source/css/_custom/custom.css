@@ -3280,6 +3280,7 @@ hr:before {
   color: pink;
 }
 
+
 /* --------------------------- */
 
 /* 倒计时样式 */
@@ -3408,13 +3409,13 @@ hr:before {
     flex-direction: column;
   }
 
-  /* 手机适配音乐播放器 */
-  .aplayer.aplayer-fixed {
+  /* 手机端不显示星星 */
+  .page:has(.layout>#page>#article-container>.hexo-douban-tabs) blockquote{
     display: none;
   }
 
-  /* 手机端不显示星星 */
-  .page:has(.layout>#page>#article-container>.hexo-douban-tabs) blockquote{
+  /* 手机端不显示音乐播放器 */
+  #bottom_aplayer {
     display: none;
   }
 }

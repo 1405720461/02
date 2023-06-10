@@ -1,3 +1,16 @@
+// 页面dom刚加载完毕执行，页面宽度小于600px暂停音乐播放器，并隐藏
+document.addEventListener("DOMContentLoaded", function() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if (screenWidth < 600) {
+    var bottomAplayerDiv = document.getElementById("bottom_aplayer");
+
+    if (bottomAplayerDiv) {
+      bottomAplayerDiv.setAttribute("data-autoplay", "false");
+    }
+  }
+});
+
 /* 阅读进度 start */
 document.addEventListener('pjax:complete', function () {
   window.onscroll = percent;
