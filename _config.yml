@@ -38,6 +38,8 @@ i18n_dir: :lang
 skip_render: [
               'box/collect/龙猫/**',
               'box/collect/love/**',
+              'box/collect/烟花绽放/**',
+              'box/collect/九宫格拼图游戏/**',
               'box/collect/12个动画/**',
               'box/collect/todolist/**',
               'box/collect/点击轮播图/**',
