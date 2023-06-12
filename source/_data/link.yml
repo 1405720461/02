@@ -1,5 +1,5 @@
-- class_name: 朋友
-  class_desc: 这里是最熟悉的小伙伴，前排前排✨
+- class_name: 朋友✨
+  class_desc: 这里是最熟悉的小伙伴，前排前排
   link_list:
     - name: 你好可爱
       link: https://wjldarling.top/
@@ -7,8 +7,8 @@
       descr: 山水一程，三生有幸✨
       siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp
 
-- class_name: 技术支持
-  class_desc: 前端大牛，轮子缔造者，本网站的搭建参考了以下开源作者💡
+- class_name: 技术支持💡
+  class_desc: 前端大牛，轮子缔造者，本网站的搭建参考了以下开源作者
   link_list:
     - name: Hexo
       link: https://hexo.io/zh-cn/
@@ -46,8 +46,8 @@
       descr: 分享设计与科技生活
       siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/zhheo_bg.webp
 
-- class_name: 群友
-  class_desc: 群里的技术大佬们🏅
+- class_name: 群友🏅
+  class_desc: 群里的技术大佬们
   link_list:
     - name: Ethan.Tzy
       link: https://fe32.top/
@@ -84,3 +84,12 @@
       avatar: https://picbed.saop.cc/Asuna/Asuna1x1.png
       descr: 我们终会相遇相知，在那悠远的苍穹
       siteshot: https://picbed.saop.cc/Asuna/Asuna-EvolutionaryProcess_2.png
+    
+    - name: 萌傀儡
+      link: https://blhorizon.github.io/
+      avatar: https://cdn1.tianli0.top/npm/blogimages/link/avatar.webp
+      descr: 珍惜现在，趁早摸鱼
+      siteshot: https://cdn1.tianli0.top/npm/blogimages/pictures/khdslb.webp
+
+# - class_name: 小伙伴🌏
+#   link_list:
