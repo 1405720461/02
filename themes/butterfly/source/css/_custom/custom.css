@@ -515,10 +515,10 @@ div#archive {
   /* linear-gradient(to bottom, #2193b0, #6dd5ed); */
   background: linear-gradient(
     to top,
-    #4568dc,
-    #b06ab3
+    #afc2ff,
+    #f6c4f9
   ); /*默认模式访客气泡配色*/
-  padding: 10px;
+  padding: 10px 20px;
   color: #fff; /*默认模式访客气泡字体配色*/
   border-radius: 10px;
   font-size: 16px !important;
@@ -538,7 +538,7 @@ div#archive {
   word-wrap: break-word;
 }
 .tk-content a {
-  color: #eeecaa; /*默认模式超链接配色*/
+  color: #bdf7b8; /*默认模式超链接配色*/
 }
 .tk-content::before {
   content: "";
@@ -555,15 +555,15 @@ div#archive {
 .tk-master .tk-content {
   background: linear-gradient(
     to top,
-    #43cea2,
-    #185a9d
+    #a2fee1,
+    #a196ff 
   ); /*默认模式博主气泡配色*/
   color: #fff; /*默认模式博主气泡字体配色*/
   width: fit-content;
   max-width: 100%;
 }
 .tk-master .tk-content a {
-  color: #eeecaa;
+  color: #f6e69d;
 }
 .tk-master .tk-content::before {
   content: "";
@@ -592,7 +592,7 @@ div#archive {
   color: #fff;
 }
 [data-theme="dark"] .tk-content a {
-  color: #dfa036;
+  color: #a7ea9f;
 }
 [data-theme="dark"] .tk-content::before {
   border-right: 15px solid #000;
@@ -618,7 +618,7 @@ div#archive {
     width: fit-content;
   }
   .tk-master .tk-content {
-    width: 75%;
+    /* width: 75%; */
   }
   .tk-master .tk-content::before {
     left: 100%;
@@ -627,7 +627,7 @@ div#archive {
   }
   .tk-master .tk-avatar {
     position: relative;
-    left: calc(75% + 70px);
+    /* left: calc(75% + 70px); */
   }
   .tk-master .tk-row[data-v-d82ce9a0] {
     position: relative;

@@ -91,5 +91,10 @@
       descr: 珍惜现在，趁早摸鱼
       siteshot: https://cdn1.tianli0.top/npm/blogimages/pictures/khdslb.webp
 
-# - class_name: 小伙伴🌏
-#   link_list:
+- class_name: 小伙伴🌏
+  link_list:
+    - name: 好摄之徒
+      link: https://www.mz521.cn
+      avatar: https://www.mz521.cn/tp/8.png
+      descr: 欢迎一起学习
+      siteshot: 
