@@ -7,6 +7,12 @@
       descr: 山水一程，三生有幸✨
       siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp
 
+    - name: BiQing
+      link: https://www.biqing.top/
+      avatar: https://biqing-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20230102161539190.png
+      descr: 总有人间一两风，填我十万八千梦。若在许我少年时 一两黄金一两风
+      siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/biqing.webp
+
 - class_name: 技术支持💡
   class_desc: 前端大牛，轮子缔造者，本网站的搭建参考了以下开源作者
   link_list:
