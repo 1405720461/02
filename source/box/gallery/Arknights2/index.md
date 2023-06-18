@@ -203,5 +203,7 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Arknights2/195.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Arknights2/196.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Arknights2/197.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Arknights2/198.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Arknights2/199.webp)
 
 {% endgallery %}

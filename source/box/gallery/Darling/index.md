@@ -172,5 +172,11 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/164.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/165.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/166.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/167.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/168.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/169.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/170.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/171.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Darling/172.webp)
 
 {% endgallery %}
