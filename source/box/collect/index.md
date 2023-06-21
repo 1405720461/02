@@ -23,6 +23,7 @@ comments: false
             {% galleryGroup '画图板' 'drawing board' '/box/collect/画图板/index.html' /box/collect/collect_bg/13.webp %}
             {% galleryGroup '贼几把酷炫的小开关' 'Day night toggle button master' '/box/collect/Day-night-toggle-button-master/index.html' /box/collect/collect_bg/14.webp %}
             {% galleryGroup '粘性球球' 'Sticky ball' '/box/collect/粘性球球/index.html' /box/collect/collect_bg/15.webp %}
+            {% galleryGroup '魔法键盘' 'Magic Keyboard' 'https://toolwa.com/magic-keyboard/' /box/collect/collect_bg/16.webp %}
         </div>
     </div>
     <div style="flex:1" class="collect_right">

@@ -7,11 +7,11 @@ comments: false
 {% note info simple %} 画廊中图片均为 webp 格式方便加载，如需要原图可在首页加站长联系方式。如有侵权，也请速速联系站长删除 {% endnote %}
 
 <div class="gallery-group-main">
-{% galleryGroup '明日方舟' '粥' '/box/gallery/Arknights1' /assets/images/Arknights/8.webp %}
+{% galleryGroup '明日方舟' '博士，您还有许多事要处理，现在还不能休息哦。' '/box/gallery/Arknights1' /assets/images/Arknights/8.webp %}
 
-{% galleryGroup '明日方舟 - 年 夕 令' '岁相姐妹的美图' '/box/gallery/Arknights2' /assets/images/Arknights/1.webp %}
+{% galleryGroup '明日方舟 - 年 夕 令' '岁相' '/box/gallery/Arknights2' /assets/images/Arknights/1.webp %}
 
-{% galleryGroup 'DARLING in the FRANXX' '02' '/box/gallery/Darling' /assets/images/Darling/1.webp %}
+{% galleryGroup 'DARLING in the FRANXX' '呐，Darling，到时候一起来看吧。<br/>嗯，Darling，我们约定好了呦。' '/box/gallery/Darling' /assets/images/Darling/1.webp %}
 
 {% galleryGroup '海贼王' '我是要成为海贼王的男人！' '/box/gallery/One_piece' /assets/images/One_Piece/1.webp %}
 
@@ -19,7 +19,7 @@ comments: false
 
 {% galleryGroup '一人之下' '过去无可挽回，未来可以改变。<p style="text-align:right !important">——王也</p>' '/box/gallery/The_Outcast' /assets/images/The_Outcast/1.webp %}
 
-{% galleryGroup '罗小黑战记' '“你想报复人类吗?” “我只是想回到森林里”' '/box/gallery/Luo_XiaoHei' /assets/images/Luo_XiaoHei/1.webp %}
+{% galleryGroup '罗小黑战记' '“你想报复人类吗?”<br/>“我只是想回到森林里”' '/box/gallery/Luo_XiaoHei' /assets/images/Luo_XiaoHei/1.webp %}
 
 {% galleryGroup '青春猪头少年不会梦到兔女郎学姐' '人活着就是为了樱岛麻衣!!!' '/box/gallery/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai' /assets/images/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/1.webp %}
 
