@@ -4,6 +4,9 @@ date: 2023-05-14 21:30:00
 comments: false
 ---
 
+<img width="100%" alt="game gif" src="https://raw.githubusercontent.com/1405720461/1405720461/output/github-contribution-grid-snake.svg"/>
+<br>
+
 {% timeline 小站建设进程 %}
 
 <!-- timeline 2023-06-10-->
