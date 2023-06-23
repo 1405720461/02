@@ -1573,6 +1573,10 @@ blockquote {
   a:hover {
   color: var(--theme-color) !important;
 }
+.tag-cloud-list a {
+  padding: 0 20px !important;
+}
+
 .tag-cloud-list a:hover {
   color: var(--theme-color) !important;
 }
