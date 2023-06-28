@@ -121,5 +121,6 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/rem/113.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/rem/114.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/rem/115.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/rem/116.webp)
 
 {% endgallery %}

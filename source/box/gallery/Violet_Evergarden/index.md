@@ -31,5 +31,6 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Violet_Evergarden/23.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Violet_Evergarden/24.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/Violet_Evergarden/25.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/Violet_Evergarden/26.webp)
 
 {% endgallery %}
