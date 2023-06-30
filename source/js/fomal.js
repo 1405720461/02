@@ -2207,7 +2207,7 @@ if (m == 5 && dd == 4) {//青年节
 }
 if (m == 5 && dd == 20) {//520
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！💑");
+    Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！❤️");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2238,7 +2238,7 @@ if (m == 5 && dd == 25) {//站长生日
 
 //传统节日部分
 
-if ((y == 2023 && m == 4 && dd == 5) || (y == 2024 && m == 4 && dd == 4) || (y == 2025 && m == 4 && dd == 4)) {//清明节
+if ((y == 2024 && m == 4 && dd == 4) || (y == 2025 && m == 4 && dd == 4)) {//清明节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("清明时节雨纷纷,一束鲜花祭故人💐");
     sessionStorage.setItem("isPopupWindow", "1");
