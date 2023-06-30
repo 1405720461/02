@@ -965,7 +965,8 @@ inject:
     # 诗词
     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/poem/poem.css">
-
+    - <link rel="stylesheet" type="text/css" href="/css/collect.css"> #收藏页面css
+    
     # 综合美化模块样式引入
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
@@ -993,6 +994,7 @@ inject:
     # - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script> # 樱花飘落效果
     - <script defer src="/js/fomal.js"></script> # 主模块js
     - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
+    - <script defer src="/js/color-span.js"></script> # 收藏网址颜色js
     # 底部音乐播放器
     - <div class="aplayer no-destroy" id="bottom_aplayer" data-id="2733900165" data-server="netease" data-type="playlist" data-autoplay="true" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" muted></div>
 

@@ -4,7 +4,7 @@ date: 2023-06-10 14:30:00
 comments: false
 ---
 
-<link rel="stylesheet" type="text/css" href="../../css/collect.css">
+<!-- <link rel="stylesheet" type="text/css" href="../../css/collect.css"> -->
 
 {% note info simple %} 都是自己喜欢的一些动画以及demo，有需要的话主要加站长联系方式。如有侵权，也请速速联系站长删除 {% endnote %}
 <div style="display:flex" class="wjl_collect">
@@ -35,9 +35,21 @@ comments: false
             <div class="website-collect">
                 <h4>网址</h4>
                 <ul>
-                    <li><a href="https://cook.yunyoujun.cn/"><span>做饭手册</span><img src="./website_img/1.png"  alt="做饭手册" /></a></li>
-                    <li><a href="https://toolwa.com/"><span>工具哇</span><img src="./website_img/2.png"  alt="工具哇" /></a></li>
-                    <li><a href="https://emojixd.com/"><span>emoji表情大全 🤣</span></a></li>
+                    <li>
+                        <a href="https://cook.yunyoujun.cn/">
+                            <span class="color-span">做饭手册</span><img src="./website_img/1.png"  alt="做饭手册" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://toolwa.com/">
+                            <span class="color-span">工具哇</span><img src="./website_img/2.png"  alt="工具哇" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://emojixd.com/">
+                            <span class="color-span">emoji表情大全 🤣</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
