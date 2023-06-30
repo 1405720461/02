@@ -4,7 +4,7 @@ date: 2023-06-10 14:30:00
 comments: false
 ---
 
-<!-- <link rel="stylesheet" type="text/css" href="../../css/collect.css"> -->
+<link rel="stylesheet" type="text/css" href="/css/collect.css">
 
 {% note info simple %} 都是自己喜欢的一些动画以及demo，有需要的话主要加站长联系方式。如有侵权，也请速速联系站长删除 {% endnote %}
 <div style="display:flex" class="wjl_collect">
@@ -55,3 +55,5 @@ comments: false
         </div>
     </div>
 </div>
+
+<script src="/js/color-span.js"></script>
