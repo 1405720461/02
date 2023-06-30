@@ -70,6 +70,10 @@ type: "link"
 站点截图建议使用以下 API 获取以匹配本站样式
 有部分朋友的截图体积过大影响加载速度，后面一律采用小体积截图代替望周知
 
+```Markdown
+https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://<你的域名>/
+```
+
 {% note primary flat %}
 🎉 本站支持交换友链，在您提出申请之前，请将本站添加至友链
 🥗 为了保障本站用户，本站仅支持个人网站的友链申请

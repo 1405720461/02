@@ -2,8 +2,12 @@
     margin-top: 0;
 }
 
+.collect2 .website-collect ul{
+    padding-left: 25px;
+}
+
 .collect2 .website-collect ul li span {
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .collect2 .website-collect ul li img {

@@ -36,18 +36,33 @@ comments: false
                 <h4>网址</h4>
                 <ul>
                     <li>
+                        <a href="https://mst.xyz/home">
+                            <img src="./website_img/mst.ico"  alt="MinisterAI" /><span class="color-span">MinisterAI</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://cook.yunyoujun.cn/">
-                            <span class="color-span">做饭手册</span><img src="./website_img/1.png"  alt="做饭手册" />
+                            <img src="./website_img/cook.png"  alt="做饭手册" /><span class="color-span">做饭手册</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://toolwa.com/">
-                            <span class="color-span">工具哇</span><img src="./website_img/2.png"  alt="工具哇" />
+                            <img src="./website_img/toolwa.png"  alt="工具哇" /><span class="color-span">工具哇</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://emojixd.com/">
-                            <span class="color-span">emoji表情大全 🤣</span>
+                            <img src="./website_img/emojixd.ico"  alt="emoji表情大全" /><span class="color-span">emoji表情大全</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kkok.cc/#term-199">
+                            <img src="./website_img/kkok.png"  alt="壳壳博客-网址导航收藏夹" /><span class="color-span">壳壳博客-网址导航收藏夹</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://xiangjianan.github.io/lks/">
+                            <img src="./website_img/lks.png"  alt="LKS-奇奇怪怪网址推荐" /><span class="color-span">LKS-奇奇怪怪网址推荐</span>
                         </a>
                     </li>
                 </ul>
