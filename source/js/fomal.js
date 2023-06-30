@@ -2229,15 +2229,9 @@ if (m == 12 && dd == 25) {//圣诞节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 8 && dd == 11) {//站长生日
+if (m == 5 && dd == 25) {//站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐！🥝");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-if (m == 6 && dd == 30) {//小猫咪生日
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
+    Swal.fire("祝站长" + (y - 2002).toString() + "岁生日快乐！🎂");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2303,15 +2297,6 @@ if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-
-// 切换主题提醒
-// if (y == 2022 && m == 12 && (dd >= 18 && dd <= 20)) {
-//     if (sessionStorage.getItem("isPopupWindow") != "1") {
-//         Swal.fire("网站换成冬日限定主题啦⛄");
-//         sessionStorage.setItem("isPopupWindow", "1");
-//     }
-// }
-
 
 /* 节日弹窗 end */
 
