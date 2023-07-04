@@ -9,6 +9,12 @@ comments: false
 
 {% timeline 小站建设进程 %}
 
+<!-- timeline 2023-07-04-->
+
+关于页面完成啦！博客基本功能全部完成✨
+
+<!-- endtimeline -->
+
 <!-- timeline 2023-06-10-->
 
 收藏页添加了一些demo

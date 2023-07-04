@@ -2329,7 +2329,6 @@ span.card-clock-weather {
 
 /* 关于页面区块 */
 .about_page {
-  background: #fafafa;
   border-radius: 20px;
   padding: 12px;
   margin: 5px;
@@ -2339,6 +2338,8 @@ span.card-clock-weather {
 [data-theme="dark"] .about_page {
   background: #252525;
 }
+
+[data-theme="dark"]
 
 /* 收藏页面区块 */
 .collect_page {
