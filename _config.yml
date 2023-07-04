@@ -48,7 +48,6 @@ skip_render: [
               'box/collect/点击轮播图/**',
               'box/collect/太阳系运动/**',
               'box/collect/滑动登录注册页/**',
-              'box/collect/画图板/**',
               'box/collect/Day-night-toggle-button-master/**',
               'box/collect/粘性球球/**',
              ]
