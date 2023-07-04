@@ -4,10 +4,14 @@ date: 2023-07-02 21:30:00
 comments: false
 type: "about"
 ---
-<link rel="stylesheet" type="text/css" href="/css/kbd.css">
+<link rel="stylesheet" type="text/css" href="/css/about.css">
 <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.css">
 
-<h2>关于我✨</h2>
+<h2 class="about_me">
+    关于我
+    <div class='darling_ico'><img src="/assets/Darling.ico"></div>
+    <div class='darling_png'><img src="/assets/Darling.png"></div>
+</h2>
 <div class="about_page">
     <h3>基本信息📃</h3>
     <ul>
