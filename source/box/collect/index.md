@@ -64,6 +64,11 @@ comments: false
                             <img src="./website_img/lks.png"  alt="LKS-奇奇怪怪网址推荐" /><span class="color-span">LKS-奇奇怪怪网址推荐</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="http://zhangwenli.com/lipstick/">
+                            <img src="./website_img/lipstick.png"  alt="口红颜色可视化" /><span class="color-span">口红颜色可视化</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
