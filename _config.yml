@@ -50,6 +50,7 @@ skip_render: [
               'box/collect/滑动登录注册页/**',
               'box/collect/Day-night-toggle-button-master/**',
               'box/collect/粘性球球/**',
+              'box/collect/代码雨/**',
              ]
 
 # Writing
