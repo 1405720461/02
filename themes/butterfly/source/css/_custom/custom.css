@@ -3314,86 +3314,6 @@ hr:before {
 
 /* --------------------------- */
 
-/* 倒计时样式 */
-.Time{
-  width: 100%;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.time{
-  width: 300px;
-  height: 200px;
-  color: white;
-  min-height:160px;
-  border-radius: 15px;
-  background-size :cover;
-  background-position :center;
-}
-
-.time1{
-  background-image :url('https://cdn.staticaly.com/gh/1405720461/blog_img@main/love_img/1.webp');
-  background-position : 0% 34%;
-}
-
-.time2{
-  background-image :url('https://cdn.staticaly.com/gh/1405720461/blog_img@main/love_img/2.webp');
-  background-position : 0% 34%;
-}
-
-.time3{
-  background-image :url('https://cdn.staticaly.com/gh/1405720461/blog_img@main/love_img/3.webp');
-  width: 300px;
-  background-position : 0% 46%;
-}
-
-.time .mask{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height :100%;
-  width: 100%;
-  padding: 15px;
-  border-radius: 15px;
-  background-color :rgba(0, 0, 0, .1);
-}
-
-.mask .date1 {
-  font-size: 50px;
-}
-
-.mask .date2{
-  position: absolute;
-  top: 97px;
-  left: 205px;
-  font-size: 18px;
-}
-
-.mask p{
-  font-weight:700;
-  color :inherit;
-  font-size: 19px;
-}
-
-.mask .left_top{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-.mask .right_bottom{
-  position: absolute;
-  top: 150px;
-  left: 140px;
-}
-
-.mask .right_bottom1{
-  left: 85px;
-}
-
 
 /*更改背景功能手机适应 */
 @media screen and (max-width: 600px) {
@@ -3431,13 +3351,6 @@ hr:before {
 
   .hbe-input-label-content{
     padding: 2em 0 !important;
-  }
-
-  /* 手机适配小屋倒计时 */
-  .Time{
-    height: 675px;
-    display:flex;
-    flex-direction: column;
   }
 
   /* 手机端不显示星星 */

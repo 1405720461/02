@@ -2229,12 +2229,6 @@ if (m == 12 && dd == 25) {//圣诞节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 5 && dd == 25) {//站长生日
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝站长" + (y - 2002).toString() + "岁生日快乐！🎂");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
 
 //传统节日部分
 
@@ -2294,6 +2288,14 @@ if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {
   //重阳节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("重阳节快乐\n独在异乡为异客，每逢佳节倍思亲");
+    sessionStorage.setItem("isPopupWindow", "1");
+  }
+}
+
+if ((lunar["IMonthCn"] == "五月" && lunar["IDayCn"] == "廿五")) {
+  //站长生日
+  if (sessionStorage.getItem("isPopupWindow") != "1") {
+    Swal.fire("祝站长" + (y - 2002).toString() + "岁生日快乐！🎂");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }

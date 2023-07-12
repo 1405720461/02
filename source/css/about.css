@@ -18,6 +18,7 @@
     display: inline-block;
     float: right;
     width: 180px;
+    margin-right: 10px;
 }
 
 kbd {

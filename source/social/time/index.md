@@ -8,6 +8,11 @@ comments: false
 <br>
 
 {% timeline 小站建设进程 %}
+<!-- timeline 2023-07-12-->
+
+🎉🎉🎉 站长生日啦！！！🎂🎂🎂
+
+<!-- endtimeline -->
 
 <!-- timeline 2023-07-04-->
 
@@ -30,12 +35,6 @@ comments: false
 <!-- timeline 2023-06-03-->
 
 追番页面完成，懒加载适配，博客封面修改
-
-<!-- endtimeline -->
-
-<!-- timeline 2023-05-25-->
-
-🎉🎉🎉 站长生日啦！！！🎂🎂🎂
 
 <!-- endtimeline -->
 
