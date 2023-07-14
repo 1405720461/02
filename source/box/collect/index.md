@@ -56,6 +56,11 @@ comments: false
                         </a>
                     </li>
                     <li>
+                        <a href="https://www.uy5.net/">
+                            <img src="./website_img/clone.png"  alt="克隆窝" /><span class="color-span">克隆窝</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://kkok.cc/#term-199">
                             <img src="./website_img/kkok.png"  alt="壳壳博客-网址导航收藏夹" /><span class="color-span">壳壳博客-网址导航收藏夹</span>
                         </a>
