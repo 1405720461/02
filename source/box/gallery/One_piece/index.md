@@ -120,5 +120,7 @@ comments: false
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/112.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/113.webp)
 ![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/114.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/115.webp)
+![](https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/116.webp)
 
 {% endgallery %}
