@@ -4,7 +4,7 @@
 
 # Site
 title: 你好可爱
-subtitle: ''
+subtitle: ""
 description: "山水一程，三生有幸✨"
 keywords: "javascript,Vue,代码,博客"
 author: 你好可爱
@@ -35,23 +35,24 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 指定不渲染某些页面
-skip_render: [
-              'box/collect/龙猫/**',
-              'box/collect/love/**',
-              'box/collect/12个动画/**',
-              'box/collect/todolist/**',
-              'box/collect/烟花绽放/**',
-              'box/collect/响应式视差滚动相册/**',
-              'box/collect/响应式时间轴/**',
-              'box/collect/鼠标跟踪相册/**',
-              'box/collect/九宫格拼图游戏/**',
-              'box/collect/点击轮播图/**',
-              'box/collect/太阳系运动/**',
-              'box/collect/滑动登录注册页/**',
-              'box/collect/Day-night-toggle-button-master/**',
-              'box/collect/粘性球球/**',
-              'box/collect/代码雨/**',
-             ]
+skip_render:
+  [
+    "box/collect/龙猫/**",
+    "box/collect/love/**",
+    "box/collect/12个动画/**",
+    "box/collect/todolist/**",
+    "box/collect/烟花绽放/**",
+    "box/collect/响应式视差滚动相册/**",
+    "box/collect/响应式时间轴/**",
+    "box/collect/鼠标跟踪相册/**",
+    "box/collect/九宫格拼图游戏/**",
+    "box/collect/点击轮播图/**",
+    "box/collect/太阳系运动/**",
+    "box/collect/滑动登录注册页/**",
+    "box/collect/Day-night-toggle-button-master/**",
+    "box/collect/粘性球球/**",
+    "box/collect/代码雨/**",
+  ]
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -274,68 +275,68 @@ plugins:
 
 # 追番模块
 bangumi:
-  enable: true 
+  enable: true
   vmid: 392071577
   path: /life/bangumis/index.html
-  title: '追番'
-  quote: '都是爷喜欢的动漫！！！'
+  title: "追番"
+  quote: "都是爷喜欢的动漫！！！"
   show: 1
   lazyload: false
 
 # 豆瓣影院模块
 douban:
-  id: 271110737  # 你的豆瓣ID
-  builtin: true
+  id: 271110737 # 你的豆瓣ID
+  builtin: false
   movie:
     path: /life/movies/index.html
-    title: '影院'
+    title: "影院"
     quote: '<div class="wjl_rating">
-              <input value="star-1" name="star-radio" id="star-1" type="radio">
-              <label for="star-1">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-2" type="radio">
-              <label for="star-2">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-3" type="radio">
-              <label for="star-3">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-4" type="radio">
-              <label for="star-4">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-5" type="radio">
-              <label for="star-5">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-            </div>'
+      <input value="star-1" name="star-radio" id="star-1" type="radio">
+      <label for="star-1">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-2" type="radio">
+      <label for="star-2">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-3" type="radio">
+      <label for="star-3">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-4" type="radio">
+      <label for="star-4">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-5" type="radio">
+      <label for="star-5">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      </div>'
   game:
     path: /box/games/index.html
-    title: '游戏'
+    title: "游戏"
     quote: '<div class="wjl_rating">
-              <input value="star-1" name="star-radio" id="star-1" type="radio">
-              <label for="star-1">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-2" type="radio">
-              <label for="star-2">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-3" type="radio">
-              <label for="star-3">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-4" type="radio">
-              <label for="star-4">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-              <input value="star-1" name="star-radio" id="star-5" type="radio">
-              <label for="star-5">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
-              </label>
-            </div>'
+      <input value="star-1" name="star-radio" id="star-1" type="radio">
+      <label for="star-1">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-2" type="radio">
+      <label for="star-2">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-3" type="radio">
+      <label for="star-3">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-4" type="radio">
+      <label for="star-4">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      <input value="star-1" name="star-radio" id="star-5" type="radio">
+      <label for="star-5">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
+      </label>
+      </div>'
   timeout: 10000
 
 # 小冰分类磁贴
