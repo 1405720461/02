@@ -185,7 +185,6 @@ cover:
     - /assets/images/blog_bg/36.webp
     - /assets/images/blog_bg/37.webp
 
-
     # - /assets/images/Darling/2.webp
     # - /assets/images/Darling/3.webp
     # - /assets/images/Darling/4.webp
@@ -954,8 +953,6 @@ Open_Graph_meta: true
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
-
-
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
@@ -965,8 +962,8 @@ inject:
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
     # 诗词
     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
-    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/poem/poem.css">    
-    
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/poem/poem.css">
+
     # 综合美化模块样式引入
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
@@ -995,7 +992,7 @@ inject:
     - <script defer src="/js/fomal.js"></script> # 主模块js
     - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
     # 底部音乐播放器
-    - <div class="aplayer no-destroy" id="bottom_aplayer" data-id="2733900165" data-server="netease" data-type="playlist" data-autoplay="true" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" muted></div>
+    - <div class="aplayer no-destroy" id="bottom_aplayer" data-id="2733900165" data-server="netease" data-type="playlist" data-autoplay="false" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" muted></div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
