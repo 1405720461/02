@@ -20,12 +20,12 @@
       link: https://hexo.io/zh-cn/
       avatar: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/hexo.webp
       descr: 快速、简洁且高效的博客框架
-      siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/hexo_bg.webp 
+      siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/hexo_bg.webp
 
     - name: Butterfly
       link: https://butterfly.js.org/
       avatar: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/butterfly.webp
-      descr: '🦋 A Hexo Theme: Butterfly'
+      descr: "🦋 A Hexo Theme: Butterfly"
       siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/butterfly_bg.webp
 
     - name: Fomalhaut🥝
@@ -60,13 +60,13 @@
       avatar: https://bu.dusays.com/2022/05/02/626f92e193879.jpg
       descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志
       screenshot: https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg
-      
+
     - name: Cartafi
       link: https://www.startly.cn
       avatar: https://startly.s3.bitiful.net/links/avatar/avatar.webp
       descr: 互联网中的寂静之地
-      siteshot: https://startly.s3.bitiful.net/links/avatar/siteshot.webp 
-      
+      siteshot: https://startly.s3.bitiful.net/links/avatar/siteshot.webp
+
     - name: Tianlin_Zz
       link: https://linjiangyu.com
       avatar: https://cdn1.tianli0.top/gh/linjiangyu2/halo/img/fa.jpg
@@ -90,7 +90,7 @@
       avatar: https://picbed.saop.cc/Asuna/Asuna1x1.png
       descr: 我们终会相遇相知，在那悠远的苍穹
       siteshot: https://picbed.saop.cc/Asuna/Asuna-EvolutionaryProcess_2.png
-    
+
     - name: 萌傀儡
       link: https://blhorizon.github.io/
       avatar: https://cdn1.tianli0.top/npm/blogimages/link/avatar.webp
@@ -103,7 +103,7 @@
       link: https://www.mz521.cn
       avatar: https://www.mz521.cn/tp/8.png
       descr: 欢迎一起学习
-      siteshot: 
+      siteshot:
 
     - name: Kiwi Fruit
       link: https://kiwifruit.asia/
@@ -116,3 +116,9 @@
       avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
       descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
       siteshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
+
+    - name: 极客蜂巢(GeekHive)
+      link: https://jblog.oscode.top
+      avatar: https://web-1256739961.cos.ap-guangzhou.myqcloud.com/wp/2022/12/博客logo.png
+      descr: 本站为共创型技术博客，开放对外注册成为作者并发布技术文章博客；同时也支持开源项目的免费推广，为软件开源尽自己的一份力量。
+      siteshot:
