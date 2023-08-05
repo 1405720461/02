@@ -4,6 +4,7 @@ date: 2023-07-02 21:30:00
 comments: false
 type: "about"
 ---
+
 <link rel="stylesheet" type="text/css" href="/css/about.css">
 <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.css">
 
@@ -13,7 +14,7 @@ type: "about"
     <ul>
         <li>昵称：你好可爱</li>
         <li>性别：♂</li>
-        <li>生日：2002.05.25(阴历的)</li>
+        <li>生日：2002.05.25</li>
         <li>身份：河南某二本大四在校生</li>
         <li>专业：食品科学与工程</li>
         <li>邮箱：1405720461@qq.com</li>
@@ -21,9 +22,9 @@ type: "about"
     <h3>编程之路⏳</h3>
     <p>&emsp;&emsp;高考结束填写志愿的时候，每个学校的第一志愿都是计算机专业，奈何都没有录取，最后去了食品专业，本来以为与计算机擦肩而过了，但在一次机缘巧合的情况，使我又重新接触他，开始了前端的学习···</p>
     <h3>技能掌握🪐</h3>
-    <p><span class="iconfont icon-duigou1"></span>致力于成为一个前端小姥⭐ </p>
+    <p><span class="iconfont icon-duigou1"></span>致力于成为一个前端小佬⭐ </p>
     <p><span class="iconfont icon-duigou1"></span>又菜又爱玩🎮 <kbd>ctrl</kbd> + <kbd>C</kbd> 、 <kbd>ctrl</kbd> + <kbd>V</kbd> 高级CV工程师🏆</p>
-    <p><span class="iconfont icon-duigou1"></span>前端掌握Html、CSS、JavaScript、JQuery、Vue、TypeScript、WeChat、uni-app等💻</p>
+    <p><span class="iconfont icon-duigou1"></span>前端掌握Html、CSS、JavaScript、JQuery、Vue、TypeScrip、uni-app、NodeJs等💻</p>
     <p><span class="iconfont icon-cuowu"></span>后端精通PHP、Java、Python、C、C++、C#、Go等单词的拼写🎲</p>
     <p><span class="iconfont icon-cuowu"></span>擅长PS、Pr、Ae、Au、Ai、Dw、An、Id等软件的安装与卸载🎃</p>
     <p><span class="iconfont icon-cuowu"></span>熟悉Windows、Linux、Mac、Android、IOS等系统的开关机👻</p>
