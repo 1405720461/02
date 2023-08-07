@@ -5,7 +5,7 @@ tags:
 date: 2023-05-26
 update: 2023-05-26
 comments: false
-password: "wangjinglun"
+password: "wangjinglun "
 theme: xray
 message: 这里记录我和女朋友的一些事情哦，需要密码才能进入哦!
 abstract: 只有你和我才知道密码! #密码框提示信息
@@ -75,6 +75,7 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试! #密码�
 <!-- endtab -->
 
 {% endfolding %}
+
   </div>
 </div>
 
