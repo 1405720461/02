@@ -11,10 +11,10 @@ menu:
   休闲 || icon-pinweishenghuo || faa-tada || hide:
     八音盒: /life/music/ ||icon-yinle || faa-tada
     追番: /life/bangumis/ || icon-nvwumao || faa-tada
-    影院: /life/movies/ ||icon-dianying1 || faa-tada
+    # 影院: /life/movies ||icon-dianying1 || faa-tada
   百宝箱 || icon-xiangzi || faa-tada || hide:
     画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
-    游戏: /box/games/ || icon-youxishoubing || faa-tada
+    # 游戏: /box/games/ || icon-youxishoubing || faa-tada
     收藏: /box/collect/ ||icon-zhifengche || faa-tada
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     留言板: /comments/ || icon-liuyan || faa-tada

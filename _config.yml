@@ -140,7 +140,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repository: # 这里写上你的Github地址
+    repository:
     branch: main
   # - type: baidu_url_submitter
   # - type: git
@@ -288,8 +288,10 @@ douban:
   id: 271110737 # 你的豆瓣ID
   builtin: false
   movie:
-    path: /life/movies/index.html
+    path: /life/movies
     title: "影院"
+    comments: false
+    aside: true
     quote: '<div class="wjl_rating">
       <input value="star-1" name="star-radio" id="star-1" type="radio">
       <label for="star-1">
@@ -313,8 +315,10 @@ douban:
       </label>
       </div>'
   game:
-    path: /box/games/index.html
+    path: /box/games
     title: "游戏"
+    comments: false
+    aside: true
     quote: '<div class="wjl_rating">
       <input value="star-1" name="star-radio" id="star-1" type="radio">
       <label for="star-1">
@@ -337,6 +341,7 @@ douban:
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
       </label>
       </div>'
+
   timeout: 10000
 
 # 小冰分类磁贴
