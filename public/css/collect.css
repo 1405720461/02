@@ -1,0 +1,18 @@
+.collect2 .website-collect h4{
+    margin-top: 0;
+}
+
+.collect2 .website-collect ul{
+    padding-left: 25px;
+}
+
+.collect2 .website-collect ul li span {
+    margin-left: 5px;
+}
+
+.collect2 .website-collect ul li img {
+    display: inline-block !important;
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+}

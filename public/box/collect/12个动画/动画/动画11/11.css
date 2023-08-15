@@ -1,0 +1,86 @@
+/* 引入文字 */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+
+.j-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 288px;
+    font-family: "Raleway";
+    background-color: #eaece5;
+}
+
+.j-text {
+    font-size: 60px;
+    position: relative;
+    display: flex;
+}
+
+.letter {
+    position: relative;
+    display: flex;
+}
+
+.source {
+    color: gray;
+    display: flex;
+    -webkit-text-stroke: 0.01em rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    background-image: linear-gradient(90deg, white 50%, #eff0eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotateY(-30deg) skew(0, -10deg);
+    /* 设置元素旋转基点 */
+    transform-origin: left;
+    animation: overlay 3s infinite ease-out var(--delay);
+}
+
+@keyframes overlay {
+
+    0%,
+    20%,
+    100% {
+        transform: rotateY(-30deg) skew(0, -10deg);
+    }
+
+    10% {
+        transform: rotateY(0deg) skew(0, 0);
+    }
+}
+
+.shadow {
+    filter: blur(5px);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 30%, transparent);
+    /* 以盒子内的文字作为裁剪区域向外裁剪，文字之外的区域都将被裁剪掉 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: skew(0, 20deg) translateY(0.1em);
+    animation: shadow 3s infinite var(--delay);
+}
+
+@keyframes shadow {
+
+    0%,
+    20%,
+    100% {
+        transform: translateX(0.05em) translateY(0.1em) skew(0, 20deg);
+        opacity: 1;
+    }
+
+    10% {
+        transform: translateX(0) translateY(0) skew(0, 0);
+        opacity: 0;
+    }
+}
+
+.overlay,
+.shadow {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}

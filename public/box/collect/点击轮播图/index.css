@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    bottom: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(170, 190, 250);
+}
+
+.shell {
+    width: 900px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 10px #fff solid;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+.images {
+    width: 800%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+
+.img {
+    width: 100%;
+    background-size: cover;
+}
+
+.img:nth-child(1) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/99.webp");
+}
+
+.img:nth-child(2) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/98.webp");
+}
+
+.img:nth-child(3) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/104.webp");
+}
+
+.img:nth-child(4) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/105.webp");
+}
+
+.img:nth-child(5) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/103.webp");
+}
+
+.img:nth-child(6) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/101.webp");
+}
+
+.img:nth-child(7) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/110.webp");
+}
+
+.img:nth-child(8) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/102.webp");
+}
+
+.min-images {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    z-index: 999;
+    right: 10%;
+}
+
+.min {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-size: cover;
+    border: solid rgba(255, 255, 255, 0.5) 5px;
+    background-position: -20px 0;
+}
+
+.min:nth-child(1) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/99.webp");
+}
+
+.min:nth-child(2) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/98.webp");
+}
+
+.min:nth-child(3) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/104.webp");
+}
+
+.min:nth-child(4) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/105.webp");
+}
+
+.min:nth-child(5) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/103.webp");
+}
+
+.min:nth-child(6) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/101.webp");
+}
+
+.min:nth-child(7) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/110.webp");
+}
+
+.min:nth-child(8) {
+    background-image: url("https://cdn.staticaly.com/gh/1405720461/images@master/One_piece/102.webp");
+}
+
+
+.button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.button-left,
+.button-right {
+    font-size: 50px;
+    background-color: rgba(160, 193, 255, 0.7);
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 500px;
+}

@@ -1,0 +1,136 @@
+/* .about_me{
+    display: flex;
+} */
+
+.about_me .darling_ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+}
+
+.about_me div img {
+    border-radius: 0 !important;
+    border: 0px !important;
+}
+
+.about_me .darling_png {
+    display: inline-block;
+    float: right;
+    width: 180px;
+    margin-right: 10px;
+}
+
+.iconfont {
+    margin: 0 5px;
+}
+
+div#page {
+    background: rgba(253, 253, 253, 0.5);
+    padding-top: 10px !important;
+}
+
+.about_page {
+    background: rgba(253, 253, 253, 1);
+}
+
+.about_page p {
+    margin: 0 20px 16px !important;
+}
+
+#page .about_page.benediction {
+    display: flex;
+}
+
+.about_page.benediction .benediction-left {
+    width: 70%;
+}
+
+.about_page.benediction .benediction-right {
+    width: 30%;
+    margin-left: 50px;
+    display: flex;
+}
+
+.about_page.benediction div p {
+    font-size: 20px;
+}
+
+.about_page.benediction .benediction-left p:nth-child(1) {
+    margin: 0 20px !important;
+}
+
+.about_page.benediction .benediction-left p:nth-child(2) {
+    margin: 15px 20px !important;
+}
+
+
+.benediction .benediction-left p:nth-child(1)::first-letter {
+    font-size: 200%;
+}
+
+.benediction .benediction-right a {
+    height: 154px;
+}
+
+.benediction .benediction-right img {
+    width: 150px;
+    height: 150px;
+}
+
+.benediction .benediction-right span {
+    width: 130px;
+    height: 45px;
+    margin-top: 34px;
+    font-size: 25px;
+    opacity: 0;
+    transform: translate(-132px, 0px);
+    transition: all 1.0s;
+    transition-timing-function: cubic-bezier(0.56, 1.35, 0.52, 1.00);
+    /* 加入回弹动画 */
+}
+
+.benediction .benediction-right a:hover+span {
+    opacity: 1;
+    transform: translate(46px, 18px);
+}
+
+@media screen and (max-width: 1300px) {
+    .benediction .benediction-right a:hover+span {
+        opacity: 1;
+        transform: translate(-30px, 136px);
+    }
+
+    .benediction .benediction-right span {
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #page .about_page.benediction {
+        flex-direction: column;
+    }
+
+    .about_page.benediction .benediction-left {
+        width: 100%;
+    }
+
+    .about_page.benediction .benediction-right {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .benediction .benediction-right a:hover+span {
+        opacity: 1;
+        transform: translate(50px, 16px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .benediction .benediction-right a:hover+span {
+        opacity: 1;
+        transform: translate(5px, 16px);
+    }
+}

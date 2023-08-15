@@ -1,0 +1,54 @@
+.container7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 288px;
+    height: 288px;
+}
+
+.container7 .box-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.container7 .box-btn .img {
+    /* 这里让图片在盒子里垂直+水平居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    /* 圆角属性 */
+    border-radius: 20px;
+    /* 盒子阴影 */
+    box-shadow: 16px 16px 30px rgba(0, 0, 0, 0.2),
+        -16px -16px 30px rgba(255, 255, 255, 1);
+    /* 过渡时间 ease-out是指先快速 后慢速 */
+    transition: all 0.2s ease-out;
+}
+
+.container7 .box-btn .img img {
+    width: 60px;
+    transition: all 0.2s ease-out;
+}
+
+.container7 .box-btn p {
+    color: slategrey;
+}
+
+.container7 .box-btn .img:hover {
+    /* inset 是内部阴影 默认是外部阴影outset */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 rgba(255, 255, 255, 0.8),
+        inset 16px 16px 30px rgba(0, 0, 0, 0.1),
+        inset -16px -16px 30px rgba(255, 255, 255, 1);
+}
+
+.container7 .box-btn .img:hover img {
+    width: 58px;
+}

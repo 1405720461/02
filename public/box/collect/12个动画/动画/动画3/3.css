@@ -1,0 +1,72 @@
+.animation3 {
+    perspective: 900px;
+}
+
+section {
+    position: relative;
+    width: 130px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 12s linear infinite;
+    cursor: pointer;
+    margin: 50px 0 0 78px;
+}
+
+section:hover {
+    /* 鼠标经过暂停 */
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+section div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+section div:nth-child(1) {
+    background-color: #c14c39;
+    transform: translateZ(130px);
+}
+
+section div:nth-child(2) {
+    background-color: #6e9c72;
+    /* 先旋转后移动 */
+    transform: rotateY(60deg) translateZ(130px);
+}
+
+section div:nth-child(3) {
+    background-color: #5e5f7a;
+    /* 先旋转后移动 */
+    transform: rotateY(120deg) translateZ(130px);
+}
+
+section div:nth-child(4) {
+    background-color: #f5eb98;
+    /* 先旋转后移动 */
+    transform: rotateY(180deg) translateZ(130px);
+}
+
+section div:nth-child(5) {
+    background-color: #50a3bc;
+    /* 先旋转后移动 */
+    transform: rotateY(240deg) translateZ(130px);
+}
+
+section div:nth-child(6) {
+    background-color: #f9a99a;
+    /* 先旋转后移动 */
+    transform: rotateY(300deg) translateZ(130px);
+}

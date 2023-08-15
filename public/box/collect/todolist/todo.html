@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <!-- 引入css -->
+    <link rel="stylesheet" href="todo.css">
+    <!-- 引入js -->
+    <script src="animate.js"></script>
+    <script src="todo.js"></script>
+</head>
+
+<body>
+    <div class="center">
+
+        <!-- 今日任务 -->
+        <div class="task">
+            <div class="task-icon"></div>
+            <div class="today">今日任务</div>
+            <!-- 日期 -->
+            <p id="date"></p>
+        </div>
+
+
+        <!-- 输入框 -->
+        <div class="new-task">
+            <input type="text" placeholder="输入任务后 按Enter 添加">
+        </div>
+
+        <!-- 滑动框 -->
+        <div class="slide">
+            <div class="slide-input"></div>
+        </div>
+
+        <!-- 任务栏taskbar -->
+        <div class="taskbar">
+            <!-- <div class="todo-item">
+                <div class="left-item"></div>
+                <div class="center-item">吃饭</div>
+
+                <div class="right-item"></div>
+            </div>
+            <div class="todo-item">
+                <div class="left-item"></div>
+                <div class="center-item">吃饭</div>
+                <div class="right-item"></div>
+            </div> -->
+        </div>
+        <div class="todo-template">
+            <div class=" todo-item">
+                <div class="left-item"></div>
+                <div class="center-item"></div>
+                <div class="time-delay">
+                    <!-- 定时 -->
+                    <div class="timing">
+                        定时
+                        <select name="" id="timing-list">
+                            <option value="0">0s</option>
+                            <option value="1">1s</option>
+                            <option value="2">2s</option>
+                            <option value="3">3s</option>
+                            <option value="4">4s</option>
+                            <option value="5">5s</option>
+                        </select>
+                    </div>
+                    <!-- 延时 -->
+                    <div class="delayed">
+                        延时
+                        <select name="" id="delayed-list">
+                            <option value="0">0s</option>
+                            <option value="1">1s</option>
+                            <option value="2">2s</option>
+                            <option value="3">3s</option>
+                            <option value="4">4s</option>
+                            <option value="5">5s</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right-item"></div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <footer>
+            <div class="left-footer"><span class="number">0</span>项任务</div>
+            <!-- <div class="kong"></div> -->
+            <button class="all" style="box-shadow:5px 5px 15px rgb(219, 218, 218), -5px -5px 10px #fff ;">所有</button>
+            <button class="unfinished">未完成</button>
+            <button class="finished">已完成</button>
+            <div class="right-footer">删除已完成</div>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

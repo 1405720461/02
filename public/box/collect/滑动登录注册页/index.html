@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑动登录注册页</title>
+    <!-- 导入字体图标 -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4118831_cvq7r4p68af.css">
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="shell">
+        <div class="container a-container" id="a-container">
+            <form action="" method="" class="form" id="a-form">
+                <h2 class="form_title title">创建账号</h2>
+                <div class="form_icons">
+                    <i class="iconfont icon-QQ"></i>
+                    <i class="iconfont icon-weixin"></i>
+                    <i class="iconfont icon-bilibili"></i>
+                </div>
+                <span class="form_span">选择注册方式活电子邮箱注册</span>
+                <input type="text" class="form_input" placeholder="Name">
+                <input type="text" class="form_input" placeholder="Email">
+                <input type="text" class="form_input" placeholder="Password">
+                <button class="form_button button submit">SIGN UP</button>
+            </form>
+        </div>
+
+        <div class="container b-container" id="b-container">
+            <form action="" method="" class="form" id="b-form">
+                <h2 class="form_title title">登入账号</h2>
+                <div class="form_icons">
+                    <i class="iconfont icon-QQ"></i>
+                    <i class="iconfont icon-weixin"></i>
+                    <i class="iconfont icon-bilibili"></i>
+                </div>
+                <span class="form_span">选择登录方式活电子邮箱登录</span>
+                <input type="text" class="form_input" placeholder="Email">
+                <input type="text" class="form_input" placeholder="Password">
+                <a class="form_link">忘记密码？</a>
+                <button class="form_button button submit">SIGN IN</button>
+            </form>
+        </div>
+
+        <div class="switch" id="switch-cnt">
+            <div class="switch_circle"></div>
+            <div class="switch_circle switch_circle-t"></div>
+            <div class="switch_container" id="switch-c1">
+                <h2 class="switch_title title" style="letter-spacing: 0;">Welcome Back！</h2>
+                <p class="switch_description description">已经有账号了嘛，去登入账号来进入奇妙世界吧！！！</p>
+                <button class="switch_button button switch-btn">SIGN IN</button>
+            </div>
+
+            <div class="switch_container is-hidden" id="switch-c2">
+                <h2 class="switch_title title" style="letter-spacing: 0;">Hello Friend！</h2>
+                <p class="switch_description description">去注册一个账号，成为尊贵的粉丝会员，让我们踏入奇妙的旅途！</p>
+                <button class="switch_button button switch-btn">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let switchCtn = document.querySelector("#switch-cnt");
+    let switchC1 = document.querySelector("#switch-c1");
+    let switchC2 = document.querySelector("#switch-c2");
+    let switchCircle = document.querySelectorAll(".switch_circle");
+    let switchBtn = document.querySelectorAll(".switch-btn");
+    let aContainer = document.querySelector("#a-container");
+    let bContainer = document.querySelector("#b-container");
+    let allButtons = document.querySelectorAll(".submit");
+
+    let getButtons = (e) => e.preventDefault()
+    let changeForm = (e) => {
+        // 修改类名
+        switchCtn.classList.add("is-gx");
+        setTimeout(function () {
+            switchCtn.classList.remove("is-gx");
+        }, 1500)
+        switchCtn.classList.toggle("is-txr");
+        switchCircle[0].classList.toggle("is-txr");
+        switchCircle[1].classList.toggle("is-txr");
+
+        switchC1.classList.toggle("is-hidden");
+        switchC2.classList.toggle("is-hidden");
+        aContainer.classList.toggle("is-txl");
+        bContainer.classList.toggle("is-txl");
+        bContainer.classList.toggle("is-z");
+    }
+    // 点击切换
+    let shell = (e) => {
+        for (var i = 0; i < allButtons.length; i++)
+            allButtons[i].addEventListener("click", getButtons);
+        for (var i = 0; i < switchBtn.length; i++)
+            switchBtn[i].addEventListener("click", changeForm)
+    }
+    window.addEventListener("load", shell);
+
+</script>
+</body>
+
+</html>
