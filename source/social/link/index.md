@@ -15,7 +15,7 @@ type: "link"
 ```yml
 - name: 你好可爱
   link: https://wjldarling.top/
-  avatar: https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg
+  avatar: https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg
   descr: 山水一程，三生有幸✨
   siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp
 ```
@@ -29,7 +29,7 @@ type: "link"
   "title": "你好可爱",
   "screenshot": "https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp",
   "url": "https://wjldarling.top/",
-  "avatar": "https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg",
+  "avatar": "https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg",
   "description": "山水一程，三生有幸✨",
   "keywords": "你好可爱"
 }
@@ -44,9 +44,9 @@ type: "link"
 | 站点名称   | 你好可爱                                                                  |
 | 站点截图   | https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp |
 | 站点链接   | https://wjldarling.top/                                                   |
-| 站长头像   | https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg         |
-| 站点描述   | 山水一程，三生有幸✨                                                       |
-| 站点关键词 | JavaScript,Vue,个人博客,代码                                         |
+| 站长头像   | https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg              |
+| 站点描述   | 山水一程，三生有幸 ✨                                                     |
+| 站点关键词 | JavaScript,Vue,个人博客,代码                                              |
 
 <!-- endtab -->
 

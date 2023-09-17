@@ -104,7 +104,7 @@ favicon:
 
 # Avatar (头像)
 avatar:
-  img: https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg
+  img: https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg
   effect: false
 
 # Disable all banner image
