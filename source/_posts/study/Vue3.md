@@ -99,8 +99,8 @@ vite 官网：https://vitejs.cn
   - 真正的按需编译，不再等待整个应用编译完成。
 - 传统构建 与 vite 构建对比图
 
-{% inlineimage https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/10.webp, height=240px %}
-{% inlineimage https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/11.webp, height=240px %}
+{% inlineimage https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/10.webp, height=240px %}
+{% inlineimage https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/11.webp, height=240px %}
 
 ```bash
 ## 创建工程
@@ -175,8 +175,10 @@ npm run dev
 #### Vue3.0 的响应式
 
 - 实现原理:
+
   - 通过 Proxy（代理）: 拦截对象中任意属性的变化，包括：属性值的读写、属性的添加、属性的删除等。
   - 通过 Reflect（反射）: 对源对象的属性进行操作。
+
     - MDN 文档中描述的 Proxy 与 Reflect：
 
       - Proxy：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy
@@ -345,11 +347,11 @@ npm run dev
 <div style="display:flex">
   <div>
     <strong>vue2.x的生命周期</strong>
-    <img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/12.webp"  style="zoom:33%;width:1200px" />
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/12.webp"  style="zoom:33%;width:1200px" />
   </div>
   <div>
     <strong>vue3.0的生命周期</strong>
-    <img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/13.webp"  style="zoom:33%;width:2500px" />
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/13.webp"  style="zoom:33%;width:2500px" />
   </div>
 </div>
 

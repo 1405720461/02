@@ -30,17 +30,17 @@
 }
 
 .time1 {
-    background-image: url('https://cdn.staticaly.com/gh/1405720461/blog_img@main/love_img/1.webp');
+    background-image: url('https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/love_img/1.webp');
     background-position: 0% 34%;
 }
 
 .time2 {
-    background-image: url('https://cdn.staticaly.com/gh/1405720461/blog_img@main/love_img/2.webp');
+    background-image: url('https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/love_img/2.webp');
     background-position: 0% 34%;
 }
 
 .time3 {
-    background-image: url('https://cdn.staticaly.com/gh/1405720461/blog_img@main/love_img/3.webp');
+    background-image: url('https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/love_img/3.webp');
     width: 300px;
     background-position: 0% 46%;
 }
@@ -103,16 +103,17 @@
 
 /*更改背景功能手机适应 */
 @media screen and (max-width: 600px) {
+
     /* 手机适配小屋倒计时 */
     .Time {
         flex-direction: column;
     }
+
     .time-right {
         width: 100%;
     }
+
     .time-gallery .gallery-group {
         width: calc(100% - 8px) !important;
     }
 }
-
-

@@ -1,5 +1,5 @@
 // 页面dom刚加载完毕执行，页面宽度小于600px暂停音乐播放器，并隐藏
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
   if (screenWidth < 600) {
@@ -389,149 +389,149 @@ function randomPost() {
 /* 小猫咪 start */
 if (document.body.clientWidth > 992) {
   function getBasicInfo() {
-      /* 窗口高度 */
-      var ViewH = $(window).height();
-      /* document高度 */
-      var DocH = $("body")[0].scrollHeight;
-      /* 滚动的高度 */
-      var ScrollTop = $(window).scrollTop();
-      /* 可滚动的高度 */
-      var S_V = DocH - ViewH;
-      var Band_H = ScrollTop / (DocH - ViewH) * 100;
-      return {
-          ViewH: ViewH,
-          DocH: DocH,
-          ScrollTop: ScrollTop,
-          Band_H: Band_H,
-          S_V: S_V
-      }
+    /* 窗口高度 */
+    var ViewH = $(window).height();
+    /* document高度 */
+    var DocH = $("body")[0].scrollHeight;
+    /* 滚动的高度 */
+    var ScrollTop = $(window).scrollTop();
+    /* 可滚动的高度 */
+    var S_V = DocH - ViewH;
+    var Band_H = ScrollTop / (DocH - ViewH) * 100;
+    return {
+      ViewH: ViewH,
+      DocH: DocH,
+      ScrollTop: ScrollTop,
+      Band_H: Band_H,
+      S_V: S_V
+    }
   };
   function show(basicInfo) {
-      if (basicInfo.ScrollTop > 0.001) {
-          $(".neko").css('display', 'block');
-      } else {
-          $(".neko").css('display', 'none');
-      }
+    if (basicInfo.ScrollTop > 0.001) {
+      $(".neko").css('display', 'block');
+    } else {
+      $(".neko").css('display', 'none');
+    }
   }
   (function ($) {
-      $.fn.nekoScroll = function (option) {
-          var defaultSetting = {
-              top: '0',
-              scroWidth: 6 + 'px',
-              z_index: 9999,
-              zoom: 0.9,
-              borderRadius: 5 + 'px',
-              right: 60 + 'px',
-              // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图
-              nekoImg: "/assets/star.png",
-              hoverMsg: "喵喵喵~",
-              color: "#6f42c1",
-              during: 500,
-              blog_body: "body",
-          };
-          var setting = $.extend(defaultSetting, option);
-          var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +
-              this.prop("id") : this.prop("nodeName");
-          if ($(".neko").length == 0) {
-              this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");
-          }
-          let basicInfo = getBasicInfo();
-          $(getThis)
-              .css({
-                  'position': 'fixed',
-                  'width': setting.scroWidth,
-                  'top': setting.top,
-                  'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',
-                  'z-index': setting.z_index,
-                  'background-color': setting.bgcolor,
-                  "border-radius": setting.borderRadius,
-                  'right': setting.right,
-                  'background-image': 'url(' + setting.scImg + ')',
-                  'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent)', 'border-radius': '2em',
-                  'background-size': 'contain'
-              });
-          $("#" + setting.nekoname)
-              .css({
-                  'position': 'fixed',
-                  'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',
-                  'z-index': setting.z_index * 10,
-                  'right': setting.right,
-                  'background-image': 'url(' + setting.nekoImg + ')',
-              });
-          show(getBasicInfo());
-          $(window)
-              .scroll(function () {
-                  let basicInfo = getBasicInfo();
-                  show(basicInfo);
-                  $(getThis)
-                      .css({
-                          'position': 'fixed',
-                          'width': setting.scroWidth,
-                          'top': setting.top,
-                          'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',
-                          'z-index': setting.z_index,
-                          'background-color': setting.bgcolor,
-                          "border-radius": setting.borderRadius,
-                          'right': setting.right,
-                          'background-image': 'url(' + setting.scImg + ')',
-                          'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent)', 'border-radius': '2em',
-                          'background-size': 'contain'
-                      });
-                  $("#" + setting.nekoname)
-                      .css({
-                          'position': 'fixed',
-                          'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',
-                          'z-index': setting.z_index * 10,
-                          'right': setting.right,
-                          'background-image': 'url(' + setting.nekoImg + ')',
-                      });
-                  if (basicInfo.ScrollTop == basicInfo.S_V) {
-                      $("#" + setting.nekoname)
-                          .addClass("showMsg")
-                  } else {
-                      $("#" + setting.nekoname)
-                          .removeClass("showMsg");
-                      $("#" + setting.nekoname)
-                          .attr("data-msg", setting.hoverMsg);
-                  }
-              });
-          this.click(function (e) {
-              btf.scrollToDest(0, 500)
-          });
-          $("#" + setting.nekoname)
-              .click(function () {
-                  btf.scrollToDest(0, 500)
-              });
-          return this;
+    $.fn.nekoScroll = function (option) {
+      var defaultSetting = {
+        top: '0',
+        scroWidth: 6 + 'px',
+        z_index: 9999,
+        zoom: 0.9,
+        borderRadius: 5 + 'px',
+        right: 60 + 'px',
+        // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图
+        nekoImg: "/assets/star.png",
+        hoverMsg: "喵喵喵~",
+        color: "#6f42c1",
+        during: 500,
+        blog_body: "body",
+      };
+      var setting = $.extend(defaultSetting, option);
+      var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +
+        this.prop("id") : this.prop("nodeName");
+      if ($(".neko").length == 0) {
+        this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");
       }
+      let basicInfo = getBasicInfo();
+      $(getThis)
+        .css({
+          'position': 'fixed',
+          'width': setting.scroWidth,
+          'top': setting.top,
+          'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',
+          'z-index': setting.z_index,
+          'background-color': setting.bgcolor,
+          "border-radius": setting.borderRadius,
+          'right': setting.right,
+          'background-image': 'url(' + setting.scImg + ')',
+          'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent)', 'border-radius': '2em',
+          'background-size': 'contain'
+        });
+      $("#" + setting.nekoname)
+        .css({
+          'position': 'fixed',
+          'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',
+          'z-index': setting.z_index * 10,
+          'right': setting.right,
+          'background-image': 'url(' + setting.nekoImg + ')',
+        });
+      show(getBasicInfo());
+      $(window)
+        .scroll(function () {
+          let basicInfo = getBasicInfo();
+          show(basicInfo);
+          $(getThis)
+            .css({
+              'position': 'fixed',
+              'width': setting.scroWidth,
+              'top': setting.top,
+              'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',
+              'z-index': setting.z_index,
+              'background-color': setting.bgcolor,
+              "border-radius": setting.borderRadius,
+              'right': setting.right,
+              'background-image': 'url(' + setting.scImg + ')',
+              'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent)', 'border-radius': '2em',
+              'background-size': 'contain'
+            });
+          $("#" + setting.nekoname)
+            .css({
+              'position': 'fixed',
+              'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',
+              'z-index': setting.z_index * 10,
+              'right': setting.right,
+              'background-image': 'url(' + setting.nekoImg + ')',
+            });
+          if (basicInfo.ScrollTop == basicInfo.S_V) {
+            $("#" + setting.nekoname)
+              .addClass("showMsg")
+          } else {
+            $("#" + setting.nekoname)
+              .removeClass("showMsg");
+            $("#" + setting.nekoname)
+              .attr("data-msg", setting.hoverMsg);
+          }
+        });
+      this.click(function (e) {
+        btf.scrollToDest(0, 500)
+      });
+      $("#" + setting.nekoname)
+        .click(function () {
+          btf.scrollToDest(0, 500)
+        });
+      return this;
+    }
   })(jQuery);
 
   $(document).ready(function () {
-      //部分自定义
-      $("#myscoll").nekoScroll({
-          bgcolor: 'rgb(196 233 244 / 1)', //背景颜色，没有绳子背景图片时有效
-          borderRadius: '2em',
-          zoom: 0.9
-      }
-      );
-      //自定义（去掉以下注释，并注释掉其他的查看效果）
-      /*
-      $("#myscoll").nekoScroll({
-          nekoname:'neko1', //nekoname，相当于id
-          nekoImg:'img/猫咪.png', //neko的背景图片
-          scImg:"img/绳1.png", //绳子的背景图片
-          bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效
-          zoom:0.9, //绳子长度的缩放值
-          hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息
-          right:'100px', //距离页面右边的距离
-          fontFamily:'楷体', //对话框字体
-          fontSize:'14px', //对话框字体的大小
-          color:'#1e90ff', //对话框字体颜色
-          scroWidth:'8px', //绳子的宽度
-          z_index:100, //不用解释了吧
-          during:1200, //从顶部到底部滑动的时长
-      });
-      */
+    //部分自定义
+    $("#myscoll").nekoScroll({
+      bgcolor: 'rgb(196 233 244 / 1)', //背景颜色，没有绳子背景图片时有效
+      borderRadius: '2em',
+      zoom: 0.9
+    }
+    );
+    //自定义（去掉以下注释，并注释掉其他的查看效果）
+    /*
+    $("#myscoll").nekoScroll({
+        nekoname:'neko1', //nekoname，相当于id
+        nekoImg:'img/猫咪.png', //neko的背景图片
+        scImg:"img/绳1.png", //绳子的背景图片
+        bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效
+        zoom:0.9, //绳子长度的缩放值
+        hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息
+        right:'100px', //距离页面右边的距离
+        fontFamily:'楷体', //对话框字体
+        fontSize:'14px', //对话框字体的大小
+        color:'#1e90ff', //对话框字体颜色
+        scroWidth:'8px', //绳子的宽度
+        z_index:100, //不用解释了吧
+        during:1200, //从顶部到底部滑动的时长
+    });
+    */
   })
 }
 
@@ -2499,9 +2499,9 @@ function createtime() {
     snum = Math.round(seconds);
   1 == String(snum).length && (snum = "0" + snum);
   let currentTimeHtml = "";
-  (currentTimeHtml =`<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
-  document.getElementById("workboard") &&
-  (document.getElementById("workboard").innerHTML = currentTimeHtml);
+  (currentTimeHtml = `<div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+    document.getElementById("workboard") &&
+    (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
 // 设置重复执行函数，周期1000ms
 setInterval(() => {
@@ -3031,10 +3031,10 @@ function createWinbox() {
   window.addEventListener("resize", winResize);
 
   // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
-//<div class="content" style="display:flex">
-//  <div class="content-text" style="font-weight:bold; padding-left:10px"> 模糊效果 (消耗性能) </div><input type="checkbox" id="blur" onclick="setBlur()">
-//  <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
-//</div>
+  //<div class="content" style="display:flex">
+  //  <div class="content-text" style="font-weight:bold; padding-left:10px"> 模糊效果 (消耗性能) </div><input type="checkbox" id="blur" onclick="setBlur()">
+  //  <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
+  //</div>
 
 
   winbox.body.innerHTML = `
@@ -3163,7 +3163,7 @@ function createWinbox() {
 {% folding cyan, 设置自定义背景 %}
 <p>
   <center>
-    <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.staticaly.com/gh/1405720461/images@master/rem/18.webp">
+    <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.jsdelivr.net/gh/1405720461/images@master/rem/18.webp">
   </center>
 </p>
 <p>

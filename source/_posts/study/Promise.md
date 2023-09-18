@@ -42,7 +42,7 @@ updated: 2023-06-01 19:57:00
 
 #### promise 的基本流程
 
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/2.webp"  style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/2.webp"  style="zoom:67%;" />
 
 #### promise 的基本使用
 
@@ -70,12 +70,10 @@ updated: 2023-06-01 19:57:00
   value => {
     // 成功的回调函数 onResolved, 得到成功的 vlaue
     console.log("成功的 value: ", value)
-  }, reason =>{" "}
-  {
+  }, reason => {
     // 失败的回调函数 onRejected, 得到失败的 reason
     console.log("失败的 reason: ", reason)
-  }
-  )
+  })
 </script>
 ```
 

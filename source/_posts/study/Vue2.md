@@ -96,7 +96,7 @@ updated: 2023-06-01 05:20:00
 2. V：视图(View) ：模板
 3. VM：视图模型(ViewModel) ： Vue 实例对象
 
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/3.webp"  style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/3.webp"  style="zoom:67%;" />
 
 data 中所有的属性,最后都出现在了 vm 身上。
 vm 身上所有的属性及 Vue 原型上所有属性，在 Vue 模板中都可以直接使用。
@@ -140,7 +140,7 @@ vm 身上所有的属性及 Vue 原型上所有属性，在 Vue 模板中都可�
 
 https://www.bilibili.com/video/BV1Zy4y1K7SH?p=13&amp;spm_id_from=pageDriver&amp;vd_source=e754d95b996bf636e1256b88397221dd
 
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/4.webp"  style="zoom: 50%;" />
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/4.webp"  style="zoom: 50%;" />
 
 1.Vue 中的数据代理:
 通过 vm 对象来代理 data 对象中属性的操作(读/写）
@@ -466,7 +466,7 @@ v-show : 条件渲染(动态控制节点是否展示)
 
 ### 自定义指令
 
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/5.webp" style="zoom: 80%;" />
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/5.webp" style="zoom: 80%;" />
 
 ---
 
@@ -480,7 +480,7 @@ v-show : 条件渲染(动态控制节点是否展示)
 
 4.生命周期函数中的 this 指向是 vm 或 组件实例对象。
 
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/6.webp" alt="生命周期" style="zoom: 20%;" />
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/6.webp" alt="生命周期" style="zoom: 20%;" />
 
 常用的生命周期钩子:
 
@@ -667,7 +667,7 @@ https://www.bilibili.com/video/BV1Zy4y1K7SH?p=61&amp;vd_source=e754d95b996bf636e
 
 #### 配置项 props
 
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/7.webp" style="zoom: 80%;" />
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/7.webp" style="zoom: 80%;" />
 
 ### 父子组件间的三种通信方式\*
 
@@ -1114,7 +1114,7 @@ mounted() {
 1.作用: 在插入、更新或移除 DOM 元素时，在合适的时候给元素添加样式类名。
 
 2.图示:
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/9.webp" /> 
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/9.webp" /> 
 3.写法:
 
 ​ 1.准备好样式:
@@ -1317,7 +1317,7 @@ export default {
 
 #### vuex 工作原理图
 
-<img src="https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/8.webp" alt="vuex" style="zoom: 33%;" />
+<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/8.webp" alt="vuex" style="zoom: 33%;" />
 
 - **视图（View）**，以声明方式将**状态**映射到视图；
 - **操作（Actions）**，响应在**视图**上的用户输入导致的状态变化

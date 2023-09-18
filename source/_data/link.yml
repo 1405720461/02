@@ -5,28 +5,28 @@
       link: https://wjldarling.top/
       avatar: https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg
       descr: 山水一程，三生有幸✨
-      siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/wjldarling.webp
+      siteshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
 
     - name: BiQing
       link: https://www.biqing.top/
       avatar: https://biqing-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20230102161539190.png
       descr: 总有人间一两风，填我十万八千梦。若在许我少年时 一两黄金一两风
-      siteshot: https://cdn.staticaly.com/gh/1405720461/images@master/img/biqing.webp
+      siteshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/biqing.webp
 
 - class_name: 技术支持💡
   class_desc: 前端大牛，轮子缔造者，本网站的搭建参考了以下开源作者
   link_list:
     - name: Hexo
       link: https://hexo.io/zh-cn/
-      avatar: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/hexo.webp
+      avatar: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo.webp
       descr: 快速、简洁且高效的博客框架
-      siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/hexo_bg.webp
+      siteshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo_bg.webp
 
     - name: Butterfly
       link: https://butterfly.js.org/
-      avatar: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/butterfly.webp
+      avatar: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly.webp
       descr: "🦋 A Hexo Theme: Butterfly"
-      siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/butterfly_bg.webp
+      siteshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly_bg.webp
 
     - name: Fomalhaut🥝
       link: https://www.fomal.cc/
@@ -50,7 +50,7 @@
       link: https://blog.zhheo.com/
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
       descr: 分享设计与科技生活
-      siteshot: https://cdn.staticaly.com/gh/1405720461/blog_img@main/link/zhheo_bg.webp
+      siteshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/zhheo_bg.webp
 
 - class_name: 群友🏅
   class_desc: 群里的技术大佬们

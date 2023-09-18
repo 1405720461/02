@@ -90,9 +90,9 @@ header h1 {
 ```
 
 &emsp;&emsp;另外，推荐这个 VSCode 插件可以帮助你更方便地进行 px 到 rem 的单位转换，提高开发效率。尤其在移动端适配过程中，能够帮助你快速计算合适的 rem 值。
-![](https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/14.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/14.webp)
 
 需要进行扩展设置，设置好相应的宽度，就可以进行快速转换了
 
-![](https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/15.webp)
-![](https://cdn.staticaly.com/gh/1405720461/blog_img@main/study/16.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/15.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/16.webp)
