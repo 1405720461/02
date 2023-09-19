@@ -590,7 +590,7 @@ tag_ui: # 留空或 index
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # "#e4f4f6" "#efefef"
 background:
-  #【必选】默认背景  var(--default-bg)     fomal.js第3129行
+  #【必选】默认背景  var(--default-bg)     fomal.js第2870行
   default: var(--default-bg)
   #【可选】PC端夜间模式背景  var(--darkmode-bg)
   darkmode: var(--darkmode-bg)
