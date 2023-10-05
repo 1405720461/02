@@ -1220,14 +1220,13 @@ button#go-up:hover #percent {
 .imgbox,
 .box {
   margin: 10px;
-  border-radius: 10px !important;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .pimgbox,
 .imgbox {
-  width: 184px;
-  border-radius: 10px;
+  width: 20%;
   overflow: hidden;
 }
 
@@ -1239,34 +1238,25 @@ button#go-up:hover #percent {
 }
 
 .pimgbox {
-  height: 368px;
+  aspect-ratio: 9/16;
 }
 
 .imgbox {
-  height: 103px;
+  aspect-ratio: 16/9;
 }
 
 .box {
-  height: 108px;
-  width: 192px;
+  width: 17%;
+  aspect-ratio: 16/9;
 }
 
 @media screen and (max-width: 768px) {
 
   /* 背景 */
-  .pimgbox {
-    height: 175px;
-    width: 100px;
-  }
-
-  .imgbox {
-    height: 63px;
-    width: 112px;
-  }
-
+  .pimgbox,
+  .imgbox,
   .box {
-    height: 90px;
-    width: 160px;
+    width: 40%;
   }
 
   /* 2.0新增内容 */
@@ -1419,7 +1409,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://cdn.staticaly.com/gh/1405720461/images@master/img/188.jpg) no-repeat center center;
+  background: url(https://cdn.jsdelivr.net/gh/1405720461/images@master/img/188.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -3310,94 +3300,68 @@ hr:before {
   position: relative;
   color: aliceblue;
   border-radius: 5px;
-  top: 40px;
+  top: 48px;
   padding: 2px 5px;
   background: #00000090;
 }
 
 #bingDayBox::before {
-  left: 47px;
+  left: 36px;
   content: "必应每日壁纸";
 }
 
 #bingHistoryBox::before {
-  left: 47px;
+  left: 36px;
   content: "必应历史壁纸";
 }
 
 #EEEDogBox::before {
-  left: 34px;
+  left: 30px;
   content: "EEEDog动漫壁纸";
 }
 
-#seovxBox::before {
-  left: 30px;
-  content: "seovx美女壁纸";
-}
 
 #picsumBox::before {
-  left: 37px;
+  left: 32px;
   content: "picsum随机壁纸";
 }
 
-#waiBizhiBox::before {
-  left: 34px;
-  content: "小歪高清壁纸";
-}
-
-#btstuBox::before {
-  left: 34px;
-  content: "博天随机壁纸";
-}
 
 #unsplashBox::before {
-  left: 28px;
+  left: 26px;
   content: "Unsplash随机壁纸";
 }
 
 
 @media screen and (max-width: 768px) {
   .apiBox::before {
+    font-size: 13px;
     top: 30px;
   }
 
   #bingDayBox::before {
-    left: 30px;
+    left: 14px;
     content: "必应每日壁纸";
   }
 
   #bingHistoryBox::before {
-    left: 30px;
+    left: 14px;
     content: "必应历史壁纸";
   }
 
   #EEEDogBox::before {
-    left: 17px;
+    left: 6px;
     content: "EEEDog动漫壁纸";
   }
 
-  #seovxBox::before {
-    left: 30px;
-    content: "seovx美女壁纸";
-  }
 
   #picsumBox::before {
-    left: 22px;
+    left: 8px;
     content: "picsum随机壁纸";
   }
 
-  #waiBizhiBox::before {
-    left: 34px;
-    content: "小歪高清壁纸";
-  }
-
-  #btstuBox::before {
-    left: 34px;
-    content: "博天随机壁纸";
-  }
-
   #unsplashBox::before {
-    left: 14px;
+    left: 2px;
     content: "Unsplash随机壁纸";
   }
 }
