@@ -6,11 +6,12 @@ comments: false
 
 <link rel="stylesheet" type="text/css" href="/css/collect.css">
 
-{% note info simple %} 都是自己喜欢的一些动画以及demo，有需要的话主要加站长联系方式。如有侵权，也请速速联系站长删除 {% endnote %}
-<div style="display:flex" class="wjl_collect">
-    <div style="flex:3" class="collect_left">
+{% note info simple %} 都是自己喜欢的一些动画以及 demo，有需要的话主要加站长联系方式。如有侵权，也请速速联系站长删除 {% endnote %}
+
+<div class="wjl_collect">
+    <div class="collect_left">
         <h2>一些demo和css动画🪄</h2>
-        <div class="collect_page collect1" style="display:flex; flex-wrap:wrap;">
+        <div class="collect_page">
             {% galleryGroup '龙猫' 'Totoro' '/box/collect/龙猫/index.html' /box/collect/collect_bg/1.webp %}
             {% galleryGroup 'love' '一个爱情的demo' '/box/collect/love/index.html' /box/collect/collect_bg/2.webp %}
             {% galleryGroup '12个动画' '学习过程中做的小动画' '/box/collect/12个动画/index.html' /box/collect/collect_bg/3.webp %}
@@ -29,7 +30,7 @@ comments: false
             {% galleryGroup '代码雨' 'Code Rain' '/box/collect/代码雨/index.html' /box/collect/collect_bg/16.webp %}
         </div>
     </div>
-    <div style="flex:1" class="collect_right">
+    <div class="collect_right">
         <h3>其他收藏</h3>
         <div class="collect_page collect2">
             <div class="website-collect">
