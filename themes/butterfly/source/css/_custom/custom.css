@@ -947,79 +947,77 @@ h6::before {
 }
 
 /* 友链一行显示更多 */
-.site-card {
-  width: calc(100% / 5 - 16px) !important;
-  border-radius: 18px !important;
+.flink-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 30px 15px;
 }
 
-.site-card .img {
-  height: 165px !important;
-  border-radius: 18px !important;
-}
-
-/* 适应宽度不同的设备 */
-@media screen and (max-width: 1200px) {
-  .site-card {
-    width: calc(100% / 4 - 16px) !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .site-card {
-    width: calc(100% / 3 - 16px) !important;
-  }
+.flink-list .info {
+  aspect-ratio: 16/9;
 }
 
 @media screen and (max-width: 600px) {
-  .site-card {
-    width: calc(100% / 2 - 16px) !important;
+  .flink-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flink-list a {
+    height: 85px;
+  }
+
+  .flink-list>a .wrapper img {
+    height: 80px;
+  }
+
+  .flink-list>a .info img {
+    top: 26px;
+    width: 46px;
+    height: 46px;
   }
 }
+
 
 /* Gallery画廊页面一行显示更多 */
-.gallery-group {
-  width: calc(33% - 8px) !important;
-}
-
-/* 适应宽度不同的设备 */
-@media screen and (max-width: 900px) {
-  .gallery-group {
-    width: calc(50% - 8px) !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .gallery-group {
-    width: calc(100% - 8px) !important;
-  }
+.gallery-group-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 15px;
 }
 
 /* 收藏页面手机适配 */
-.wjl_collect .collect_page .gallery-group {
-  width: calc(33% - 10px) !important;
+.wjl_collect {
+  display: flex;
 }
 
-/* 适应宽度不同的设备 */
-@media screen and (max-width: 1200px) {
-  .wjl_collect .collect_page .gallery-group {
-    width: calc(50% - 8px) !important;
-  }
+.wjl_collect .collect_left {
+  width: 75%;
 }
 
-@media screen and (max-width: 900px) {
-  .wjl_collect {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .wjl_collect .collect_page .gallery-group {
-    width: calc(100% - 8px) !important;
-  }
+.wjl_collect .collect_left .collect_page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
 }
 
 .wjl_collect .collect_right {
-  margin-top: 9px;
+  width: 25%;
+  margin: 9px 0 0 40px;
+}
+
+@media screen and (max-width: 840px) {
+  .wjl_collect {
+    flex-direction: column;
+
+    .collect_left,
+    .collect_right {
+      width: 100%;
+    }
+
+    .collect_right {
+      margin: 9px 0 0 0;
+    }
+  }
 }
 
 
@@ -1211,23 +1209,17 @@ button#go-up:hover #percent {
 }
 
 .bgbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
 }
 
 .pimgbox,
 .imgbox,
 .box {
-  margin: 10px;
   background-size: cover;
   border-radius: 10px;
-}
-
-.pimgbox,
-.imgbox {
-  width: 20%;
-  overflow: hidden;
+  aspect-ratio: 16/9;
 }
 
 .imgbox:hover,
@@ -1241,23 +1233,7 @@ button#go-up:hover #percent {
   aspect-ratio: 9/16;
 }
 
-.imgbox {
-  aspect-ratio: 16/9;
-}
-
-.box {
-  width: 17%;
-  aspect-ratio: 16/9;
-}
-
 @media screen and (max-width: 768px) {
-
-  /* 背景 */
-  .pimgbox,
-  .imgbox,
-  .box {
-    width: 40%;
-  }
 
   /* 2.0新增内容 */
   .wb-min {
@@ -1327,14 +1303,14 @@ button#go-up:hover #percent {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content>.card-widget.card-info {
-  background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/springBg.png);
+  background-image: url(/assets/day-bg.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
 }
 
 [data-theme="dark"] #aside-content>.card-widget.card-info {
-  background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/aurora.webp);
+  background-image: url(/assets/night-bg.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
@@ -3296,74 +3272,37 @@ hr:before {
   text-decoration: none !important;
 }
 
+.apiBox {
+  text-align: center;
+}
+
 .apiBox::before {
   position: relative;
   color: aliceblue;
   border-radius: 5px;
-  top: 48px;
+  top: 60%;
   padding: 2px 5px;
   background: #00000090;
 }
 
 #bingDayBox::before {
-  left: 36px;
   content: "必应每日壁纸";
 }
 
 #bingHistoryBox::before {
-  left: 36px;
   content: "必应历史壁纸";
 }
 
 #EEEDogBox::before {
-  left: 30px;
   content: "EEEDog动漫壁纸";
 }
 
-
 #picsumBox::before {
-  left: 32px;
   content: "picsum随机壁纸";
 }
 
-
 #unsplashBox::before {
-  left: 26px;
   content: "Unsplash随机壁纸";
-}
-
-
-@media screen and (max-width: 768px) {
-  .apiBox::before {
-    font-size: 13px;
-    top: 30px;
-  }
-
-  #bingDayBox::before {
-    left: 14px;
-    content: "必应每日壁纸";
-  }
-
-  #bingHistoryBox::before {
-    left: 14px;
-    content: "必应历史壁纸";
-  }
-
-  #EEEDogBox::before {
-    left: 6px;
-    content: "EEEDog动漫壁纸";
-  }
-
-
-  #picsumBox::before {
-    left: 8px;
-    content: "picsum随机壁纸";
-  }
-
-  #unsplashBox::before {
-    left: 2px;
-    content: "Unsplash随机壁纸";
-  }
 }
 
 /* 评论区圆角 */
