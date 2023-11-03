@@ -344,7 +344,7 @@ npm run dev
 
 ### 8.生命周期
 
-<div style="display:flex">
+<div class='blog-img'>
   <div>
     <strong>vue2.x的生命周期</strong>
     <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/12.webp"  style="zoom:33%;width:1200px" />

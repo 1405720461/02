@@ -3650,3 +3650,16 @@ hr:before {
     }
   }
 }
+
+/* 文章页面图片展示自适应 */
+#article-container {
+  .blog-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+    gap: 30px 15px;
+
+    a {
+      display: inline-block;
+    }
+  }
+}
