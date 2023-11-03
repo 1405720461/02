@@ -99,8 +99,10 @@ vite 官网：https://vitejs.cn
   - 真正的按需编译，不再等待整个应用编译完成。
 - 传统构建 与 vite 构建对比图
 
-{% inlineimage https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/10.webp, height=240px %}
-{% inlineimage https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/11.webp, height=240px %}
+<div class='blog-img'>
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/10.webp" />
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/11.webp" />
+</div>
 
 ```bash
 ## 创建工程
@@ -502,22 +504,18 @@ npm run dev
 
 使用传统 OptionsAPI 中，新增或者修改一个需求，就需要分别在 data，methods，computed 里修改 。
 
-<div style="width:600px;height:370px;overflow:hidden;float:left">
-    <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f84e4e2c02424d9a99862ade0a2e4114~tplv-k3u1fbpfcp-watermark.image" style="width:600px;float:left" />
-</div>
-<div style="width:300px;height:370px;overflow:hidden;float:left">
-    <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5ac7e20d1784887a826f6360768a368~tplv-k3u1fbpfcp-watermark.image" style="zoom:50%;width:560px;left" /> 
+<div class='blog-img'>
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/33.image" />
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/34.image" />
 </div>
 
 ### 2.Composition API 的优势
 
 我们可以更加优雅的组织我们的代码，函数。让相关功能的代码更加有序的组织在一起。
 
-<div style="width:500px;height:340px;overflow:hidden;float:left">
-    <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc0be8211fc54b6c941c036791ba4efe~tplv-k3u1fbpfcp-watermark.image"style="height:360px"/>
-</div>
-<div style="width:430px;height:340px;overflow:hidden;float:left">
-    <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6cc55165c0e34069a75fe36f8712eb80~tplv-k3u1fbpfcp-watermark.image"style="height:360px"/>
+<div class='blog-img'>
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/35.image" />
+    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/36.image" />
 </div>
 
 ## 五、新的组件
