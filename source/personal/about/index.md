@@ -8,7 +8,10 @@ type: "about"
 <link rel="stylesheet" type="text/css" href="/css/about.css">
 <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.css">
 
-<h2 class="about_me">关于我<div class='darling_ico'><img src="/assets/Darling.ico"></div><div class='darling_png'><img src="/assets/Darling.png"></div></h2>
+<div class='about-top'>
+    <h2 class="about_me"><span>关于我</span><div class='darling_ico'><img src="/assets/Darling.ico"></div></h2>
+    <div class='darling_png'><img src="/assets/Darling.png"></div>
+</div>
 <div class="about_page">
     <h3>基本信息📃</h3>
     <ul>
@@ -51,11 +54,11 @@ type: "about"
 </div>
 <h2>山水一程，三生有幸✨</h2>
 <div class="about_page benediction">
-    <div class="benediction-left">
+    <div id="benediction-left">
         <p>祝少年不老，祝爱情和自尊两全，祝所有想触碰却又缩回的手，最终都紧紧牵在一起。</p>
         <p>平安喜乐，诸事顺遂。存远志，常读书，乐交友，惜四时。山高有行路，水深有渡舟。</p>
     </div>
-    <div class="benediction-right">
+    <div id="benediction-right">
         <img src="/assets/nihaokeai.jpg">
         <span>嘘，小声点</span>
     </div>

@@ -134,7 +134,7 @@ const btf = {
 
     let start = null
     pos = +pos
-    window.requestAnimationFrame(function step (currentTime) {
+    window.requestAnimationFrame(function step(currentTime) {
       start = !start ? currentTime : start
       const progress = currentTime - start
       if (currentPos < pos) {
@@ -156,7 +156,7 @@ const btf = {
   },
 
   animateOut: (ele, text) => {
-    ele.addEventListener('animationend', function f () {
+    ele.addEventListener('animationend', function f() {
       ele.style.display = ''
       ele.style.animation = ''
       ele.removeEventListener('animationend', f)
@@ -190,6 +190,7 @@ const btf = {
     for (const [key, value] of Object.entries(options)) {
       creatEle.setAttribute(key, value)
     }
+
     selector.parentNode.insertBefore(creatEle, selector)
     creatEle.appendChild(selector)
   },
@@ -234,7 +235,28 @@ const btf = {
         if (i.parentNode.tagName !== 'A') {
           const dataSrc = i.dataset.lazySrc || i.src
           const dataCaption = i.title || i.alt || ''
-          btf.wrap(i, 'a', { href: dataSrc, 'data-fancybox': 'gallery', 'data-caption': dataCaption, 'data-thumb': dataSrc })
+          // btf.wrap(i, 'a', { href: dataSrc, 'data-fancybox': 'gallery', 'data-caption': dataCaption, 'data-thumb': dataSrc })
+
+          const divWrapper = document.createElement('div');
+
+          // 创建一个新的 <a> 标签
+          const aElement = document.createElement('a');
+          aElement.href = dataSrc;
+          aElement.setAttribute('data-fancybox', 'gallery');
+          aElement.setAttribute('data-caption', dataCaption);
+          aElement.setAttribute('data-thumb', dataSrc);
+
+          // 克隆图像元素，以便保留原始图像元素
+          const imageClone = i.cloneNode(true);
+
+          // 将图像元素添加到新的 <a> 标签中
+          aElement.appendChild(imageClone);
+
+          // 将 <a> 标签包装在新的 <div> 标签中
+          divWrapper.appendChild(aElement);
+
+          // 用新的 <div> 标签替换原始图像元素
+          i.parentNode.replaceChild(divWrapper, i);
         }
       })
 
@@ -249,6 +271,8 @@ const btf = {
       }
     }
   },
+
+
 
   initJustifiedGallery: function (selector) {
     selector.forEach(function (i) {

@@ -1,22 +1,28 @@
-﻿/* .about_me{
+﻿.about-top {
     display: flex;
-} */
+    justify-content: space-between;
+    align-items: center;
+}
 
-.about_me .darling_ico {
+.about-top .about_me {
+    display: flex;
+    align-items: center;
+}
+
+.about-top .about_me .darling_ico {
     display: inline-block;
     width: 20px;
     height: 20px;
-    padding-top: 2px;
+    margin-left: 5px;
 }
 
-.about_me div img {
+.about-top div img {
     border-radius: 0 !important;
     border: 0px !important;
 }
 
-.about_me .darling_png {
+.darling_png {
     display: inline-block;
-    float: right;
     width: 180px;
     margin-right: 10px;
 }
@@ -42,11 +48,11 @@ div#page {
     display: flex;
 }
 
-.about_page.benediction .benediction-left {
+.about_page.benediction #benediction-left {
     width: 70%;
 }
 
-.about_page.benediction .benediction-right {
+.about_page.benediction #benediction-right {
     width: 30%;
     margin-left: 50px;
     display: flex;
@@ -56,29 +62,27 @@ div#page {
     font-size: 20px;
 }
 
-.about_page.benediction .benediction-left p:nth-child(1) {
-    margin: 0 20px !important;
+.about_page.benediction #benediction-left p:nth-child(1) {
+    margin: 0 20px;
 }
 
-.about_page.benediction .benediction-left p:nth-child(2) {
-    margin: 15px 20px !important;
+.about_page.benediction #benediction-left p:nth-child(2) {
+    margin: 15px 20px;
 }
 
 
-.benediction .benediction-left p:nth-child(1)::first-letter {
+.benediction #benediction-left p:nth-child(1)::first-letter {
     font-size: 200%;
 }
 
-.benediction .benediction-right a {
-    height: 154px;
-}
-
-.benediction .benediction-right img {
+.benediction #benediction-right img {
+    position: relative;
     width: 150px;
     height: 150px;
+    z-index: 10;
 }
 
-.benediction .benediction-right span {
+.benediction #benediction-right span {
     width: 130px;
     height: 45px;
     margin-top: 34px;
@@ -90,18 +94,33 @@ div#page {
     /* 加入回弹动画 */
 }
 
-.benediction .benediction-right a:hover+span {
+/* 你好可爱图片动画 */
+.benediction #benediction-right img {
+    transition: all 1.0s;
+    transition-timing-function: cubic-bezier(0.56, 1.35, 0.52, 1.00);
+}
+
+.benediction #benediction-right>div:hover img {
+    text-decoration: none;
+    color: #fefefe;
+    background: var(--text-bg-hover);
+    transition: all 0.3s ease-in-out;
+    padding: 4px;
+}
+
+.benediction #benediction-right>div:hover+span {
     opacity: 1;
     transform: translate(46px, 18px);
 }
 
+
 @media screen and (max-width: 1300px) {
-    .benediction .benediction-right a:hover+span {
+    .benediction #benediction-right>div:hover+span {
         opacity: 1;
         transform: translate(-30px, 136px);
     }
 
-    .benediction .benediction-right span {
+    .benediction #benediction-right span {
         width: 120px;
         height: 40px;
         font-size: 20px;
@@ -113,23 +132,24 @@ div#page {
         flex-direction: column;
     }
 
-    .about_page.benediction .benediction-left {
+    .about_page.benediction #benediction-left {
         width: 100%;
     }
 
-    .about_page.benediction .benediction-right {
+    .about_page.benediction #benediction-right {
         width: 100%;
         margin-left: 20px;
     }
 
-    .benediction .benediction-right a:hover+span {
+    .benediction #benediction-right>div:hover+span {
         opacity: 1;
         transform: translate(50px, 16px);
     }
 }
 
+
 @media screen and (max-width: 500px) {
-    .benediction .benediction-right a:hover+span {
+    .benediction #benediction-right>div:hover+span {
         opacity: 1;
         transform: translate(5px, 16px);
     }

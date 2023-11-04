@@ -61,17 +61,11 @@
       descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志
       screenshot: https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg
 
-    - name: Cartafi
-      link: https://www.startly.cn
-      avatar: https://startly.s3.bitiful.net/links/avatar/avatar.webp
-      descr: 互联网中的寂静之地
-      siteshot: https://startly.s3.bitiful.net/links/avatar/siteshot.webp
-
-    - name: Tianlin_Zz
+    - name: Tianlin
       link: https://linjiangyu.com
-      avatar: https://cdn1.tianli0.top/gh/linjiangyu2/halo/img/fa.jpg
-      descr: 这世界温暖的人如树一样多 我也想成为其中的一颗
-      siteshot: https://cdn1.tianli0.top/gh/linjiangyu2/halo/img/siteshot.jpg
+      avatar: https://gcore.jsdelivr.net/gh/linjiangyu2/halo@master/img/fa.jpg
+      descr: 正因为是一张白纸 才可以随心所欲地描绘地图
+      siteshot: https://gcore.jsdelivr.net/gh/linjiangyu2/halo@master/img/siteshot.jpg
 
     - name: Iridescent Trajectory🌠
       link: https://ovoz.cn
@@ -91,11 +85,11 @@
       descr: 我们终会相遇相知，在那悠远的苍穹
       siteshot: https://picbed.saop.cc/Asuna/Asuna-EvolutionaryProcess_2.png
 
-    - name: 萌傀儡
+    - name: 萌傀儡`Blog
       link: https://blhorizon.github.io/
-      avatar: https://cdn1.tianli0.top/npm/blogimages/link/avatar.webp
+      avatar: https://tc.mwm.moe/i/6/2023/10/25/65389a5fd0a2b.webp
       descr: 珍惜现在，趁早摸鱼
-      siteshot: https://cdn1.tianli0.top/npm/blogimages/pictures/khdslb.webp
+      siteshot: https://jsd.onmicrosoft.cn/npm/blogassert/covers/1687615739569.png
 
     - name: 爱吃肉的猫
       link: https://meuicat.com/

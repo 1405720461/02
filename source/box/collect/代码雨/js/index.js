@@ -1,8 +1,8 @@
 ﻿// 获取canvas元素
 const cvs = document.getElementById('bg')
 // 获取窗口尺寸
-const width = window.innerWidth,
-    height = window.innerHeight;
+const width = window.innerWidth - 20,
+    height = window.innerHeight - 20;
 // 设置canvas尺寸为窗口尺寸
 cvs.width = width
 cvs.height = height
@@ -29,7 +29,7 @@ function draw() {
         const x = i * columnWidth;
         const y = fz * columnNextIndexes[i];
         ctx.fillText(getRandomChar(), x, y)
-        if (y > height && Math.random()>0.99) {
+        if (y > height && Math.random() > 0.99) {
             columnNextIndexes[i] = 0
         } else {
             columnNextIndexes[i]++
