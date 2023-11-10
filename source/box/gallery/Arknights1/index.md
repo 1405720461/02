@@ -383,5 +383,7 @@ comments: false
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/375.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/376.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/377.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/378.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/379.webp)
 
 {% endgallery %}
