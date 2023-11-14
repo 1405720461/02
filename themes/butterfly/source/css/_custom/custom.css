@@ -3,18 +3,15 @@
   --blue-custom: #5ea6e5;
   --loading-color: rgba(207, 246, 247, 0.92);
   --border-color: #c9c9c9;
-  --color-red: rgb(241, 71, 71);
-  --color-orange: rgb(241, 162, 71);
-  --color-yellow: rgb(241, 238, 71);
-  --color-purple: rgb(179, 71, 241);
-  --color-blue: rgb(102, 204, 255);
-  --color-gray: rgb(226, 226, 226);
+  --color-red: rgb(243, 94, 94);
+  --color-orange: rgb(245, 181, 117);
+  --color-yellow: rgb(239, 236, 46);
   --color-green: rgb(57, 197, 187);
-  --color-whitegray: rgb(241, 241, 241);
-  --color-pink: rgb(237, 112, 155);
-  --color-black: rgb(0, 0, 0);
+  --color-blue: rgb(157, 213, 246);
   --color-darkblue: rgb(97, 100, 159);
-  --color-heoblue: rgb(66, 90, 239);
+  --color-lavender: rgb(156, 168, 246);
+  --color-pink: rgb(255, 215, 228);
+  --color-black: rgb(0, 0, 0);
   --btn-bg: var(--theme-color) !important;
   --scrollbar-color: var(--theme-color) !important;
   --border-style: 1px solid rgba(169, 169, 169, 0.7);
@@ -1512,16 +1509,8 @@ input[name="colors"] {
   border: 3px solid var(--color-blue);
 }
 
-#purple {
-  border: 3px solid var(--color-purple);
-}
-
 #pink {
   border: 3px solid var(--color-pink);
-}
-
-#heoblue {
-  border: 3px solid var(--color-heoblue);
 }
 
 #darkblue {
@@ -1532,15 +1521,8 @@ input[name="colors"] {
   border: 3px solid var(--color-black);
 }
 
-#blackgray {
-  border: 3px solid var(--color-blackgray);
-}
-
-#purple:checked {
-  box-shadow: 0 0 0 2px #fff inset;
-  border-radius: 50%;
-  border: 3px solid var(--color-purple);
-  background-color: var(--color-purple);
+#lavender {
+  border: 3px solid var(--color-lavender);
 }
 
 #red:checked {
@@ -1578,20 +1560,6 @@ input[name="colors"] {
   background-color: var(--color-blue);
 }
 
-#pink:checked {
-  box-shadow: 0 0 0 2px #fff inset;
-  border-radius: 50%;
-  border: 3px solid var(--color-pink);
-  background-color: var(--color-pink);
-}
-
-#heoblue:checked {
-  box-shadow: 0 0 0 2px #fff inset;
-  border-radius: 50%;
-  border: 3px solid var(--color-heoblue);
-  background-color: var(--color-heoblue);
-}
-
 #darkblue:checked {
   box-shadow: 0 0 0 2px #fff inset;
   border-radius: 50%;
@@ -1599,18 +1567,25 @@ input[name="colors"] {
   background-color: var(--color-darkblue);
 }
 
+#lavender:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-lavender);
+  background-color: var(--color-lavender);
+}
+
+#pink:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-pink);
+  background-color: var(--color-pink);
+}
+
 #black:checked {
   box-shadow: 0 0 0 2px #fff inset;
   border-radius: 50%;
   border: 3px solid var(--color-black);
   background-color: var(--color-black);
-}
-
-#blackgray:checked {
-  box-shadow: 0 0 0 2px #fff inset;
-  border-radius: 50%;
-  border: 3px solid var(--color-blackgray);
-  background-color: var(--color-blackgray);
 }
 
 /* 主题色适配覆盖区域 */

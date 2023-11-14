@@ -2320,18 +2320,15 @@ const getStyle2 = (el, attr) => {
 
 // 为了屏蔽异步加载导致无法读取颜色值，这里统一用哈希表预处理
 const map = new Map();
-map.set('red', "rgb(241, 71, 71)");
-map.set('orange', "rgb(241, 162, 71)");
-map.set('yellow', "rgb(241, 238, 71)")
-map.set('purple', "rgb(179, 71, 241)");
-map.set('blue', "rgb(102, 204, 255)");
-map.set('gray', "rgb(226, 226, 226)");
+map.set('red', "rgb(243, 94, 94)");
+map.set('orange', "rgb(245, 181, 117)");
+map.set('yellow', "rgb(239, 236, 46)")
 map.set('green', "rgb(57, 197, 187)");
-map.set('whitegray', "rgb(241, 241, 241)");
-map.set('pink', "rgb(237, 112, 155)");
-map.set('black', "rgb(0, 0, 0)");
+map.set('blue', "rgb(157, 213, 246)");
 map.set('darkblue', "rgb(97, 100, 159)");
-map.set('heoblue', "rgb(66, 90, 239)");
+map.set('lavender', "rgb(156, 168, 246)");
+map.set('pink', "rgb(255, 215, 228)");
+map.set('black', "rgb(0, 0, 0)");
 
 class Cursor {
   constructor() {
@@ -2644,7 +2641,7 @@ function setFontBorder() {
 
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
-  localStorage.setItem("themeColor", "green");
+  localStorage.setItem("themeColor", "lavender");
 }
 setColor(localStorage.getItem("themeColor"));
 function setColor(c) {
@@ -3081,9 +3078,8 @@ function createWinbox() {
   <input type="radio" id="yellow" name="colors" value=" " onclick="setColor('yellow')">
   <input type="radio" id="green" name="colors" value=" " onclick="setColor('green')" checked="checked">
   <input type="radio" id="blue" name="colors" value=" " onclick="setColor('blue')">
-  <input type="radio" id="heoblue" name="colors" value=" " onclick="setColor('heoblue')">
   <input type="radio" id="darkblue" name="colors" value=" " onclick="setColor('darkblue')">
-  <input type="radio" id="purple" name="colors" value=" " onclick="setColor('purple')">
+  <input type="radio" id="lavender" name="colors" value=" " onclick="setColor('lavender')">
   <input type="radio" id="pink" name="colors" value=" " onclick="setColor('pink')">
   <input type="radio" id="black" name="colors" value=" " onclick="setColor('black')">
 </div>
