@@ -971,8 +971,8 @@ inject:
     - <style id="blurNum"></style> # 模糊半径调节
     - <style id="settingStyle"></style> # 模糊效果开关
     - <span id="fps"></span> # 帧率检测
-    - <style id="defineBg"></style> # 自定义背景选项
-    - <style id="menu_shadow"></style> # 菜单发光样式
+    - <style id="defineBg"></style> # 自定项
+    - <style id="menu_shadow"></style> # 菜单义背景选发光样式
 
   bottom:
     - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
