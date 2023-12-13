@@ -3637,3 +3637,7 @@ hr:before {
 #article-container .blog-img a {
   display: inline-block;
 }
+
+.swal2-popup {
+  width: auto !important;
+}
