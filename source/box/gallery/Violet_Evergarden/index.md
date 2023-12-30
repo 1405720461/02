@@ -32,5 +32,6 @@ comments: false
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/24.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/25.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/26.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/27.webp)
 
 {% endgallery %}

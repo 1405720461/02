@@ -44,8 +44,8 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试! #密码�
     {% span center logo large gray, 相册 %}
     <br>
     <div class="gallery-group-main time-gallery">
-    {% galleryGroup 'wjl❤️pxy' '小笨蛋啊' '/personal/love/love_img/love' /assets/images/Violet_Evergarden/1.webp %}
-    {% galleryGroup '青岛' '一起去青岛啦' '/personal/love/love_img/Qingdao' /assets/images/Violet_Evergarden/1.webp %}
+    {% galleryGroup 'wjl❤️pxy' '小笨蛋啊' '/personal/love/love_img/love' /assets/images/Violet_Evergarden/1.jpg %}
+    {% galleryGroup '青岛' '一起去青岛啦' '/personal/love/love_img/Qingdao' /assets/images/Violet_Evergarden/1.jpg %}
     </div>
   </div>
   <div class='time-right'>

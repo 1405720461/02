@@ -3109,7 +3109,7 @@ function createWinbox() {
 
 {% folding cyan, 查看海贼王背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/1.webp)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/1.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/1.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/1.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/2.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/2.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/3.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/3.jpg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/One_Piece/4.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/One_Piece/4.jpg)')"></a>
