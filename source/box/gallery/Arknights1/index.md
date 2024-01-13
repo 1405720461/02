@@ -390,5 +390,9 @@ comments: false
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/382.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/383.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/384.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/385.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/386.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/387.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights/388.webp)
 
 {% endgallery %}
