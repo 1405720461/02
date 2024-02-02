@@ -9,7 +9,7 @@ comments: false
 <div class="gallery-group-main">
 {% galleryGroup '明日方舟' '博士，您还有许多事要处理，现在还不能休息哦。' '/box/gallery/Arknights1' /assets/images/Arknights/8.webp %}
 
-{% galleryGroup '明日方舟 - 年 夕 令' '岁相' '/box/gallery/Arknights2' /assets/images/Arknights/1.webp %}
+{% galleryGroup '明日方舟 - 岁相' '年、夕、令、重岳、黍' '/box/gallery/Arknights2' /assets/images/Arknights/1.webp %}
 
 {% galleryGroup 'DARLING in the FRANXX' '呐，Darling，到时候一起来看吧。<br/>嗯，Darling，我们约定好了呦。' '/box/gallery/Darling' /assets/images/Darling/1.jpg %}
 
