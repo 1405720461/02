@@ -255,7 +255,7 @@ comments: false
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/247.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/248.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/249.webp)
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/250.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/250.jpg)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/251.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/252.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/253.webp)
@@ -266,5 +266,12 @@ comments: false
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/258.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/259.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/260.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/261.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/262.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/263.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/264.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/265.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/266.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Arknights2/267.webp)
 
 {% endgallery %}

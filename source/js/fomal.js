@@ -3100,7 +3100,7 @@ function createWinbox() {
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/6.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/6.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/7.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/7.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/8.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/8.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/9.webp)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/9.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/images/Arknights/9.jpg)" class="imgbox" onclick="changeBg('url(/assets/images/Arknights/9.jpg)')"></a>
 
 </div>
 {% endfolding %}
@@ -3134,7 +3134,7 @@ function createWinbox() {
 {% folding cyan, 查看适配手机的背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/1.webp)" class="pimgbox" onclick="changeBg('url(/assets/phone/1.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2.webp)" class="pimgbox" onclick="changeBg('url(/assets/phone/2.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/2.jpeg)" class="pimgbox" onclick="changeBg('url(/assets/phone/2.jpeg)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/3.webp)" class="pimgbox" onclick="changeBg('url(/assets/phone/3.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/4.webp)" class="pimgbox" onclick="changeBg('url(/assets/phone/4.webp)')"></a>
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/phone/5.webp)" class="pimgbox" onclick="changeBg('url(/assets/phone/5.webp)')"></a>
