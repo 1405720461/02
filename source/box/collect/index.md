@@ -37,11 +37,6 @@ comments: false
                 <h4>网址</h4>
                 <ul>
                     <li>
-                        <a href="https://mst.xyz/home">
-                            <img src="./website_img/mst.ico"  alt="MinisterAI" /><span class="color-span">MinisterAI</span>
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://cook.yunyoujun.cn/">
                             <img src="./website_img/cook.png"  alt="做饭手册" /><span class="color-span">做饭手册</span>
                         </a>
