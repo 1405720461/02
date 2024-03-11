@@ -180,8 +180,5 @@ comments: false
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/172.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/173.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/174.webp)
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/175.webp)
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/176.webp)
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/177.webp)
 
 {% endgallery %}
