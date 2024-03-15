@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+//禁止iframe加载
+if (window.location != window.parent.location) window.parent.location = window.location
+
 /* 阅读进度 start */
 document.addEventListener('pjax:complete', function () {
   window.onscroll = percent;
