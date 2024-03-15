@@ -2866,12 +2866,13 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights1/9.jpg);
-    --darkmode-bg:url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Arknights2/152.jpg);
-    --mobileday-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/172.jpg);
-    --mobilenight-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/Darling/62.jpg);
+    --default-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/bg/default-bg.jpg);
+    --darkmode-bg:url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/bg/darkmode-bg.webp);
+    --mobileday-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/bg/mobileday-bg.jpg);
+    --mobilenight-bg: url(https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/bg/mobilenight-bg.jpg);
   }`;
 }
+
 // 切换背景主函数
 function changeBg(s) {
   // 自定义颜色框
@@ -3161,7 +3162,7 @@ function createWinbox() {
 {% folding cyan, 设置自定义背景 %}
 <p>
   <center>
-    <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.jsdelivr.net/gh/1405720461/images@master/rem/18.webp">
+    <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights2/222.webp">
   </center>
 </p>
 <p>
