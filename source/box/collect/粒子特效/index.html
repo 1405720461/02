@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arknights</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/nav.css">
+</head>
+
+<body>
+  <div class="container">
+    <canvas id="akCanvas"></canvas>
+  </div>
+
+  <div class="shell">
+    <div class="btn"><span></span></div>
+
+    <div class="box Arknights">
+      <img src="./image/Arknights/arknight.jpeg" alt="">
+      <img src="./image/Arknights/island.png" alt="">
+      <img src="./image/Arknights/longmen.png" alt="">
+      <img src="./image/Arknights/penguin.jpeg" alt="">
+      <img src="./image/Arknights/reunion.jpeg" alt="">
+      <img src="./image/Arknights/rhine.jpeg" alt="">
+    </div>
+    <div class="box Genshin-Impact">
+      <img src="./image/Genshin-Impact/fire.webp" alt="">
+      <img src="./image/Genshin-Impact/grass.webp" alt="">
+      <img src="./image/Genshin-Impact/ice.webp" alt="">
+      <img src="./image/Genshin-Impact/rock.webp" alt="">
+      <img src="./image/Genshin-Impact/thunder.webp" alt="">
+      <img src="./image/Genshin-Impact/water.webp" alt="">
+      <img src="./image/Genshin-Impact/wind.webp" alt="">
+    </div>
+    <div class="box transition">
+      <img src="./image/changeParticleMode.svg" alt="">
+    </div>
+  </div>
+</body>
+
+<script src="./js/canvasClass.js"></script>
+<script src="./js/index.js"></script>
+<script>
+  window.addEventListener('beforeunload', function (event) {
+    PreDestroy();
+  });
+</script>
+
+</html>

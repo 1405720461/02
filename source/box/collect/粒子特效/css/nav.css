@@ -1,0 +1,214 @@
+.shell {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 40px;
+    left: 5%;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #fff;
+    transition-duration: 0.3s;
+    animation: pop-btn 0.3s both ease-in-out 0.5s;
+}
+
+@keyframes pop-btn {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5);
+}
+
+.btn span {
+    width: 60%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    animation: to-hamburger 0.3s forwards ease-in-out;
+}
+
+.btn span::before,
+.btn span::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    transition-duration: 0.3s;
+    transform: rotate(0deg);
+    right: 0;
+}
+
+.btn span::before {
+    margin-top: -7px;
+}
+
+.btn span::after {
+    margin-top: 7px;
+}
+
+.btn.active span {
+    animation: to-arrow 0.3s forwards ease-in-out;
+}
+
+.btn.active span::before,
+.btn.active span::after {
+    width: 60%;
+    right: -1px;
+}
+
+.btn.active span::before {
+    transform: rotate(45deg);
+}
+
+.btn.active span::after {
+    transform: rotate(-45deg);
+}
+
+@keyframes to-hamburger {
+    from {
+        transform: translateY(-50%) rotate(90deg);
+    }
+}
+
+@keyframes to-arrow {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-50%) rotate(90deg);
+    }
+}
+
+
+.box {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 10px #fff;
+    transition-duration: 0.3s;
+    object-fit: contain;
+    background-color: #000;
+}
+
+.box img:hover {
+    transition-delay: initial !important;
+    box-shadow: 0 0 0 5px #babbbc;
+}
+
+.box.open {
+    opacity: 1;
+}
+
+.box.transition img {
+    transform: translate(70px, -60px);
+    transition-delay: 0s;
+}
+
+.Arknights.open img:nth-of-type(1) {
+    transform: translateY(0px);
+    transition-delay: 0s;
+    z-index: 99;
+}
+
+.Arknights.open img:nth-of-type(2) {
+    transform: translateY(60px);
+    transition-delay: 0.05s;
+    z-index: 5;
+}
+
+.Arknights.open img:nth-of-type(3) {
+    transform: translateY(120px);
+    transition-delay: 0.1s;
+    z-index: 4;
+}
+
+.Arknights.open img:nth-of-type(4) {
+    transform: translateY(180px);
+    transition-delay: 0.15s;
+    z-index: 3;
+}
+
+.Arknights.open img:nth-of-type(5) {
+    transform: translateY(240px);
+    transition-delay: 0.2s;
+    z-index: 2;
+}
+
+.Arknights.open img:nth-of-type(6) {
+    transform: translateY(300px);
+    transition-delay: 0.25s;
+    z-index: 1;
+}
+
+.Genshin-Impact.open img:nth-of-type(1) {
+    transform: translate(70px, 0px);
+    transition-delay: 0s;
+    z-index: 7;
+}
+
+.Genshin-Impact.open img:nth-of-type(2) {
+    transform: translate(70px, 60px);
+    transition-delay: 0.05s;
+    z-index: 6;
+}
+
+.Genshin-Impact.open img:nth-of-type(3) {
+    transform: translate(70px, 120px);
+    transition-delay: 0.1s;
+    z-index: 5;
+}
+
+.Genshin-Impact.open img:nth-of-type(4) {
+    transform: translate(70px, 180px);
+    transition-delay: 0.15s;
+    z-index: 4;
+}
+
+.Genshin-Impact.open img:nth-of-type(5) {
+    transform: translate(70px, 240px);
+    transition-delay: 0.2s;
+    z-index: 3;
+}
+
+.Genshin-Impact.open img:nth-of-type(6) {
+    transform: translate(70px, 300px);
+    transition-delay: 0.25s;
+    z-index: 2;
+}
+
+.Genshin-Impact.open img:nth-of-type(7) {
+    transform: translate(70px, 360px);
+    transition-delay: 0.3s;
+    z-index: 1;
+}

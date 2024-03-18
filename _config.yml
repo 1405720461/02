@@ -39,6 +39,7 @@ skip_render:
   [
     "box/collect/龙猫/**",
     "box/collect/love/**",
+    "box/collect/粒子特效/**",
     "box/collect/12个动画/**",
     "box/collect/todolist/**",
     "box/collect/烟花绽放/**",
@@ -46,7 +47,6 @@ skip_render:
     "box/collect/响应式时间轴/**",
     "box/collect/鼠标跟踪相册/**",
     "box/collect/九宫格拼图游戏/**",
-    "box/collect/点击轮播图/**",
     "box/collect/太阳系运动/**",
     "box/collect/滑动登录注册页/**",
     "box/collect/Day-night-toggle-button-master/**",
