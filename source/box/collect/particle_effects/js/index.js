@@ -1,15 +1,17 @@
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 let dpr = window.devicePixelRatio || 1;
-let w = 400, spacing = 2;
-let canvasWidth = w * spacing
-let windowWidth = window.innerWidth
-let renderX = (windowWidth - canvasWidth) * dpr / 2
+let w = isMobile ? 350 : 400, spacing = isMobile ? 1 : 2;
+let windowWidth = window.innerWidth;
+let canvasWidth = w * spacing;
+let renderX = Math.abs((windowWidth - canvasWidth) * dpr / 2);
 
 let DameDaneParticleDemo = new DameDaneParticle(document.getElementById('akCanvas'), {
   src: './image/Arknights/island.png',
   renderX,
-  renderY: 40,
+  renderY: isMobile ? 100 : 60,
   w,
-  size: 1.8,
+  size: isMobile ? 1.2 : 1.8,
   spacing,
   validColor: {
     min: 300,
@@ -17,8 +19,8 @@ let DameDaneParticleDemo = new DameDaneParticle(document.getElementById('akCanva
     invert: false
   },
   effectParticleMode: 'repulsion',
-  Thickness: 100,
-})
+  Thickness: 50,
+});
 
 
 //修改粒子吸附或者散开效果
@@ -28,11 +30,11 @@ function changeParticleMode() {
 
 //方舟图片
 function arknight() {
-  DameDaneParticleDemo.ChangeImg('./image/Arknights/arknight.jpeg')
+  DameDaneParticleDemo.ChangeImg('./image/Arknights/arknight.jpeg', { w: 350 })
 }
 
 function island() {
-  DameDaneParticleDemo.ChangeImg('./image/Arknights/island.png')
+  DameDaneParticleDemo.ChangeImg('./image/Arknights/island.png', { w: isMobile ? 350 : 400 })
 }
 
 function longmen() {
@@ -40,44 +42,44 @@ function longmen() {
 }
 
 function penguin() {
-  DameDaneParticleDemo.ChangeImg('./image/Arknights/penguin.jpeg')
+  DameDaneParticleDemo.ChangeImg('./image/Arknights/penguin.jpeg', { w: 350 })
 }
 
 function rhine() {
-  DameDaneParticleDemo.ChangeImg('./image/Arknights/rhine.jpeg')
+  DameDaneParticleDemo.ChangeImg('./image/Arknights/rhine.jpeg', { w: 350 })
 }
 
 function reunion() {
-  DameDaneParticleDemo.ChangeImg('./image/Arknights/reunion.jpeg')
+  DameDaneParticleDemo.ChangeImg('./image/Arknights/reunion.jpeg', { w: 400 })
 }
 
 //原神元素
 function fire() {
-  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/fire.webp')
+  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/fire.webp', { w: 350 })
 }
 
 function grass() {
-  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/grass.webp')
+  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/grass.webp', { w: 350 })
 }
 
 function ice() {
-  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/ice.webp')
+  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/ice.webp', { w: 350 })
 }
 
 function rock() {
-  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/rock.webp')
+  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/rock.webp', { w: 350 })
 }
 
 function thunder() {
-  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/thunder.webp')
+  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/thunder.webp', { w: 350 })
 }
 
 function water() {
-  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/water.webp')
+  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/water.webp', { w: 350 })
 }
 
 function wind() {
-  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/wind.webp')
+  DameDaneParticleDemo.ChangeImg('./image/Genshin-Impact/wind.webp', { w: 350 })
 }
 
 
