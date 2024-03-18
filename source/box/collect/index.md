@@ -14,7 +14,7 @@ comments: false
         <div class="collect_page">
             {% galleryGroup '龙猫' 'Totoro' '/box/collect/龙猫/index.html' /box/collect/collect_bg/1.webp %}
             {% galleryGroup 'love' '一个爱情的demo' '/box/collect/love/index.html' /box/collect/collect_bg/2.webp %}
-            {% galleryGroup '粒子特效' '仿明日方舟官网粒子特效' '/box/collect/粒子特效/index.html' /box/collect/collect_bg/3.webp %}
+            {% galleryGroup '粒子特效' '仿明日方舟官网粒子特效' '/box/collect/particle_effects/index.html' /box/collect/collect_bg/3.webp %}
             {% galleryGroup '12个动画' '学习过程中做的小动画' '/box/collect/12个动画/index.html' /box/collect/collect_bg/4.webp %}
             {% galleryGroup 'todolist' 'todolist作品' '/box/collect/todolist/todo.html' /box/collect/collect_bg/5.webp %}
             {% galleryGroup '烟花绽放' 'fireworks bloom' '/box/collect/烟花绽放/index.html' /box/collect/collect_bg/6.webp %}

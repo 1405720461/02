@@ -39,7 +39,7 @@ skip_render:
   [
     "box/collect/龙猫/**",
     "box/collect/love/**",
-    "box/collect/粒子特效/**",
+    "box/collect/particle_effects/**",
     "box/collect/12个动画/**",
     "box/collect/todolist/**",
     "box/collect/烟花绽放/**",
