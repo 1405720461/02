@@ -8,6 +8,13 @@ comments: false
 <br>
 
 {% timeline 小站建设进程 %}
+
+<!-- timeline 2024-03-18-->
+
+忙碌了半天的站长往收藏页整了个粒子特效 demo
+
+<!-- endtimeline -->
+
 <!-- timeline 2023-07-12-->
 
 🎉🎉🎉 站长生日啦！！！🎂🎂🎂
@@ -16,13 +23,13 @@ comments: false
 
 <!-- timeline 2023-07-04-->
 
-关于页面完成啦！博客基本功能全部完成✨
+关于页面完成啦！博客基本功能全部完成 ✨
 
 <!-- endtimeline -->
 
 <!-- timeline 2023-06-10-->
 
-收藏页添加了一些demo
+收藏页添加了一些 demo
 
 <!-- endtimeline -->
 
