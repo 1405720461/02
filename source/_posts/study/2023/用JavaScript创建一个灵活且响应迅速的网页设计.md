@@ -63,7 +63,7 @@ updated: 2023-08-04 00:00:00
     fakeBody.appendChild(testElement);
     docEl.appendChild(fakeBody);
     if (testElement.offsetHeight === 1) {
-      docEl.classList.add("hairlines");
+      docEl.classList.add("hairline");
     }
     docEl.removeChild(fakeBody);
   }
