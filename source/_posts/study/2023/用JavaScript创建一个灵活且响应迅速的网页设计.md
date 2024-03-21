@@ -13,9 +13,171 @@ date: 2023-08-04 00:00:00
 updated: 2023-08-04 00:00:00
 ---
 
+
+
 ## 前言
 
-&emsp;&emsp;前段时间写了一个数据可视化大屏的项目，从纯 h5c3+js 的一个页面改成一个 vue3 的小项目，因为是数据可视化大屏这种需要适配更大的屏幕，所以单位应该设置适配从而在大屏上进行显示，基本的代码如下：
+&emsp;&emsp;前段时间写了一个数据可视化大屏的项目，从纯 h5c3+js 的一个页面改成一个 vue3 的小项目，因为是数据可视化大屏这种需要适配更大的屏幕，所以单位应该设置适配从而在大屏上进行显示.
+
+## flexible.js 移动端自适应方案
+
+### 一、官方文档：
+
+flexible.js是手淘开发出的一个用来适配移动端的js框架。手淘框架的核心原理就是根据制不同的width给网页中html根节点设置不同的font-size，然后所有的px都用rem来代替，这样就实现了不同大小的屏幕都适应相同的样式了。其实它就是一个终端设备适配的解决方案，也就是说它可以让你在不同的终端设备中实现页面适配。
+
+github地址：[https://github.com/amfe/lib-flexible](https://link.jianshu.com/?t=https://github.com/amfe/lib-flexible)
+官方文档地址：[https://github.com/amfe/article/issues/17](https://link.jianshu.com/?t=https://github.com/amfe/article/issues/17)
+
+
+
+### 二、使用方式
+
+- **引入方式**
+
+```js
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+```
+
+- **单页面应用使用（`webpack` 构建工具使用）**
+
+```
+npm i -S amfe-flexible
+```
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script src="./node_modules/amfe-flexible/index.js"></script>
+```
+
+### 三、源码分析
+
+```js
+(function(win, lib) {
+    var doc = win.document;
+    var docEl = doc.documentElement;
+    var metaEl = doc.querySelector('meta[name="viewport"]');
+    var flexibleEl = doc.querySelector('meta[name="flexible"]');
+    var dpr = 0;
+    var scale = 0;
+    var tid;
+    var flexible = lib.flexible || (lib.flexible = {});
+    
+    if (metaEl) {
+        console.warn('将根据已有的meta标签来设置缩放比例');
+        var match = metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);
+        if (match) {
+            scale = parseFloat(match[1]);
+            dpr = parseInt(1 / scale);
+        }
+    } else if (flexibleEl) {
+        var content = flexibleEl.getAttribute('content');
+        if (content) {
+            var initialDpr = content.match(/initial\-dpr=([\d\.]+)/);
+            var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/);
+            if (initialDpr) {
+                dpr = parseFloat(initialDpr[1]);
+                scale = parseFloat((1 / dpr).toFixed(2));    
+            }
+            if (maximumDpr) {
+                dpr = parseFloat(maximumDpr[1]);
+                scale = parseFloat((1 / dpr).toFixed(2));    
+            }
+        }
+    }
+
+    if (!dpr && !scale) {
+        var isAndroid = win.navigator.appVersion.match(/android/gi);
+        var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+        if (isIPhone) {
+            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
+                dpr = 3;
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
+                dpr = 2;
+            } else {
+                dpr = 1;
+            }
+        } else {
+            // 其他设备下，仍旧使用1倍的方案
+            dpr = 1;
+        }
+        scale = 1 / dpr;
+    }
+
+    docEl.setAttribute('data-dpr', dpr);
+    if (!metaEl) {
+        metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl);
+        } else {
+            var wrap = doc.createElement('div');
+            wrap.appendChild(metaEl);
+            doc.write(wrap.innerHTML);
+        }
+    }
+
+    function refreshRem(){
+        var width = docEl.getBoundingClientRect().width;
+        if (width / dpr > 540) {
+            width = 540 * dpr;
+        }
+        var rem = width / 10;
+        docEl.style.fontSize = rem + 'px';
+        flexible.rem = win.rem = rem;
+    }
+
+    win.addEventListener('resize', function() {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem, 300);
+    }, false);
+    win.addEventListener('pageshow', function(e) {
+        if (e.persisted) {
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }
+    }, false);
+
+    if (doc.readyState === 'complete') {
+        doc.body.style.fontSize = 12 * dpr + 'px';
+    } else {
+        doc.addEventListener('DOMContentLoaded', function(e) {
+            doc.body.style.fontSize = 12 * dpr + 'px';
+        }, false);
+    }
+    
+
+    refreshRem();
+
+    flexible.dpr = win.dpr = dpr;
+    flexible.refreshRem = refreshRem;
+    flexible.rem2px = function(d) {
+        var val = parseFloat(d) * this.rem;
+        if (typeof d === 'string' && d.match(/rem$/)) {
+            val += 'px';
+        }
+        return val;
+    }
+    flexible.px2rem = function(d) {
+        var val = parseFloat(d) / this.rem;
+        if (typeof d === 'string' && d.match(/px$/)) {
+            val += 'rem';
+        }
+        return val;
+    }
+
+})(window, window['lib'] || (window['lib'] = {}));
+```
+
+
+
+
+
+## 简化方案
+
+为了简化移动端自适应的实现，我提供了一种更简单的方案。以下是该方案的具体实现：
 
 ```js
 (function flexible(window, document) {
@@ -70,9 +232,7 @@ updated: 2023-08-04 00:00:00
 })(window, document);
 ```
 
-&emsp;&emsp;该段代码能够创建一个灵活和响应迅速的网页设计。通过动态调整字体大小并检测对 0.5 像素边框的支持，可以确保我们的网页在不同像素密度的各种设备上看起来清晰明了。在项目中使用这段代码，并配合 CSS 中的 rem 单位，可以让你在不同设备上以统一的视觉效果展示数据可视化大屏。
-
-## 使用
+### 使用
 
 项目中使用的话，可以放在`src/utils/flexible.js`文件中，在`main.js`文件中直接引入即可使用
 
@@ -91,10 +251,23 @@ header h1 {
 }
 ```
 
-&emsp;&emsp;另外，推荐这个 VSCode 插件可以帮助你更方便地进行 px 到 rem 的单位转换，提高开发效率。尤其在移动端适配过程中，能够帮助你快速计算合适的 rem 值。
+### 注意事项
+
+在使用此简化方案时，请注意以下几点：
+
+1. **设置页面宽度：** 我们默认将页面宽度设置为 `1920px` 作为基准进行适配，你可以根据实际情况调整该值。
+2. **兼容性考虑：** 该方案在大多数现代浏览器和设备上都能良好运行，但仍需进行充分测试以确保在不同环境下的兼容性。
+3. **适用场景：** 此方案适用于大多数移动端项目，特别是对于需要快速实现自适应的小型项目来说，是一个不错的选择。
+
+
+
+### 推荐工具
+
+另外，推荐一个 VSCode 插件可以帮助你更方便地进行 px 到 rem 的单位转换，提高开发效率。尤其在移动端适配过程中，能够帮助你快速计算合适的 rem 值。
 ![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/14.webp)
 
 需要进行扩展设置，设置好相应的宽度，就可以进行快速转换了
 
 ![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/15.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/16.webp)
+
