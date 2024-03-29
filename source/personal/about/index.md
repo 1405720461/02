@@ -27,7 +27,7 @@ type: "about"
     <h3>技能掌握🪐</h3>
     <p><span class="iconfont icon-duigou1"></span>致力于成为一个前端小佬⭐ </p>
     <p><span class="iconfont icon-duigou1"></span>又菜又爱玩🎮 <kbd>ctrl</kbd> + <kbd>C</kbd> 、 <kbd>ctrl</kbd> + <kbd>V</kbd> 高级CV工程师🏆</p>
-    <p><span class="iconfont icon-duigou1"></span>前端技能树：Html、CSS、JavaScript、JQuery、Vue、React、TypeScrip、uni-app、NodeJs、HarmonyOS等💻</p>
+    <p><span class="iconfont icon-duigou1"></span>前端技能树：Html、CSS、JavaScript、JQuery、Vue、React、TypeScript、uni-app、NodeJs、HarmonyOS等💻</p>
     <p><span class="iconfont icon-cuowu"></span>后端精通PHP、Java、Python、C、C++、C#、Go等单词的拼写🎲</p>
     <p><span class="iconfont icon-cuowu"></span>擅长PS、Pr、Ae、Au、Ai、Dw、An、Id等软件的安装与卸载🎃</p>
     <p><span class="iconfont icon-cuowu"></span>熟悉Windows、Linux、Mac、Android、IOS等系统的开关机👻</p>
