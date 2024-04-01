@@ -37,7 +37,7 @@ class WebSocketClass {
   constructor(
     wsurl: string,
     id: number,
-    private heartbeatInterval: number = 19 //心跳间隔
+    private heartbeatInterval: number = 3 //心跳间隔
   ) {
     this.wsurl = wsurl; // 连接地址
     this.id = id; // 用户id
