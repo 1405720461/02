@@ -5,13 +5,25 @@
       link: https://wjldarling.top/
       avatar: https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg
       descr: 山水一程，三生有幸✨
-      siteshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
+      screenshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
 
     - name: BiQing
       link: https://www.biqing.top/
       avatar: https://biqing-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20230102161539190.png
       descr: 总有人间一两风，填我十万八千梦。若在许我少年时 一两黄金一两风
-      siteshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/biqing.webp
+      screenshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/biqing.webp
+
+    - name: 梦寐
+      link: https://shi-longwei.gitee.io/blog/
+      avatar: https://cdn.jsdelivr.net/gh/shizhiweid/blogimg@main/imgs/202306041724989.jpg
+      descr: 欢迎来到梦寐博客。
+      screenshot:
+
+    - name: 黑乌鸦
+      link: https://www.blackcrow.cn
+      avatar: https://www.blackcrow.cn/blogs-img/%E9%85%8D%E7%BD%AE/%E5%A4%B4%E5%83%8F.png
+      descr: 休对古人思故国，且将新火试新茶，诗酒趁年华
+      screenshot: https://www.blackcrow.cn/blogs-img/%E9%85%8D%E7%BD%AE/Screenshot.png
 
 - class_name: 技术支持💡
   class_desc: 前端大牛，轮子缔造者，本网站的搭建参考了以下开源作者
@@ -20,37 +32,37 @@
       link: https://hexo.io/zh-cn/
       avatar: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo.webp
       descr: 快速、简洁且高效的博客框架
-      siteshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo_bg.webp
+      screenshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo_bg.webp
 
     - name: Butterfly
       link: https://butterfly.js.org/
       avatar: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly.webp
       descr: "🦋 A Hexo Theme: Butterfly"
-      siteshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly_bg.webp
+      screenshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly_bg.webp
 
     - name: Fomalhaut🥝
       link: https://www.fomal.cc/
       avatar: https://www.fomal.cc/assets/avatar.webp
       descr: Future is now 🍭🍭🍭
-      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+      screenshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
 
     - name: Akilarの糖果屋
       link: https://akilar.top/
-      siteshot: https://npm.elemecdn.com/akilar-friends@latest/siteshot/akilar.top.jpg
       avatar: https://npm.elemecdn.com/akilar-friends@latest/avatar/akilar.top.jpg
       descr: 欢迎光临糖果屋
+      screenshot: https://npm.elemecdn.com/akilar-friends@latest/siteshot/akilar.top.jpg
 
     - name: 安知鱼`Blog
       link: https://blog.anheyu.com/
       avatar: https://img01.anheyu.com/useruploads/90/2023/04/23/6444e85234e51.jpg
       descr: 生活明朗，万物可爱
-      siteshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anzhiy.cn.jpg
+      screenshot: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/anzhiy.cn.jpg
 
     - name: 张洪Heo
       link: https://blog.zhheo.com/
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
       descr: 分享设计与科技生活
-      siteshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/zhheo_bg.webp
+      screenshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/zhheo_bg.webp
 
 - class_name: 群友🏅
   class_desc: 群里的技术大佬们
@@ -65,41 +77,43 @@
       link: https://linjiangyu.com
       avatar: https://gcore.jsdelivr.net/gh/linjiangyu2/halo@master/img/fa.jpg
       descr: 正因为是一张白纸 才可以随心所欲地描绘地图
-      siteshot: https://gcore.jsdelivr.net/gh/linjiangyu2/halo@master/img/siteshot.jpg
+      screenshot: https://gcore.jsdelivr.net/gh/linjiangyu2/halo@master/img/siteshot.jpg
 
     - name: 虹色轨迹🌠
       link: https://illlli.com
       avatar: https://illlli.com/assets/avatar.webp
       descr: 做一颗星星，有棱有角，黑暗中闪闪发光🍭🍭🍭
-      siteshot: https://illlli.com/assets/illlli.webp
+      screenshot: https://illlli.com/assets/illlli.webp
 
     - name: Shine
       link: https://blog.shineyu.cn/
       avatar: https://blog.shineyu.cn/img/shineyu_avatar.webp
       descr: 热爱生活点滴，分享时刻精彩。
-      siteshot: https://blog.shineyu.cn/img/website.webp
+      screenshot: https://blog.shineyu.cn/img/website.webp
 
     - name: Ading阿定の小站
       link: https://saop.cc
       avatar: https://picbed.saop.cc/Asuna/Asuna1x1.png
       descr: 我们终会相遇相知，在那悠远的苍穹
-      siteshot: https://picbed.saop.cc/Asuna/Asuna-EvolutionaryProcess_2.png
+      screenshot: https://picbed.saop.cc/Asuna/Asuna-EvolutionaryProcess_2.png
 
     - name: 萌傀儡`Blog
       link: https://blhorizon.github.io/
       avatar: https://tc.mwm.moe/i/6/2023/10/25/65389a5fd0a2b.webp
       descr: 珍惜现在，趁早摸鱼
-      siteshot: https://jsd.onmicrosoft.cn/npm/blogassert/covers/1687615739569.png
+      screenshot: https://jsd.onmicrosoft.cn/npm/blogassert/covers/1687615739569.png
 
     - name: 爱吃肉的猫
       link: https://meuicat.com/
       avatar: https://s1.ax1x.com/2023/05/26/p9qChjI.jpg
       descr: 有肉有猫有生活.
+      screenshot:
 
     - name: indude - 个人文章分享
       link: https://indude.cn/
       avatar: https://q2.qlogo.cn/g?b=qq&nk=656497229&s=100
       descr: 分享一些想法和文章.
+      screenshot:
 
 - class_name: 小伙伴🌏
   link_list:
@@ -107,31 +121,31 @@
       link: https://www.mz521.cn
       avatar: https://www.mz521.cn/tp/8.png
       descr: 欢迎一起学习
-      siteshot:
+      screenshot:
 
     - name: Kiwi Fruit
       link: https://kiwifruit.asia/
       avatar: https://kiwifruit.asia/myBlog/assets/head.jpg
       descr: 懂滴滴代码の背锅狮
-      siteshot: https://kiwifruit.asia/myBlog/assets/index.jpg
+      screenshot: https://kiwifruit.asia/myBlog/assets/index.jpg
 
     - name: 月亮
       link: https://blog.monl.cc/
       avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
       descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
-      siteshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
+      screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
 
     - name: 极客蜂巢(GeekHive)
       link: https://jblog.oscode.top
       avatar: https://web-1256739961.cos.ap-guangzhou.myqcloud.com/wp/2022/12/博客logo.png
       descr: 本站为共创型技术博客，开放对外注册成为作者并发布技术文章博客；同时也支持开源项目的免费推广，为软件开源尽自己的一份力量。
-      siteshot:
+      screenshot:
 
     - name: Aegcbx
       link: https://uu.sssu.us/
       avatar: https://uu.sssu.us/img/avatar.png
       descr: 九月露湿，待君之前
-      siteshot: https://pic.imgdb.cn/item/649ad9d51ddac507cc40f140.png
+      screenshot: https://pic.imgdb.cn/item/649ad9d51ddac507cc40f140.png
 
     - name: 呆鱼
       link: https://daiyu.fun/
