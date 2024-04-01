@@ -17,7 +17,7 @@ type: "link"
   link: https://wjldarling.top/
   avatar: https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg
   descr: 山水一程，三生有幸✨
-  siteshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
+  screenshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
 ```
 
 <!-- endtab -->
@@ -61,7 +61,7 @@ type: "link"
   link: #站点链接
   avatar: #站长头像
   descr: #站点描述
-  siteshot: #站点截图
+  screenshot: #站点截图
 ```
 
 站点截图可以自己提供，尺寸尽量不要大于 600\*600，图片压缩后最好小于 200KB。
