@@ -129,11 +129,11 @@
       descr: 懂滴滴代码の背锅狮
       screenshot: https://kiwifruit.asia/myBlog/assets/index.jpg
 
-    - name: 月亮
-      link: https://blog.monl.cc/
-      avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
-      descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
-      screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
+    # - name: 月亮
+    #   link: https://blog.monl.cc/
+    #   avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
+    #   descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
+    #   screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
 
     - name: 极客蜂巢(GeekHive)
       link: https://jblog.oscode.top
@@ -164,3 +164,9 @@
       avatar: https://q1.qlogo.cn/g?b=qq&nk=1748326225&s=640
       descr: 用技术改变世界
       screenshot: https://www.lequxiang.com.cn/view.php/56764ea8cdfb968730a97bb28e46c87f.png
+
+    - name: isYangs Blog
+      link: https://isyangs.cn
+      avatar: https://7.isyangs.cn/8/655c9835780a0-8.jpg
+      descr: 一个前端Bug构造师的博客
+      screenshot:
