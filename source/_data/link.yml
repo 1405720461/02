@@ -142,7 +142,7 @@
     #   screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
 
     - name: 极客蜂巢(GeekHive)
-      link: https://jblog.oscode.top
+      link: https://www.gkhive.com/
       avatar: https://web-1256739961.cos.ap-guangzhou.myqcloud.com/wp/2022/12/博客logo.png
       descr: 本站为共创型技术博客，开放对外注册成为作者并发布技术文章博客；同时也支持开源项目的免费推广，为软件开源尽自己的一份力量。
       screenshot:
@@ -176,3 +176,9 @@
       avatar: https://oyiso.cn/logo.png
       descr: The shortest answer is doing
       screenshot:
+
+    - name: 林熙の博客
+      link: https://bk.foryi.cn
+      avatar: http://blog.foryi.cn/wp-content/uploads/2024/04/u13141086893834976047fm253app138fJPEG.jpeg
+      descr: 一位爱生活游戏的休闲博主
+      screenshot: http://blog.foryi.cn/wp-content/uploads/2024/04/Screenshot_20240409_134623_edit_336658757619983.jpg
