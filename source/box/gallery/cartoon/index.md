@@ -40,5 +40,6 @@ comments: false
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/cartoon/28.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/cartoon/29.webp)
 ![](https://cdn.jsdelivr.net/gh/1405720461/images@master/cartoon/30.webp)
+![](https://cdn.jsdelivr.net/gh/1405720461/images@master/cartoon/31.webp)
 
 {% endgallery %}
