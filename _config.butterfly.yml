@@ -9,12 +9,10 @@ menu:
     标签: /tags/ || icon-sekuaibiaoqian || faa-tada
     分类: /categories/ || icon-fenlei || faa-tada
   休闲 || icon-pinweishenghuo || faa-tada || hide:
-    八音盒: /life/music/ ||icon-yinle || faa-tada
-    追番: /life/bangumis/ || icon-nvwumao || faa-tada
-    # 影院: /life/movies ||icon-dianying1 || faa-tada
+    八音盒: /relaxation/music/ ||icon-yinle || faa-tada
+    追番: /relaxation/bangumis/ || icon-nvwumao || faa-tada
   百宝箱 || icon-xiangzi || faa-tada || hide:
     画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
-    # 游戏: /box/games/ || icon-youxishoubing || faa-tada
     收藏: /box/collect/ ||icon-zhifengche || faa-tada
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     留言板: /comments/ || icon-liuyan || faa-tada
@@ -23,12 +21,6 @@ menu:
   个人 || icon-maoliang || faa-tada || hide:
     关于: /personal/about/ || icon-paperplane || faa-tada
     恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
-  # 网站 || icon-wangye || faa-tada || hide:
-  #   网站统计: /site/census/ || icon--tongjibiao || faa-tada
-  #   文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
-  #   朋友圈: /social/fcircle/ || icon-pengyouquan || faa-tada
-  #   网址导航: /box/nav/ || icon-zhifengche || faa-tada
-  #   唠叨: /personal/bb/ || icon-qunliaotian || faa-tada
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -190,8 +182,7 @@ cover:
 error_404:
   enable: true
   subtitle: "此页面不存在哦٩͡[๏̯͡๏]"
-  # https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
-  background: /assets/404_1.jpg
+  background: /assets/404.jpg
 
 post_meta:
   page: # Home Page
@@ -304,7 +295,7 @@ addThis:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: false
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: facebook,twitter,wechat,qq
 
 # AddToAny
 # https://www.addtoany.com/
@@ -765,9 +756,6 @@ aside:
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
-  # 微博侧边栏
-  card_weibo:
-    enable: false
   card_friend_link: #友链通讯录
     enable: false
     sort_order: # Don't modify the setting unless you know
@@ -920,10 +908,10 @@ pwa:
   enable: false
   manifest: /manifest.json
   theme_color: var(--theme-color)
-  apple_touch_icon: /assets/gulp/siteicon/128.png
-  favicon_32_32: /assets/gulp/siteicon/32.png
-  favicon_16_16: /assets/gulp/siteicon/16.png
-  mask_icon: /assets/gulp/siteicon/128.png
+  apple_touch_icon: /assets/gulp/128.png
+  favicon_32_32: /assets/gulp/32.png
+  favicon_16_16: /assets/gulp/16.png
+  mask_icon: /assets/gulp/128.png
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -939,9 +927,8 @@ inject:
   head:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"> # 常规css
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
-    # 诗词
-    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
-    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/poem/poem.css">
+    - <link rel="stylesheet" type="text/css" href="/css/jinrishici.css"> # 诗词&&
+    - <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.css"> #字体图标
 
     # 综合美化模块样式引入
     - <style id="themeColor"></style> # 主题色
@@ -989,9 +976,6 @@ CDN:
 
   # Add version number to CDN, true or false
   version: false
-
-  # 微博模块
-  card_weibo: /js/card_weibo.js
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}

@@ -6,7 +6,6 @@ type: "about"
 ---
 
 <link rel="stylesheet" type="text/css" href="/css/about.css">
-<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.css">
 
 <div class='about-top'>
     <h2 class="about_me"><span>关于我</span><div class='darling_ico'><img src="/assets/Darling.ico"></div></h2>

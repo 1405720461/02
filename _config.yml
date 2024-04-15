@@ -224,51 +224,6 @@ nofollow:
   field: site
   exclude: ""
 
-# github提交日志
-# hexo-filter-gitcalendar
-# see https://akilar.top/posts/1f9c68c9/
-gitcalendar:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: /site/census/ # 应用页面
-  # butterfly挂载容器
-  layout: # 挂载容器类型
-    type: id
-    name: gitZone
-    index: 0
-  # volantis挂载容器
-  # layout:
-  #   type: class
-  #   name: l_main
-  #   index: 0
-  # matery挂载容器
-  # layout:
-  #   type: id
-  #   name: indexCard
-  #   index: 0
-  # mengd挂载容器
-  # layout:
-  #   type: class
-  #   name: content
-  #   index: 0
-  # simplemode: true
-  user: 1405720461
-  apiurl: ""
-  minheight:
-    pc: 320px #桌面端最小高度
-    mibile: 0px #移动端最小高度
-  color: "['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9']"
-  # "['rgb(145, 145, 145, 0.2)', '#c6ecc1', '#a0e2bb', '#1fc7b6', '#70c5d3', '#60a2ce', '#507ac9', '#4356c5', '#423cc4', '#5b3abc', '#7138b6']" # 冷色系温度色调
-  # "['rgb(145, 145, 145, 0.2)', '#c6ecc1', '#a0e2bb', '#1fc7b6', '#70c5d3', '#60a2ce', '#507ac9', '#4356c5', '#423cc4', '#5b3abc', '#7138b6']" # 冷色系温度色调
-  # "['#ebedf0', '#cdefec', '#a9e4de', '#1fc7b6', '#65cfc5', '#4dc8bb', '#39bbae', '#319d93', '#278178', '#216962', '#1b5852']" #蒂芙尼蓝色调
-  # "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
-  # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
-  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
-  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
-  gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
-  gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
-
 # 新版的搜索插件
 plugins:
   - hexo-algoliasearch
@@ -277,7 +232,7 @@ plugins:
 bangumi:
   enable: true
   vmid: 392071577
-  path: /life/bangumis/index.html
+  path: /relaxation/bangumis/index.html
   title: "追番"
   quote: "都是爷喜欢的动漫！！！"
   show: 1
@@ -288,7 +243,7 @@ douban:
   id: 271110737 # 你的豆瓣ID
   builtin: false
   movie:
-    path: /life/movies
+    path: /relaxation/movies
     title: "影院"
     comments: false
     aside: true
