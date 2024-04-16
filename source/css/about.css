@@ -1,3 +1,30 @@
+@font-face {
+    font-family: "iconfont";
+    /* Project id 4092704 */
+    /* Color fonts */
+    src:
+        url('//at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.woff2?t=1688346890092') format('woff2'),
+        url('//at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.woff?t=1688346890092') format('woff'),
+        url('//at.alicdn.com/t/c/font_4092704_l22qnk6x7q9.ttf?t=1688346890092') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-duigou1:before {
+    content: "\e744";
+}
+
+.icon-cuowu:before {
+    content: "\e65b";
+}
+
+
 .about-top {
     display: flex;
     justify-content: space-between;
@@ -27,11 +54,10 @@
     }
 }
 
-
-
 .iconfont {
     margin: 0 5px;
 }
+
 
 div#page {
     background: rgba(253, 253, 253, 0.5);

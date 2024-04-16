@@ -1,4 +1,5 @@
-﻿function getRandomColor() {
+﻿// 收藏页随机颜色
+function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
   for (var i = 0; i < 6; i++) {

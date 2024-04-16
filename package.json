@@ -24,7 +24,6 @@
     "hexo-bilibili-bangumi": "^1.8.7",
     "hexo-blog-encrypt": "^3.1.7",
     "hexo-butterfly-clock-anzhiyu": "^1.1.8",
-    "hexo-butterfly-douban": "^1.2.5",
     "hexo-butterfly-envelope": "^1.0.15",
     "hexo-butterfly-swiper": "^1.0.12",
     "hexo-butterfly-tag-plugins-plus": "^1.0.17",
@@ -40,6 +39,7 @@
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^1.0.0",
     "hexo-magnet-fomal": "^1.0.0",
+    "hexo-oh-my-live2d": "^0.1.2",
     "hexo-pdf": "^1.1.1",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-kramed": "^0.1.4",
@@ -55,6 +55,7 @@
     "markdown-it-deflist": "^2.1.0",
     "markdown-it-emoji": "^2.0.2",
     "markdown-it-mark": "^3.0.1",
+    "oh-my-live2d": "^0.16.1",
     "save": "^2.5.0",
     "vanilla-lazyload": "^17.8.3",
     "workbox-build": "^6.5.4"
