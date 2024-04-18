@@ -25,7 +25,9 @@ updated: 2024-03-18 00:00:00
 
 先看一张图：
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/54.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/54.webp' />
+</div>
 
 **关于设备像素、css 像素、设备独立像素与 dpr 之间的区别，请参考站长文章：**
 
@@ -35,7 +37,9 @@ updated: 2024-03-18 00:00:00
 
 其中 Chrome 把 0.5px 四舍五入变成了 1px，而 firefox/safari 能够画出半个像素的边，并且 Chrome 会把小于 0.5px 的当成 0，而 Firefox 会把不小于 0.55px 当成 1px，Safari 是把不小于 0.75px 当成 1px，进一步在手机上观察 iOS 的 Chrome 会画出 0.5px 的边，而安卓(5.0)原生浏览器是不行的。所以直接设置 0.5px 不同浏览器的差异比较大，并且我们看到不同系统的不同浏览器对小数点的 px 有不同的处理。所以如果我们把单位设置成小数的 px 包括宽高等，其实不太可靠，因为不同浏览器表现不一样。如下图所示：
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/56.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/56.webp' />
+</div>
 
 ---
 
@@ -65,7 +69,9 @@ updated: 2024-03-18 00:00:00
 
 **实现原理：** 因为 `1px` 会被渲染为 `2px`，故我们可以设计一个 `2*2px` 的图，如果需要设置上边框，则把下面 `1px` 设置为透明，将上面 `1px` 设置为我们需要的颜色即可，如下图所示
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/57.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/57.webp' />
+</div>
 
 ```css
 @media screen and (-webkit-min-device-pixel-ratio: 2) {

@@ -264,7 +264,7 @@ const btf = {
         Fancybox.bind('[data-fancybox]', {
           Hash: false,
           Thumbs: {
-            autoStart: false
+            autoStart: false,
           }
         })
         window.fancyboxRun = true

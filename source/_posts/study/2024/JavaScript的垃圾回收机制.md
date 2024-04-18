@@ -50,7 +50,9 @@ test = [1, 2, 3, 4, 5];
 
 那上面代码首先我们声明了一个变量 `test`，它引用了对象 `{name: 'isboyjc'}`，接着我们把这个变量重新赋值了一个数组对象，也就变成了该变量引用了一个数组，那么之前的对象引用关系就没有了，如下图
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/58.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/58.webp' />
+</div>
 
 没有了引用关系，也就是无用的对象，这个时候假如任由它搁置，一个两个还好，多了的话内存也会受不了，所以就需要被清理（回收）。
 
@@ -79,7 +81,9 @@ test = [1, 2, 3, 4, 5];
 
 首先它会遍历堆内存上所有的对象，分别给它们打上标记，然后在代码执行过程结束之后，对所使用过的变量取消标记。在清除阶段再把具有标记的内存对象进行整体清除，从而释放内存空间。
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/59.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/59.webp' />
+</div>
 
 整个标记清除算法大致过程就像下面这样
 
@@ -90,7 +94,9 @@ test = [1, 2, 3, 4, 5];
 
 假设我们新建对象分配内存时需要大小为 `size`，由于空闲内存是间断的、不连续的，则需要对空闲内存列表进行一次单向遍历找出大于等于 `size` 的块才能为其分配（如下图）
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/60.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/60.webp' />
+</div>
 
 那如何找到合适的块呢？我们可以采取下面三种分配策略
 
@@ -109,7 +115,9 @@ test = [1, 2, 3, 4, 5];
 
 而 **标记整理（Mark-Compact）算法** 就可以有效地解决，它的标记阶段和标记清除算法没有什么不同，只是标记结束后，标记整理算法会将活着的对象（即不需要清理的对象）向内存的一端移动，最后清理掉边界的内存（如下图）
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/61.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/61.webp' />
+</div>
 
 ### 引用计数算法
 
@@ -174,7 +182,9 @@ V8 的垃圾回收策略主要基于分代式垃圾回收机制，V8 中将堆�
 
 V8 整个堆内存的大小就等于新生代加上老生代的内存（如下图）
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/62.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/62.webp' />
+</div>
 
 对于新老两块内存区域的垃圾回收，V8 采用了两个垃圾回收器来管控，我们暂且将管理新生代的垃圾回收器叫做新生代垃圾回收器，同样的，我们称管理老生代的垃圾回收器叫做老生代垃圾回收器好了
 
@@ -184,7 +194,9 @@ V8 整个堆内存的大小就等于新生代加上老生代的内存（如下�
 
 `Cheney算法` 中将堆内存一分为二，一个是处于使用状态的空间我们暂且称之为 `使用区`，一个是处于闲置状态的空间我们称之为 `空闲区`，如下图所示
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/63.webp)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/63.webp' />
+</div>
 
 - 新加入的对象都会存放在使用区，当使用区快写满时就进行一次垃圾清理操作。
 - 在开始进行垃圾回收时，新生代回收器会对使用区内的对象进行标记

@@ -57,7 +57,10 @@ px 会受到下面的因素的影响而变化：
 指设备能控制显示的最小物理单位，不一定是一个小正方形区块，也没有标准的宽高，只是用于显示丰富色彩的一个“点”而已
 
 可以参考公园里的景观变色彩灯，一个彩灯(物理像素)由红、蓝、绿小灯组成，三盏小灯不同的亮度混合出各种色彩
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/41.png)
+
+<div class='blog-img'>
+  <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/41.png' />
+</div>
 
 从屏幕在工厂生产出的那天起，它上面设备像素点就固定不变了，单位为`pt`
 
@@ -89,7 +92,9 @@ dpr（device pixel ratio），设备像素比，代表设备独立像素到设�
 
 计算公式如下：
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/42.png)
+<div class='blog-img'>
+  <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/42.png' />
+</div>
 
 当设备像素比为 1:1 时，使用 1（1×1）个设备像素显示 1 个 CSS 像素
 
@@ -99,7 +104,9 @@ dpr（device pixel ratio），设备像素比，代表设备独立像素到设�
 
 如下图所示：
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/43.png)
+<div class='blog-img'>
+  <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/43.png' />
+</div>
 
 当`dpr`为 3，那么`1px`的`CSS`像素宽度对应`3px`的物理像素的宽度，1px 的`CSS`像素高度对应`3px`的物理像素高度
 

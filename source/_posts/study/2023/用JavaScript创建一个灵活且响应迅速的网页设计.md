@@ -13,8 +13,6 @@ date: 2023-08-04 00:00:00
 updated: 2023-08-04 00:00:00
 ---
 
-
-
 ## 前言
 
 &emsp;&emsp;前段时间写了一个数据可视化大屏的项目，从纯 h5c3+js 的一个页面改成一个 vue3 的小项目，因为是数据可视化大屏这种需要适配更大的屏幕，所以单位应该设置适配从而在大屏上进行显示.
@@ -23,12 +21,10 @@ updated: 2023-08-04 00:00:00
 
 ### 一、官方文档：
 
-flexible.js是手淘开发出的一个用来适配移动端的js框架。手淘框架的核心原理就是根据制不同的width给网页中html根节点设置不同的font-size，然后所有的px都用rem来代替，这样就实现了不同大小的屏幕都适应相同的样式了。其实它就是一个终端设备适配的解决方案，也就是说它可以让你在不同的终端设备中实现页面适配。
+flexible.js 是手淘开发出的一个用来适配移动端的 js 框架。手淘框架的核心原理就是根据制不同的 width 给网页中 html 根节点设置不同的 font-size，然后所有的 px 都用 rem 来代替，这样就实现了不同大小的屏幕都适应相同的样式了。其实它就是一个终端设备适配的解决方案，也就是说它可以让你在不同的终端设备中实现页面适配。
 
-github地址：[https://github.com/amfe/lib-flexible](https://link.jianshu.com/?t=https://github.com/amfe/lib-flexible)
+github 地址：[https://github.com/amfe/lib-flexible](https://link.jianshu.com/?t=https://github.com/amfe/lib-flexible)
 官方文档地址：[https://github.com/amfe/article/issues/17](https://link.jianshu.com/?t=https://github.com/amfe/article/issues/17)
-
-
 
 ### 二、使用方式
 
@@ -45,135 +41,155 @@ npm i -S amfe-flexible
 ```
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+/>
 <script src="./node_modules/amfe-flexible/index.js"></script>
 ```
 
 ### 三、源码分析
 
 ```js
-(function(win, lib) {
-    var doc = win.document;
-    var docEl = doc.documentElement;
-    var metaEl = doc.querySelector('meta[name="viewport"]');
-    var flexibleEl = doc.querySelector('meta[name="flexible"]');
-    var dpr = 0;
-    var scale = 0;
-    var tid;
-    var flexible = lib.flexible || (lib.flexible = {});
-    
-    if (metaEl) {
-        console.warn('将根据已有的meta标签来设置缩放比例');
-        var match = metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);
-        if (match) {
-            scale = parseFloat(match[1]);
-            dpr = parseInt(1 / scale);
-        }
-    } else if (flexibleEl) {
-        var content = flexibleEl.getAttribute('content');
-        if (content) {
-            var initialDpr = content.match(/initial\-dpr=([\d\.]+)/);
-            var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/);
-            if (initialDpr) {
-                dpr = parseFloat(initialDpr[1]);
-                scale = parseFloat((1 / dpr).toFixed(2));    
-            }
-            if (maximumDpr) {
-                dpr = parseFloat(maximumDpr[1]);
-                scale = parseFloat((1 / dpr).toFixed(2));    
-            }
-        }
-    }
+(function (win, lib) {
+  var doc = win.document;
+  var docEl = doc.documentElement;
+  var metaEl = doc.querySelector('meta[name="viewport"]');
+  var flexibleEl = doc.querySelector('meta[name="flexible"]');
+  var dpr = 0;
+  var scale = 0;
+  var tid;
+  var flexible = lib.flexible || (lib.flexible = {});
 
-    if (!dpr && !scale) {
-        var isAndroid = win.navigator.appVersion.match(/android/gi);
-        var isIPhone = win.navigator.appVersion.match(/iphone/gi);
-        var devicePixelRatio = win.devicePixelRatio;
-        if (isIPhone) {
-            // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
-            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {                
-                dpr = 3;
-            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)){
-                dpr = 2;
-            } else {
-                dpr = 1;
-            }
-        } else {
-            // 其他设备下，仍旧使用1倍的方案
-            dpr = 1;
-        }
-        scale = 1 / dpr;
+  if (metaEl) {
+    console.warn("将根据已有的meta标签来设置缩放比例");
+    var match = metaEl
+      .getAttribute("content")
+      .match(/initial\-scale=([\d\.]+)/);
+    if (match) {
+      scale = parseFloat(match[1]);
+      dpr = parseInt(1 / scale);
     }
-
-    docEl.setAttribute('data-dpr', dpr);
-    if (!metaEl) {
-        metaEl = doc.createElement('meta');
-        metaEl.setAttribute('name', 'viewport');
-        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
-        if (docEl.firstElementChild) {
-            docEl.firstElementChild.appendChild(metaEl);
-        } else {
-            var wrap = doc.createElement('div');
-            wrap.appendChild(metaEl);
-            doc.write(wrap.innerHTML);
-        }
+  } else if (flexibleEl) {
+    var content = flexibleEl.getAttribute("content");
+    if (content) {
+      var initialDpr = content.match(/initial\-dpr=([\d\.]+)/);
+      var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/);
+      if (initialDpr) {
+        dpr = parseFloat(initialDpr[1]);
+        scale = parseFloat((1 / dpr).toFixed(2));
+      }
+      if (maximumDpr) {
+        dpr = parseFloat(maximumDpr[1]);
+        scale = parseFloat((1 / dpr).toFixed(2));
+      }
     }
+  }
 
-    function refreshRem(){
-        var width = docEl.getBoundingClientRect().width;
-        if (width / dpr > 540) {
-            width = 540 * dpr;
-        }
-        var rem = width / 10;
-        docEl.style.fontSize = rem + 'px';
-        flexible.rem = win.rem = rem;
+  if (!dpr && !scale) {
+    var isAndroid = win.navigator.appVersion.match(/android/gi);
+    var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+    var devicePixelRatio = win.devicePixelRatio;
+    if (isIPhone) {
+      // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+      if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+        dpr = 3;
+      } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+        dpr = 2;
+      } else {
+        dpr = 1;
+      }
+    } else {
+      // 其他设备下，仍旧使用1倍的方案
+      dpr = 1;
     }
+    scale = 1 / dpr;
+  }
 
-    win.addEventListener('resize', function() {
+  docEl.setAttribute("data-dpr", dpr);
+  if (!metaEl) {
+    metaEl = doc.createElement("meta");
+    metaEl.setAttribute("name", "viewport");
+    metaEl.setAttribute(
+      "content",
+      "initial-scale=" +
+        scale +
+        ", maximum-scale=" +
+        scale +
+        ", minimum-scale=" +
+        scale +
+        ", user-scalable=no"
+    );
+    if (docEl.firstElementChild) {
+      docEl.firstElementChild.appendChild(metaEl);
+    } else {
+      var wrap = doc.createElement("div");
+      wrap.appendChild(metaEl);
+      doc.write(wrap.innerHTML);
+    }
+  }
+
+  function refreshRem() {
+    var width = docEl.getBoundingClientRect().width;
+    if (width / dpr > 540) {
+      width = 540 * dpr;
+    }
+    var rem = width / 10;
+    docEl.style.fontSize = rem + "px";
+    flexible.rem = win.rem = rem;
+  }
+
+  win.addEventListener(
+    "resize",
+    function () {
+      clearTimeout(tid);
+      tid = setTimeout(refreshRem, 300);
+    },
+    false
+  );
+  win.addEventListener(
+    "pageshow",
+    function (e) {
+      if (e.persisted) {
         clearTimeout(tid);
         tid = setTimeout(refreshRem, 300);
-    }, false);
-    win.addEventListener('pageshow', function(e) {
-        if (e.persisted) {
-            clearTimeout(tid);
-            tid = setTimeout(refreshRem, 300);
-        }
-    }, false);
+      }
+    },
+    false
+  );
 
-    if (doc.readyState === 'complete') {
-        doc.body.style.fontSize = 12 * dpr + 'px';
-    } else {
-        doc.addEventListener('DOMContentLoaded', function(e) {
-            doc.body.style.fontSize = 12 * dpr + 'px';
-        }, false);
+  if (doc.readyState === "complete") {
+    doc.body.style.fontSize = 12 * dpr + "px";
+  } else {
+    doc.addEventListener(
+      "DOMContentLoaded",
+      function (e) {
+        doc.body.style.fontSize = 12 * dpr + "px";
+      },
+      false
+    );
+  }
+
+  refreshRem();
+
+  flexible.dpr = win.dpr = dpr;
+  flexible.refreshRem = refreshRem;
+  flexible.rem2px = function (d) {
+    var val = parseFloat(d) * this.rem;
+    if (typeof d === "string" && d.match(/rem$/)) {
+      val += "px";
     }
-    
-
-    refreshRem();
-
-    flexible.dpr = win.dpr = dpr;
-    flexible.refreshRem = refreshRem;
-    flexible.rem2px = function(d) {
-        var val = parseFloat(d) * this.rem;
-        if (typeof d === 'string' && d.match(/rem$/)) {
-            val += 'px';
-        }
-        return val;
+    return val;
+  };
+  flexible.px2rem = function (d) {
+    var val = parseFloat(d) / this.rem;
+    if (typeof d === "string" && d.match(/px$/)) {
+      val += "rem";
     }
-    flexible.px2rem = function(d) {
-        var val = parseFloat(d) / this.rem;
-        if (typeof d === 'string' && d.match(/px$/)) {
-            val += 'rem';
-        }
-        return val;
-    }
-
-})(window, window['lib'] || (window['lib'] = {}));
+    return val;
+  };
+})(window, window["lib"] || (window["lib"] = {}));
 ```
-
-
-
-
 
 ## 简化方案
 
@@ -259,15 +275,19 @@ header h1 {
 2. **兼容性考虑：** 该方案在大多数现代浏览器和设备上都能良好运行，但仍需进行充分测试以确保在不同环境下的兼容性。
 3. **适用场景：** 此方案适用于大多数移动端项目，特别是对于需要快速实现自适应的小型项目来说，是一个不错的选择。
 
-
-
 ### 推荐工具
 
 另外，推荐一个 VSCode 插件可以帮助你更方便地进行 px 到 rem 的单位转换，提高开发效率。尤其在移动端适配过程中，能够帮助你快速计算合适的 rem 值。
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/14.webp)
+
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/14.webp' />
+</div>
 
 需要进行扩展设置，设置好相应的宽度，就可以进行快速转换了
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/15.webp)
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/16.webp)
-
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/15.webp' />
+</div>
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/16.webp' />
+</div>

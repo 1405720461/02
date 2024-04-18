@@ -30,9 +30,13 @@ cover:
 
 安装插件后，重启浏览器即可体验效果。
 
-![](https://bu.dusays.com/2023/10/17/652df3bce365c.jpg)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652df3bce365c.jpg' />
+</div>
 
-![](https://bu.dusays.com/2023/10/17/652df9e3b8cd6.jpg)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652df9e3b8cd6.jpg' />
+</div>
 
 ### 添加条件断点
 
@@ -61,9 +65,11 @@ persons.forEach((v) => {
 
 在数据量很大的情况下，使用 `条件断点` 对开发工作很有帮助，大大提高效率。
 
-![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/clutter/1.gif)
+<div class='blog-img'>
+ <img src='https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/clutter/1.gif' />
+</div>
 
-### 使用 “$” 引用上次执行的结果
+### 使用 “`$`” 引用上次执行的结果
 
 类似下面的场景，如果你对字符串进行了各种操作后，又想知道每一步的结果，该怎么做呢？
 
@@ -87,7 +93,9 @@ persons.forEach((v) => {
   ].join(""); // 7991nuki
 ```
 
-![](https://bu.dusays.com/2023/10/17/652dfc7db96d1.jpg)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652dfc7db96d1.jpg' />
+</div>
 
 使用 “$” 获取上一次操作的结果，无需每次都复制。
 
@@ -100,7 +108,9 @@ $_.reverse(); // ['7', '9', '9', '1', 'n', 'u', 'k', 'i']
 $_.join(""); // 7991nuki
 ```
 
-![](https://bu.dusays.com/2023/10/17/652dfe986c34b.jpg)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652dfe986c34b.jpg' />
+</div>
 
 ### 展开所有子节点
 
@@ -108,15 +118,19 @@ $_.join(""); // 7991nuki
 
 当然使用 `Alt + 单击` 一次展开所有子节点啦
 
-![](https://bu.dusays.com/2023/10/17/652e02df46bf1.gif)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652e02df46bf1.gif' />
+</div>
 
 在 gif 中 显而易见，点击一次只展开了一个子节点，`Alt + 单击` 则展开所有子节点。
 
-### 使用 "\$" 和 "\$$" 快速选择 DOM 元素
+### 使用 "`$`" 和 "`$$`" 快速选择 DOM 元素
 
 使用 `document.querySelector` 和 `document.querySelectorAll` 在控制台中选择当前页面的元素是最常见的需求，单词太长，我们可以使用 `$` 和 `$$` 来代替。
 
-![](https://bu.dusays.com/2023/10/17/652e02cc053e3.jpg)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652e02cc053e3.jpg' />
+</div>
 
 ### 在控制台重新发送请求
 
@@ -124,7 +138,9 @@ $_.join(""); // 7991nuki
 
 1.选择 Network 面板 中的 `Fetch/XHR` 2.选中要重新发送的请求，`Replay XHR`
 
-![](https://bu.dusays.com/2023/10/17/652e3407a53f9.gif)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652e3407a53f9.gif' />
+</div>
 
 ### 在控制台发送修改参数后的请求
 
@@ -132,10 +148,12 @@ $_.join(""); // 7991nuki
 
 1.选择 Network 面板 中的 `Fetch/XHR`
 
-2.选中要重新发送的请求，**Copy as fetch **
+2.选中要重新发送的请求，**Copy as fetch**
 
 3.修改参数并发送
 
-![](https://bu.dusays.com/2023/10/17/652e311619cf7.gif)
+<div class='blog-img'>
+ <img src='https://bu.dusays.com/2023/10/17/652e311619cf7.gif' />
+</div>
 
 > 原文链接 [几个非常实用的 Chrome Devtools 技巧](https://fe32.top/articles/skill001/)

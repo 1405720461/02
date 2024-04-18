@@ -135,12 +135,12 @@ div#poem_dynasty {
     transition: bottom 0.5s ease;
 }
 
-.aplayer.aplayer-narrow+#oml2d-stage {
-    bottom: 66px !important;
-}
-
 .aplayer+#oml2d-stage {
     bottom: 317px !important;
+}
+
+.aplayer.aplayer-narrow+#oml2d-stage {
+    bottom: 66px !important;
 }
 
 /* 菜单 */
