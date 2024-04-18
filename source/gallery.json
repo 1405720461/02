@@ -1,23 +1,13 @@
 ﻿[
     {
     "name": "国家队",
-    "cover": "https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/184.jpg",
+    "cover": "https://fastly.jsdelivr.net/gh/1405720461/images@master/Darling/1.webp",
     "date": "2023-05",
     "description": "国家队",
     "url_name": "国家队",
     "album": [
         {
-            "img_url": "https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/188.jpg",
-            "title": "国家队",
-            "describe": "02"
-        },
-        {
-            "img_url": "https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/172.jpg",
-            "title": "国家队",
-            "describe": "02"
-        },
-        {
-            "img_url": "https://cdn.jsdelivr.net/gh/1405720461/images@master/Darling/174.jpg",
+            "img_url": "https://fastly.jsdelivr.net/gh/1405720461/images@master/Darling/1.webp",
             "title": "国家队",
             "describe": "02"
         }

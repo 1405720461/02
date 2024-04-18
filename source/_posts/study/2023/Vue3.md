@@ -100,8 +100,8 @@ vite 官网：https://vitejs.cn
 - 传统构建 与 vite 构建对比图
 
 <div class='blog-img'>
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/10.webp" />
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/11.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/10.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/11.webp" />
 </div>
 
 ```bash
@@ -349,11 +349,11 @@ npm run dev
 <div class='blog-img'>
   <div>
     <strong>vue2.x的生命周期</strong>
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/12.webp"  style="zoom:33%;width:1200px" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/12.webp"  style="zoom:33%;width:1200px" />
   </div>
   <div>
     <strong>vue3.0的生命周期</strong>
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/13.webp"  style="zoom:33%;width:2500px" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/13.webp"  style="zoom:33%;width:2500px" />
   </div>
 </div>
 
@@ -505,8 +505,8 @@ npm run dev
 使用传统 OptionsAPI 中，新增或者修改一个需求，就需要分别在 data，methods，computed 里修改 。
 
 <div class='blog-img'>
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/33.image" />
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/34.image" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/33.image" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/34.image" />
 </div>
 
 ### 2.Composition API 的优势
@@ -514,8 +514,8 @@ npm run dev
 我们可以更加优雅的组织我们的代码，函数。让相关功能的代码更加有序的组织在一起。
 
 <div class='blog-img'>
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/35.image" />
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/36.image" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/35.image" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/36.image" />
 </div>
 
 ## 五、新的组件

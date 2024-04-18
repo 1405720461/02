@@ -69,7 +69,7 @@ axios.all(promises): 用于批量执行多个异步请求
 
 axios.spread(): 用来指定接收所有成功数据的回调函数的方法
 
-<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/1.webp"  style="zoom:67%;" />
+<img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/1.webp"  style="zoom:67%;" />
 
 ### axios.create(config)
 

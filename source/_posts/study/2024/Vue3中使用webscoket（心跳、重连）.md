@@ -19,7 +19,7 @@ updated: 2024-03-05 00:00:00
 
 其中最主要的核心功能就是 WebSocket，建立长连接，实现即时通信效果
 
-![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/47.png)
+![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/47.png)
 
 ## 正文
 
@@ -155,10 +155,10 @@ const ws: IWebSocket = new websocket(
 
 此时已经建立连接
 
-![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/45.png)
+![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/45.png)
 
 会自动进行心跳检测
 
-![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/46.png)
+![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/46.png)
 
 需要进行通信时，调用`send()`发送消息

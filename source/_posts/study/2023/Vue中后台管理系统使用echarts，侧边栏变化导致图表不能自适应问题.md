@@ -19,10 +19,10 @@ updated: 2023-12-05 00:00:00
 &emsp;&emsp;在做一个后台管理系统时遇到了这个问题，当左侧列表展开时就会使 echarts 图表溢出或空缺，echarts 配置的响应式只响应窗口变化，并不能支持内部变化导致的内容溢出或空缺，如图两种情况
 
 <div class='blog-img'>
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/17.webp" />
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/18.webp" />
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/19.webp" />
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/20.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/17.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/18.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/19.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/20.webp" />
 </div>
 
 ## 解决办法
@@ -111,6 +111,6 @@ updated: 2023-12-05 00:00:00
    ```
 
 <div class='blog-img'>
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/21.webp" />
-    <img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/22.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/21.webp" />
+    <img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/22.webp" />
 </div>

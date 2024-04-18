@@ -42,7 +42,7 @@ updated: 2023-01-08 19:57:00
 
 #### promise 的基本流程
 
-<img src="https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/study/2.webp"  style="zoom:67%;" />
+<img src="https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/study/2.webp"  style="zoom:67%;" />
 
 #### promise 的基本使用
 

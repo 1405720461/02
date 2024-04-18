@@ -5,17 +5,17 @@
       link: https://wjldarling.top/
       avatar: https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg
       descr: 山水一程，三生有幸✨
-      screenshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
+      screenshot: https://fastly.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
 
     - name: BiQing
       link: https://www.biqing.top/
       avatar: https://biqing-blog.oss-cn-hangzhou.aliyuncs.com/img/image-20230102161539190.png
       descr: 总有人间一两风，填我十万八千梦。若在许我少年时 一两黄金一两风
-      screenshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/biqing.webp
+      screenshot: https://fastly.jsdelivr.net/gh/1405720461/images@master/img/biqing.webp
 
     - name: 梦寐
       link: https://shi-longwei.gitee.io/blog/
-      avatar: https://cdn.jsdelivr.net/gh/shizhiweid/blogimg@main/imgs/202306041724989.jpg
+      avatar: https://fastly.jsdelivr.net/gh/shizhiweid/blogimg@main/imgs/202306041724989.jpg
       descr: 欢迎来到梦寐博客。
       screenshot:
 
@@ -30,15 +30,15 @@
   link_list:
     - name: Hexo
       link: https://hexo.io/zh-cn/
-      avatar: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo.webp
+      avatar: https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo.webp
       descr: 快速、简洁且高效的博客框架
-      screenshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo_bg.webp
+      screenshot: https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/link/hexo_bg.webp
 
     - name: Butterfly
       link: https://butterfly.js.org/
-      avatar: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly.webp
+      avatar: https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly.webp
       descr: "🦋 A Hexo Theme: Butterfly"
-      screenshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly_bg.webp
+      screenshot: https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/link/butterfly_bg.webp
 
     - name: Fomalhaut🥝
       link: https://www.fomal.cc/
@@ -62,7 +62,7 @@
       link: https://blog.zhheo.com/
       avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
       descr: 分享设计与科技生活
-      screenshot: https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/link/zhheo_bg.webp
+      screenshot:
 
 - class_name: 群友🏅
   class_desc: 群里的技术大佬们

@@ -2672,7 +2672,7 @@ function createWinbox() {
 {% folding cyan, 设置自定义背景 %}
 <p>
   <center>
-    <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://cdn.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights2/222.webp">
+    <input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights2/222.webp">
   </center>
 </p>
 <p>

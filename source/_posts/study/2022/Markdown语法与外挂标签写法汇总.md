@@ -280,7 +280,7 @@ git push
 本地图片:
 <img src="/assets/pusheencode.webp" alt="示例图片" style="zoom:50%;" />
 在线图片:
-![code](https://cdn.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
+![code](https://fastly.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
 
 <!-- endtab -->
 
@@ -290,7 +290,7 @@ git push
 # 本地图片
 <img src="/assets/pusheencode.webp" alt="示例图片" style="zoom:50%;" />
 # 在线图片
-![code](https://cdn.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
+![code](https://fastly.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
 ```
 
 <!-- endtab -->
@@ -1288,11 +1288,11 @@ Any content (support inline tags too.io).
 
 ```markdown
 {% btns circle grid5 %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %}
 ```
 
@@ -1313,13 +1313,13 @@ Any content (support inline tags too.io).
 <i class='fab fa-apple'></i>
 <b>心率管家</b>
 {% p red, 专业版 %}
-<img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
+<img src='https://fastly.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
 <i class='fab fa-apple'></i>
 <b>心率管家</b>
 {% p green, 免费版 %}
-<img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
+<img src='https://fastly.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 {% endbtns %}
 ```
@@ -1330,11 +1330,11 @@ Any content (support inline tags too.io).
 
 1.如果需要显示类似「团队成员」之类的一组含有头像的链接
 {% btns circle grid5 %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://fastly.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %} 2.或者含有图标的按钮
 {% btns rounded grid5 %}
 {% cell 下载源码, /, fas fa-download %}
@@ -1346,13 +1346,13 @@ Any content (support inline tags too.io).
 <b>心率管家</b>
 {% p red, 专业版 %}
 
-<!-- <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'> -->
+<!-- <img src='https://fastly.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'> -->
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
 <i class='fab fa-apple'></i>
 <b>心率管家</b>
 {% p green, 免费版 %}
-<!-- <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'> -->
+<!-- <img src='https://fastly.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'> -->
 </a>
 {% endbtns %}
 
@@ -1527,7 +1527,7 @@ Any content (support inline tags too.io).
 ```Markdown
 {% sitegroup %}
 
-{% site 你好可爱, url=https://wjldarling.top, screenshot=https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp, avatar=https://cdn.jsdelivr.net/gh/1405720461/images@master/img/188.jpg, description=关于网站的描述 %}
+{% site 你好可爱, url=https://wjldarling.top, screenshot=https://fastly.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp, avatar=https://fastly.jsdelivr.net/gh/1405720461/images@master/img/188.jpg, description=关于网站的描述 %}
 
 {% endsitegroup %}
 ```
@@ -1537,7 +1537,7 @@ Any content (support inline tags too.io).
 <!-- tab 渲染演示 -->
 
 {% sitegroup %}
-{% site 你好可爱, url=https://wjldarling.top, screenshot=https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp, avatar=https://cdn.jsdelivr.net/gh/1405720461/images@master/img/188.jpg, description=关于网站的描述 %}
+{% site 你好可爱, url=https://wjldarling.top, screenshot=https://fastly.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp, avatar=https://fastly.jsdelivr.net/gh/1405720461/images@master/img/188.jpg, description=关于网站的描述 %}
 
 {% endsitegroup %}
 
@@ -1566,18 +1566,18 @@ Any content (support inline tags too.io).
 <!-- tab 示例源码 -->
 
 ```Markdown
-这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
+这是 {% inlineimage https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
 
-这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
+这又是 {% inlineimage https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
 ```
 
 <!-- endtab -->
 
 <!-- tab 渲染演示 -->
 
-这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
+这是 {% inlineimage https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
 
-这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
+这又是 {% inlineimage https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
 
 <!-- endtab -->
 
@@ -1608,25 +1608,25 @@ Any content (support inline tags too.io).
 1.添加描述：
 
 ```Markdown
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, alt=每天下课回宿舍的路，没有什么故事。 %}
 ```
 
 2.指定宽度
 
 ```Markdown
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px %}
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px %}
 ```
 
 3.指定宽度并添加描述：
 
 ```Markdown
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}
 ```
 
 4.设置占位背景色：
 
 ```Markdown
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
 ```
 
 <!-- endtab -->
@@ -1634,11 +1634,11 @@ Any content (support inline tags too.io).
 <!-- tab 渲染演示 -->
 
 1.添加描述：
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, alt=每天下课回宿舍的路，没有什么故事。 %}
 2..指定宽度
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px %} 3.指定宽度并添加描述：
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %} 4.设置占位背景色：
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px %} 3.指定宽度并添加描述：
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %} 4.设置占位背景色：
+{% image https://fastly.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
 
 <!-- endtab -->
 
@@ -1810,8 +1810,8 @@ markdown 图片格式
 
 ```markdown
 {% gallery %}
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/19.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/19.webp)
 {% endgallery %}
 ```
 
@@ -1828,8 +1828,8 @@ markdown 图片格式
 2.gallery 相册
 
 {% gallery %}
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/19.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/19.webp)
 {% endgallery %}
 
 <!-- endtab -->
@@ -1847,7 +1847,7 @@ markdown 图片格式
 ```Markdown
 {% folding 参数（可选）, 标题 %}
 
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
 
 {% endfolding %}
 ```
@@ -1865,7 +1865,7 @@ markdown 图片格式
 ```markdown
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
 
 {% endfolding %}
 
@@ -1892,7 +1892,7 @@ markdown 图片格式
 
 {% folding 查看嵌套测试3 %}
 
-hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
+hahaha <span><img src='https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
 
 {% endfolding %}
 
@@ -1906,7 +1906,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/18.webp)
 
 {% endfolding %}
 
@@ -1933,7 +1933,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 
 {% folding 查看嵌套测试3 %}
 
-hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
+hahaha <span><img src='https://fastly.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
 
 {% endfolding %}
 
@@ -2677,7 +2677,7 @@ Butterfly 主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:�
 # 1.本地文件:在md文件路径下创建一个同名文件夹，其内放pdf文件名为xxx.pdf的文件
 {% pdf xxx.pdf %}
 # 2.在线链接
-{% pdf https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
+{% pdf https://fastly.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
 ```
 
 <!-- endtab -->
@@ -2685,7 +2685,7 @@ Butterfly 主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:�
 <!-- tab 渲染演示 -->
 
 2.在线链接(要放到最外层才能起作用)
-{% pdf https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
+{% pdf https://fastly.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
 
 <!-- endtab -->
 
@@ -2778,7 +2778,7 @@ content
 ```markdown
 {% hideBlock 点我预览, blue %}
 这里有张图片：
-<img src="https://cdn.jsdelivr.net/gh/1405720461/images@master/img/business_card.webp" alt="business_card" style="zoom:67%;" />
+<img src="https://fastly.jsdelivr.net/gh/1405720461/images@master/img/business_card.webp" alt="business_card" style="zoom:67%;" />
 {% endhideBlock %}
 ```
 
@@ -2788,7 +2788,7 @@ content
 
 {% hideBlock 点我预览, blue %}
 这里有张图片：
-<img src="https://cdn.jsdelivr.net/gh/1405720461/images@master/img/business_card.webp" alt="business_card" style="zoom:67%;" />
+<img src="https://fastly.jsdelivr.net/gh/1405720461/images@master/img/business_card.webp" alt="business_card" style="zoom:67%;" />
 {% endhideBlock %}
 
 <!-- endtab -->

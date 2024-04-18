@@ -17,7 +17,7 @@ type: "link"
   link: https://wjldarling.top/
   avatar: https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg
   descr: 山水一程，三生有幸✨
-  screenshot: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
+  screenshot: https://fastly.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp
 ```
 
 <!-- endtab -->
@@ -27,7 +27,7 @@ type: "link"
 ```JSON
 {
   "title": "你好可爱",
-  "screenshot": "https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp",
+  "screenshot": "https://fastly.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp",
   "url": "https://wjldarling.top/",
   "avatar": "https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg",
   "description": "山水一程，三生有幸✨",
@@ -39,14 +39,14 @@ type: "link"
 
 <!-- tab 🌴General -->
 
-| 名称       | 数值                                                                     |
-| ---------- | ------------------------------------------------------------------------ |
-| 站点名称   | 你好可爱                                                                 |
-| 站点截图   | https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp |
-| 站点链接   | https://wjldarling.top/                                                  |
-| 站长头像   | https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg             |
-| 站点描述   | 山水一程，三生有幸 ✨                                                    |
-| 站点关键词 | JavaScript,Vue,个人博客,代码                                             |
+| 名称       | 数值                                                                        |
+| ---------- | --------------------------------------------------------------------------- |
+| 站点名称   | 你好可爱                                                                    |
+| 站点截图   | https://fastly.jsdelivr.net/gh/1405720461/images@master/img/wjldarling.webp |
+| 站点链接   | https://wjldarling.top/                                                     |
+| 站长头像   | https://wangjinglun.oss-cn-beijing.aliyuncs.com/images/1.jpg                |
+| 站点描述   | 山水一程，三生有幸 ✨                                                       |
+| 站点关键词 | JavaScript,Vue,个人博客,代码                                                |
 
 <!-- endtab -->
 

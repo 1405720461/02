@@ -30,17 +30,17 @@
 }
 
 .time1 {
-    background-image: url('https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/love_img/1.webp');
+    background-image: url('https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/love_img/1.webp');
     background-position: 0% 34%;
 }
 
 .time2 {
-    background-image: url('https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/love_img/2.webp');
+    background-image: url('https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/love_img/2.webp');
     background-position: 0% 34%;
 }
 
 .time3 {
-    background-image: url('https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/love_img/3.webp');
+    background-image: url('https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/love_img/3.webp');
     width: 300px;
     background-position: 0% 46%;
 }

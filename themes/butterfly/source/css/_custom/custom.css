@@ -1381,7 +1381,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://cdn.jsdelivr.net/gh/1405720461/images@master/img/188.jpg) no-repeat center center;
+  background: url(https://fastly.jsdelivr.net/gh/1405720461/images@master/img/188.jpg) no-repeat center center;
   background-size: cover;
 }
 

@@ -61,7 +61,7 @@ persons.forEach((v) => {
 
 在数据量很大的情况下，使用 `条件断点` 对开发工作很有帮助，大大提高效率。
 
-![](https://cdn.jsdelivr.net/gh/1405720461/blog_img@main/clutter/1.gif)
+![](https://fastly.jsdelivr.net/gh/1405720461/blog_img@main/clutter/1.gif)
 
 ### 使用 “$” 引用上次执行的结果
 

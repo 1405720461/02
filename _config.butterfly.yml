@@ -242,10 +242,10 @@ reward:
   enable: true
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/wx.webp
+    - img: https://fastly.jsdelivr.net/gh/1405720461/images@master/img/wx.webp
       link:
       text: 微信
-    - img: https://cdn.jsdelivr.net/gh/1405720461/images@master/img/zfb.webp
+    - img: https://fastly.jsdelivr.net/gh/1405720461/images@master/img/zfb.webp
       link:
       text: 支付宝
 
@@ -926,7 +926,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"> # 常规css
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
     - <link rel="stylesheet" type="text/css" href="/css/custom.css"> #诗词以及自定义样式
 
     # 综合美化模块样式引入
@@ -946,7 +946,7 @@ inject:
     - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 分享按钮依赖
     - <script defer type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/sweetalert2/8.19.1/sweetalert2.all.js"></script> # 节日弹窗依赖
     - <script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script> # 顶部进度条js
-    - <script defer src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox
+    - <script defer src="https://fastly.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox
     - <script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script> # js图标引入1
     - <script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script> # js图标引入2
     - <script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script> # js图标引入3
@@ -986,7 +986,7 @@ CDN:
     # main_css:
     # main:
     # utils:
-    # translate: https://cdn.jsdelivr.net/npm/js-heo@1.0.6/translate/tw_cn.js
+    # translate: https://fastly.jsdelivr.net/npm/js-heo@1.0.6/translate/tw_cn.js
     # local_search:
     # algolia_js:
     algolia_search_v4: https://cdn.staticfile.org/algoliasearch/4.14.3/algoliasearch-lite.umd.min.js
@@ -1026,9 +1026,9 @@ CDN:
     fontawesomeV6: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css
     # flickr_justified_gallery_js: https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.js
     # flickr_justified_gallery_css: https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.css
-    # prismjs_js: https://cdn.jsdelivr.net/npm/prismjs@1.1.0/prism.js
-    # prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
-    # prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+    # prismjs_js: https://fastly.jsdelivr.net/npm/prismjs@1.1.0/prism.js
+    # prismjs_lineNumber_js: https://fastly.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+    # prismjs_autoloader: https://fastly.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
     coin_js: /js/coin.js
     coin_css: /css/coin.css
 

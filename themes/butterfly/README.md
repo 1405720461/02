@@ -12,9 +12,9 @@
 ![hexo version](https://img.shields.io/badge/hexo-5.3.0+-0e83c)
 ![license](https://img.shields.io/github/license/jerryc127/hexo-theme-butterfly?color=FF5531)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/theme-butterfly-readme.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN@m2/img/theme-butterfly-readme.png)
 
-Demo: 👍 [Butterfly](https://butterfly.js.org/)  ||   🤞 [CrazyWong](https://crazywong.com/)
+Demo: 👍 [Butterfly](https://butterfly.js.org/) || 🤞 [CrazyWong](https://crazywong.com/)
 
 Docs: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
 
@@ -42,7 +42,7 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/bu
 
 > It supports Hexo 5.0.0 or later
 
-In Hexo site root directory 
+In Hexo site root directory
 
 ```powershell
 npm i hexo-theme-butterfly
@@ -50,36 +50,36 @@ npm i hexo-theme-butterfly
 
 ## ⚙ Configuration
 
- Set theme in the hexo work folder's root config file `_config.yml`: 
+Set theme in the hexo work folder's root config file `_config.yml`:
 
 > theme: butterfly
 
- If you don't have pug & stylus renderer, try this: 
+If you don't have pug & stylus renderer, try this:
 
 > npm install hexo-renderer-pug hexo-renderer-stylus
 
 ## 🎉 Features
 
 - [x] Card UI Design
-- [X] Support sub-menu
+- [x] Support sub-menu
 - [x] Two Column designs
 - [x] Responsive Web Design
 - [x] Dark Mode
 - [x] Pjax
 - [x] Read Mode
 - [x] Conversion between Traditional and Simplified Chinese
-- [X] TOC catalog is available for both computers and mobile phones
-- [X] Color themes (darker/pale night/light/ocean/mac/mac light), support custom colors
-- [X] Code Blocks (Display code language/close or expand Code Blocks/Copy Button/word wrap)
-- [X] Disable copy/Add a Copyright Notice to the Copied Text
-- [X] Search (Algolia SearchZ/Local Search)
+- [x] TOC catalog is available for both computers and mobile phones
+- [x] Color themes (darker/pale night/light/ocean/mac/mac light), support custom colors
+- [x] Code Blocks (Display code language/close or expand Code Blocks/Copy Button/word wrap)
+- [x] Disable copy/Add a Copyright Notice to the Copied Text
+- [x] Search (Algolia SearchZ/Local Search)
 - [x] Mathjax and Katex
 - [x] Built-in 404 page
 - [x] WordCount
 - [x] Related articles
 - [x] Displays outdated notice for a post
 - [x] Share (AddThis/Sharejs/Addtoany)
-- [X] Comment (Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42)
+- [x] Comment (Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42)
 - [x] Multiple Comment System Support
 - [x] Online Chats (Chatra/Tidio/Daovoice/Gitter/Crisp)
 - [x] Web analytics
@@ -105,9 +105,9 @@ npm i hexo-theme-butterfly
 
 ## 📷 Screenshots
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-1.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-2.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-3.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-4.jpg)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/theme-butterfly-readme-homepage-1.png)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/theme-butterfly-readme-homepage-2.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-1.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-2.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-3.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-4.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/theme-butterfly-readme-homepage-1.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/theme-butterfly-readme-homepage-2.png)
