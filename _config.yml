@@ -388,7 +388,7 @@ OhMyLive2d:
         top: 0
         fontSize: 16px
       idleTips:
-        interval: 30000
+        interval: 60000
         message: |
           function(){
             return getRandomQuote()

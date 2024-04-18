@@ -1880,7 +1880,7 @@ a:hover {
 #fps {
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 8px;
   z-index: 1919810;
   height: 30px;
   display: flex;
