@@ -6,21 +6,21 @@ comments: false
 
 <link rel="stylesheet" type="text/css" href="/css/collect.css">
 
-{% note info simple %} 都是自己喜欢的一些动画以及 demo，有需要的话主要加站长联系方式。如有侵权，也请速速联系站长删除 {% endnote %}
+{% note info simple %} 都是自己喜欢的一些动画以及 demo，有需要的话主页加站长联系方式。如有侵权，也请速速联系站长删除 {% endnote %}
 
 <div class="wjl_collect">
     <div class="collect_left">
         <h2>一些demo和css动画🪄</h2>
         <div class="collect_page">
             {% galleryGroup '龙猫' 'Totoro' '/box/collect/龙猫/index.html' /box/collect/collect_bg/1.webp %}
-            {% galleryGroup 'love' '一个爱情的demo' '/box/collect/love/index.html' /box/collect/collect_bg/2.webp %}
+            {% galleryGroup '海贼通缉令' '海贼通缉令滚动相册' '/box/collect/One_Piece_gallery/index.html' /box/collect/collect_bg/2.webp %}
             {% galleryGroup '粒子特效' '仿明日方舟官网粒子特效' '/box/collect/particle_effects/index.html' /box/collect/collect_bg/3.webp %}
-            {% galleryGroup '12个动画' '学习过程中做的小动画' '/box/collect/12个动画/index.html' /box/collect/collect_bg/4.webp %}
-            {% galleryGroup 'todolist' 'todolist作品' '/box/collect/todolist/todo.html' /box/collect/collect_bg/5.webp %}
-            {% galleryGroup '烟花绽放' 'fireworks bloom' '/box/collect/烟花绽放/index.html' /box/collect/collect_bg/6.webp %}
-            {% galleryGroup '响应式视差滚动相册' 'parallax scrolling' '/box/collect/响应式视差滚动相册/index.html' /box/collect/collect_bg/7.webp %}
-            {% galleryGroup '响应式时间轴' 'parallax scrolling' '/box/collect/响应式时间轴/index.html' /box/collect/collect_bg/8.webp %}
-            {% galleryGroup '鼠标跟踪相册' 'parallax scrolling' '/box/collect/鼠标跟踪相册/index.html' /box/collect/collect_bg/9.webp %}
+            {% galleryGroup 'love' '一个爱情的demo' '/box/collect/love/index.html' /box/collect/collect_bg/4.webp %}
+            {% galleryGroup '12个动画' '学习过程中做的小动画' '/box/collect/12个动画/index.html' /box/collect/collect_bg/5.webp %}
+            {% galleryGroup 'todolist' 'todolist作品' '/box/collect/todolist/todo.html' /box/collect/collect_bg/6.webp %}
+            {% galleryGroup '烟花绽放' 'fireworks bloom' '/box/collect/烟花绽放/index.html' /box/collect/collect_bg/7.webp %}
+            {% galleryGroup '响应式视差滚动相册' 'parallax scrolling' '/box/collect/响应式视差滚动相册/index.html' /box/collect/collect_bg/8.webp %}
+            {% galleryGroup '响应式时间轴' 'parallax scrolling' '/box/collect/响应式时间轴/index.html' /box/collect/collect_bg/9.webp %}
             {% galleryGroup '九宫格拼图游戏' 'jigsaw puzzle' '/box/collect/九宫格拼图游戏/puzzle.html' /box/collect/collect_bg/10.webp %}
             {% galleryGroup '太阳系运动' '太阳系八大行星的运动轨迹' '/box/collect/太阳系运动/index.html' /box/collect/collect_bg/11.webp %}
             {% galleryGroup '滑动登录注册页' '一个不错的滑动登录注册页' '/box/collect/滑动登录注册页/index.html' /box/collect/collect_bg/12.webp %}
@@ -44,11 +44,6 @@ comments: false
                     <li>
                         <a href="https://toolwa.com/">
                             <img src="./website_img/toolwa.png"  alt="工具哇" /><span class="color-span">工具哇</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://emojixd.com/">
-                            <img src="./website_img/emojixd.ico"  alt="emoji表情大全" /><span class="color-span">emoji表情大全</span>
                         </a>
                     </li>
                     <li>
@@ -77,4 +72,19 @@ comments: false
     </div>
 </div>
 
-<script src="/js/color-span.js"></script>
+<script>
+    // 收藏页随机颜色
+    function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    let spans = document.getElementsByClassName('color-span');
+    for (let i = 0; i < spans.length; i++) {
+        let color = getRandomColor();
+        spans[i].style.color = color;
+    }
+</script>
