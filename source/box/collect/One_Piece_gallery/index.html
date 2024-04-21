@@ -13,9 +13,13 @@
         }
 
         body {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+            height: 100vh;
+            background-color: rgb(175, 146, 99);
         }
 
         #scene {
@@ -23,20 +27,16 @@
             overflow: hidden;
             width: 100%;
             height: 100vh;
-            background-color: rgb(175, 146, 99);
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         .layer {
-            pointer-events: none;
-            display: grid !important;
-            grid-template-columns: repeat(15, 1fr);
+            position: absolute !important;
         }
 
         .col {
             pointer-events: all;
+            width: 212.5px;
+            height: 297.5px;
 
             a {
                 display: inline-block;
@@ -55,11 +55,7 @@
 </head>
 
 <body>
-
-    <section id="scene" data-scalar-y="200.0" data-scalar-x="75.0">
-        <div class="layer" data-depth="1">
-        </div>
-    </section>
+    <section id="scene" data-scalar-y="200.0" data-scalar-x="75.0"></section>
     <!-- 导入插件 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
@@ -232,29 +228,62 @@
             '超新星-白马·卡文迪什',
             '超新星-贝拉米',
         ]
-        // 获取scene元素
-        const scene = document.getElementById('scene');
 
         // 创建一个字符串来保存所有图片的HTML结构
         let html = '';
+        // 定义每行每列的盒子数量
+        const rows = 11;
+        const cols = 15;
 
+        // 定义每个盒子的宽度和高度
+        const boxWidth = 212.5;
+        const boxHeight = 297.5;
+
+        // 定义盒子之间的间距
+        const gap = -40;
+
+        // 计算内容整体居中的偏移量
+        const containerWidth = cols * (boxWidth + gap) - gap; // 计算容器宽度
+        const containerHeight = rows * (boxHeight + gap) - gap; // 计算容器高度
+        const offsetLeft = (containerWidth - scene.offsetWidth) / 2; // 计算水平偏移量
+        const offsetTop = (containerHeight - scene.offsetHeight) / 2; // 计算垂直偏移量
+
+        // 初始化位置变量
+        let Left = -offsetLeft;
+        let Top = -offsetTop;
         // 循环生成HTML结构
-        imgList.forEach(imgName => {
-            const randomRotation = Math.floor(Math.random() * 61) - 30;;
+        imgList.forEach((imgName, index) => {
+            const randomRotation = Math.floor(Math.random() * 61) - 30;
+            const currentLeft = Left + (index % cols) * (boxWidth + gap);
+            const currentTop = Top + Math.floor(index / cols) * (boxHeight + gap);
+            // 随机生成 z-index
+            const zIndex = imgName === "和之国篇后-路飞" ? 15 : Math.floor(Math.random() * 10);
             // 生成图片的HTML结构，并添加到html字符串中
             html += `
-                <div class="col" style="transform: rotate(${randomRotation}deg);width:212.5px;height:297.5px;">
+            <div class="layer"  id="layer-${index}" data-depth="1" style="z-index: ${zIndex};" >
+                <div class="col" style="transform: rotate(${randomRotation}deg);">
                     <a href="./img/${imgName}.webp" data-fancybox="gallery" data-caption="${imgName}" style="width:100%;height:100%;">
                         <img class="lazyload" data-src="./img/${imgName}.webp" alt="${imgName}" style="width:100%;height:100%;object-fit: cover;border: 2px solid #333;box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);" />
                     </a>
                 </div>
+            </div>
             `;
         });
-
         // 将生成的HTML结构插入到scene中 
-        scene.firstElementChild.innerHTML += html;
+        scene.innerHTML += html;
 
-        // 获取所有带有 lazyload 类的图片元素
+        let parallax = new Parallax(scene);
+
+        // 在 Parallax.js 初始化之后再次设置样式
+        imgList.forEach((imgName, index) => {
+            const currentLeft = Left + (index % cols) * (boxWidth + gap);
+            const currentTop = Top + Math.floor(index / cols) * (boxHeight + gap);
+            const layer = document.getElementById(`layer-${index}`);
+            layer.style.top = `${currentTop}px`;
+            layer.style.left = `${currentLeft}px`;
+        });
+
+        //----------图片懒加载----------
         const lazyImages = Array.from(document.querySelectorAll('img.lazyload'));
 
         // 创建 Intersection Observer 实例
@@ -276,8 +305,6 @@
             lazyImageObserver.observe(lazyImage);
         });
 
-
-        let parallax = new Parallax(scene);
         //配置查看缩略图
         Fancybox.bind("[data-fancybox='gallery']", {
             Thumbs: false,
