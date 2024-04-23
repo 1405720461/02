@@ -59,6 +59,6 @@ type: "about"
     </div>
     <div id="benediction-right">
         <img src="/assets/nihaokeai.jpg">
-        <span>嘘，小声点</span>
+        <span id="whisper">嘘，小声点</span>
     </div>
 </div>

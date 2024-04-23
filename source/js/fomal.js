@@ -2488,6 +2488,8 @@ function changeLight(flag) {
     document.getElementById("site-subtitle").style.animation = flag ? "light_10px 10s linear infinite" : "none";
   if (document.getElementById("post-info"))
     document.getElementById("post-info").style.animation = flag ? "light_5px 10s linear infinite" : "none";
+  if (document.getElementById("whisper"))
+    document.getElementById("whisper").style.animation = flag ? "light_5px 10s linear infinite" : "none";
   document.getElementById("menu_shadow").innerText = flag ? `:root{--menu-shadow: 0 0 1px var(--theme-color);}` : `:root{--menu-shadow: none;}`;
 }
 
