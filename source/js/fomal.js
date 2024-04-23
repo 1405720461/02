@@ -2765,3 +2765,29 @@ function toggleWinbox() {
 }
 
 /* 美化模块 end */
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // 获取 #bottom_aplayer 下的 .aplayer-list 元素
+  // let aplayerList = document.getElementById('bottom_aplayer').querySelector('.aplayer-list');
+  console.log(document.getElementById('bottom_aplayer').querySelector('.aplayer-list'))
+  // 根据 .aplayer-list 元素是否包含 .aplayer-list-hide 类来修改 #oml2d-stage 元素的 bottom 值
+  function updateBottomValue() {
+    // 如果 .aplayer-list 元素包含 .aplayer-list-hide 类
+    if (aplayerList.classList.contains('aplayer-list-hide')) {
+      // 修改 #oml2d-stage 元素的 bottom 值为 66px
+      document.getElementById('oml2d-stage').style.bottom = '66px';
+    } else {
+      // 否则，将 #oml2d-stage 元素的 bottom 值重置为默认值（如果需要的话）
+      document.getElementById('oml2d-stage').style.bottom = ''; // 或者其他默认值
+    }
+  }
+
+  // 初始化时执行一次
+  // updateBottomValue();
+
+  // // 监听 .aplayer-list 元素的 class 属性变化
+  // let observer = new MutationObserver(updateBottomValue);
+  // observer.observe(aplayerList, { attributes: true });
+});

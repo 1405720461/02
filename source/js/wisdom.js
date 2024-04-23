@@ -77,3 +77,4 @@ function getRandomQuote() {
 
     return selectedCollection[randomIndex];
 }
+
