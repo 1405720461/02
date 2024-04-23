@@ -3403,10 +3403,66 @@ hr:before {
 }
 
 /* ----- 底部音乐播放器 ----- */
-.aplayer {
+#bottom_aplayer.aplayer {
   min-height: 66px;
+  border-radius: 0 8px 0;
+
+  .aplayer-list ol li {
+    height: 36px;
+    line-height: 36px;
+    font-size: 13px;
+  }
+
+  .aplayer-body {
+    border-radius: 0 8px 0px 0;
+    background: transparent;
+
+    .aplayer-info {
+      color: var(--theme-color);
+
+      .aplayer-music {
+        margin-bottom: 8px;
+        height: 24px;
+
+        .aplayer-title {
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+
+      .aplayer-controller {
+        .aplayer-bar-wrap {
+          margin-top: -2px;
+        }
+
+        .aplayer-icon path {
+          fill: var(--theme-color)
+        }
+
+        .aplayer-played {
+          background: var(--theme-color) !important;
+
+          .aplayer-thumb {
+            background: var(--theme-color) !important;
+
+          }
+        }
+      }
+    }
+
+    .aplayer-miniswitcher {
+      border-radius: 0 8px 0px 0;
+      background-color: var(--theme-color);
+
+      .aplayer-icon path {
+        fill: #fff;
+      }
+    }
+  }
+
 }
 
+/* 歌词部分 */
 .aplayer .aplayer-lrc {
   height: 38px !important;
 }
