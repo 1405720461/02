@@ -50,6 +50,13 @@
             }
 
         }
+
+        @media screen and (max-width: 600px) {
+            .col {
+                width: 127.5px;
+                height: 178.5px;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
@@ -235,12 +242,19 @@
         const rows = 11;
         const cols = 15;
 
-        // 定义每个盒子的宽度和高度
-        const boxWidth = 212.5;
-        const boxHeight = 297.5;
-
-        // 定义盒子之间的间距
-        const gap = -40;
+        let boxWidth, boxHeight, gap;
+        // 检查设备类型，如果是手机端则使用手机端的宽度和高度，否则使用默认的宽度和高度
+        if (window.innerWidth < 600) {
+            // 在手机端的宽度和高度
+            boxWidth = 127.5;
+            boxHeight = 178.5;
+            gap = -20;
+        } else {
+            // 默认的宽度和高度
+            boxWidth = 212.5;
+            boxHeight = 297.5;
+            gap = -40;
+        }
 
         // 计算内容整体居中的偏移量
         const containerWidth = cols * (boxWidth + gap) - gap; // 计算容器宽度
