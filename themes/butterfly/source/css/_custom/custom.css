@@ -3405,12 +3405,18 @@ hr:before {
 /* ----- 底部音乐播放器 ----- */
 #bottom_aplayer.aplayer {
   min-height: 66px;
-  border-radius: 0 8px 0;
+  border-radius: 0 8px 0 0;
 
-  .aplayer-list ol li {
-    height: 36px;
-    line-height: 36px;
-    font-size: 13px;
+  .aplayer-list {
+    border-color: var(--theme-color);
+    border-radius: 0 8px 0 0;
+
+    ol li {
+
+      height: 36px;
+      line-height: 36px;
+      font-size: 13px;
+    }
   }
 
   .aplayer-body {
