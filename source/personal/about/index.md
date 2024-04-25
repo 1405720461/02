@@ -22,7 +22,7 @@ type: "about"
         <li>邮箱：1405720461@qq.com</li>
     </ul>
     <h3>编程之路⏳</h3>
-    <p>&emsp;&emsp;高考结束填写志愿的时候，每个学校的第一志愿都是计算机专业，奈何都没有录取，最后去了食品专业，本来以为与计算机擦肩而过了，但在一次机缘巧合的情况，使我又重新接触他，开始了前端的学习···</p>
+    <p>&emsp;&emsp;高考结束填写志愿的时候，每个学校的第一志愿都是计算机专业，奈何都没有录取，最后去了食品专业，虽然专业不对，因为喜欢也是加入了校计算机实验室，开始了对前端的学习···</p>
     <h3>技能掌握🪐</h3>
     <p><span class="iconfont icon-duigou1"></span>致力于成为一个前端小佬⭐ </p>
     <p><span class="iconfont icon-duigou1"></span>又菜又爱玩🎮 <kbd>ctrl</kbd> + <kbd>C</kbd> 、 <kbd>ctrl</kbd> + <kbd>V</kbd> 高级CV工程师🏆</p>
@@ -35,16 +35,16 @@ type: "about"
 <div class="about_page">
     <h3>搭建经历⌛</h3>
     <p>
-        &emsp;&emsp;最早是想着在互联网上有一片属于自己的小空间，学完Vue之后是打算用Vue搞个自己的网站，但是从零开始加上自己的水平一般，导致迟迟没有动手。在一次职业规划期末作业时，问学长要了他的简历修改一下当期末作业了，看到了他搭建的个人博客，就决定自己搞一下子，说干就干。
+        &emsp;&emsp;最早是想着在互联网上有一片属于自己的小空间，学完Vue之后是打算用Vue搞个自己的网站，但是从零开始加上自己当时水平一般，导致迟迟没有动手。在一次职业规划期末作业时，问学长要了他的简历修改一下当期末作业了，看到了他搭建的个人博客，就决定自己搞一下子，说干就干。
     </p>
     <p>
-        &emsp;&emsp;去B站找的视频跟着<a href='https://blog.cuijiacai.com/blog-building/'>爱扑bug的熊</a>大佬的教程搭建一个基础的博客，用<a href='https://hexo.io/zh-cn/index.html'>hexo</a>框架搭建了一个最初的个人博客，代码托管到<a href='https://github.com/'>github</a>上，用<a href='https://www.netlify.com/'>netlify</a>加速，用的<a href='https://dash.cloudflare.com/'>Cloudflare</a>进行DNS解析，但是由于不是科班生，对于计算机基础部分的知识匮乏，导致搞的迷迷瞪瞪，后来又重新弄了一次。再后来刷B站的时候，刷到了<a href='https://www.fomal.cc/'>猕猴桃🥝</a>大佬的视频，发现了他的开源博客，就去拷贝了个他的开源博客开始修改，在最开始的时候一点不懂，跟着教程一步一步改，又去仔细了解了<a href='https://hexo.io/zh-cn/index.html'>hexo</a>框架以及<a href='https://butterfly.zhheo.com/docs/'>butterfly</a>主题，然后慢慢修改最后变成现在博客的样子，中间也配置过后台<a href='https://qexo-wiki.vercel.app/'>Qexo</a>,但是感觉用起来不顺手，很不舒服，又全都给删了。
+        &emsp;&emsp;去B站找的视频跟着<a href='https://blog.cuijiacai.com/blog-building/'>爱扑bug的熊</a>大佬的教程搭建一个基础的博客，用<a href='https://hexo.io/zh-cn/index.html'>hexo</a>框架搭建了一个最初的个人博客，代码托管到<a href='https://github.com/'>github</a>上，用<a href='https://www.netlify.com/'>netlify</a>加速，用的<a href='https://dash.cloudflare.com/'>Cloudflare</a>进行DNS解析，但是由于不是科班生，对于计算机基础部分的知识匮乏，导致搞的迷迷瞪瞪，后来又去对计算机网络相关的知识进行了一个学习。再后来刷B站的时候，刷到了<a href='https://www.fomal.cc/'>猕猴桃🥝</a>大佬的视频，发现了他的开源博客，就去拷贝了个他的开源博客开始修改，在最开始的时候一点不懂，跟着教程一步一步改，又去仔细了解了<a href='https://hexo.io/zh-cn/index.html'>hexo</a>框架以及<a href='https://butterfly.zhheo.com/docs/'>butterfly</a>主题，然后慢慢修改最后变成现在博客的样子，中间也配置过后台<a href='https://qexo-wiki.vercel.app/'>Qexo</a>,但是感觉用起来不顺手，很不舒服，又全都给删了。
     </p>
     <p>
         &emsp;&emsp;搭建期间配置twikoo评论时候出现了跨域问题，然后也是找的<a href='https://fe32.top/'>唐佬</a>帮我远程解决的问题，把DNS解析从Cloudflare换到了阿里云解析,解决了跨域问题。
     </p>
     <p>
-        &emsp;&emsp;还有图床问题，刚开始用的github，感觉速度太慢了，中间换到了阿里云的OCS，速度快了快了，发现有点小贵，而且我图片有点多，果断跑路换回github，把github图床仓库放到<a href='https://vercel.com/'>vercel</a>上加速，感觉还可以，平时挂梯用着还是挺快的（doge）。
+        &emsp;&emsp;还有图床问题，刚开始用的github，感觉速度太慢了，中间换到了阿里云的OCS，速度快是快了，发现有点小贵，而且我图片有点多，果断跑路换回github，把github图床仓库放到<a href='https://vercel.com/'>vercel</a>上加速，感觉还可以，平时挂梯用着还是挺快的（doge）。
     </p>
     <h3>其他💡</h3>
     <p>
