@@ -14,9 +14,7 @@ const SimpleWisdomQuotes = [
     "所有的桥都是温暖的，因为它让河流不再难过",
     "我在黄昏垂钓夕阳，试图拉起我堕落的人生",
     "有目的的人生才会迷路，我只是来世界散步",
-    "怀念过去是不是在历史的长河里刻舟求剑",
-    "珍惜当下是不是在现实的波涛中见风使舵",
-    "展望未来是不是在前进的道路上望梅止渴"
+    ["怀念过去是不是在历史的长河里刻舟求剑", "珍惜当下是不是在现实的波涛中见风使舵", "展望未来是不是在前进的道路上望梅止渴"]
 ];
 
 const LOLQuotes = [
@@ -67,14 +65,38 @@ const quotesCollection = {
     CartoonQuotes
 }
 
+// 用于存储当前正在遍历的集合和其索引
+let currentCollection = null;
+let isReturningArrayItems = false;
+let currentIndex = 0;
+let arrayItem = null;
+
 function getRandomQuote() {
-    const collectionKeys = Object.keys(quotesCollection);
-    const randomCollectionKey = collectionKeys[Math.floor(Math.random() * collectionKeys.length)];
+    // 如果当前处于返回数组项的模式
+    if (isReturningArrayItems) {
+        // 如果数组已经遍历完，则退出数组项模式，重新选择下一个集合
+        if (currentIndex < arrayItem.length) {
+            return arrayItem[currentIndex++];
+        } else {
+            isReturningArrayItems = false;
+            return getRandomQuote();
+        }
+    } else {
+        // 随机选择一个集合
+        const collectionKeys = Object.keys(quotesCollection);
+        const randomCollectionKey = collectionKeys[Math.floor(Math.random() * collectionKeys.length)];
+        currentCollection = quotesCollection[randomCollectionKey];
 
-    // 从选中的集合中随机选择一条
-    const selectedCollection = quotesCollection[randomCollectionKey];
-    const randomIndex = Math.floor(Math.random() * selectedCollection.length);
+        const randomIndex = Math.floor(Math.random() * currentCollection.length);
 
-    return selectedCollection[randomIndex];
+        // 如果选中的项是数组，则进入返回数组项的模式
+        if (Array.isArray(currentCollection[randomIndex])) {
+            arrayItem = currentCollection[randomIndex];
+            isReturningArrayItems = true;
+            currentIndex = 0;
+            return getRandomQuote();
+        } else {
+            return currentCollection[randomIndex];
+        }
+    }
 }
-
