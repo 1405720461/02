@@ -121,6 +121,12 @@
       descr: 一个前端Bug构造师的博客
       screenshot:
 
+    - name: 六月是只猫
+      link: https://www.lyszm.com/
+      avatar: https://www.lyszm.com/img/avatar.jpg
+      descr: 生活，一半家长里短，一半山川湖海…
+      screenshot:
+
 - class_name: 小伙伴🌏
   link_list:
     - name: 好摄之徒
