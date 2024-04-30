@@ -1,4 +1,5 @@
 - class_name: 朋友✨
+  flink_style: flexcard
   class_desc: 这里是最熟悉的小伙伴，前排前排
   link_list:
     - name: 你好可爱
@@ -23,9 +24,10 @@
       link: https://www.blackcrow.cn
       avatar: https://www.blackcrow.cn/blogs-img/%E9%85%8D%E7%BD%AE/%E5%A4%B4%E5%83%8F.png
       descr: 休对古人思故国，且将新火试新茶，诗酒趁年华
-      screenshot: https://www.blackcrow.cn/blogs-img/%E9%85%8D%E7%BD%AE/Screenshot.png
+      screenshot:
 
 - class_name: 技术支持💡
+  flink_style: volantis
   class_desc: 前端大牛，轮子缔造者，本网站的搭建参考了以下开源作者
   link_list:
     - name: Hexo
@@ -79,23 +81,11 @@
       descr: 正因为是一张白纸 才可以随心所欲地描绘地图
       screenshot: https://gcore.jsdelivr.net/gh/linjiangyu2/halo@master/img/siteshot.jpg
 
-    - name: 虹色轨迹🌠
-      link: https://illlli.com
-      avatar: https://illlli.com/assets/avatar.webp
-      descr: 做一颗星星，有棱有角，黑暗中闪闪发光🍭🍭🍭
-      screenshot: https://illlli.com/assets/illlli.webp
-
-    - name: Shine
-      link: https://blog.shineyu.cn/
-      avatar: https://blog.shineyu.cn/img/shineyu_avatar.webp
-      descr: 热爱生活点滴，分享时刻精彩。
-      screenshot: https://blog.shineyu.cn/img/website.webp
-
-    - name: Ading阿定の小站
+    - name: 定の栈
       link: https://saop.cc
-      avatar: https://picbed.saop.cc/Asuna/Asuna1x1.png
-      descr: 我们终会相遇相知，在那悠远的苍穹
-      screenshot: https://picbed.saop.cc/Asuna/Asuna-EvolutionaryProcess_2.png
+      avatar: https://saop.cc/avatar.webp
+      descr: LINK START!
+      screenshot: https://saop.cc/siteshot.webp
 
     - name: 萌傀儡`Blog
       link: https://blhorizon.github.io/
@@ -141,11 +131,11 @@
       descr: 懂滴滴代码の背锅狮
       screenshot: https://kiwifruit.asia/myBlog/assets/index.jpg
 
-    # - name: 月亮
-    #   link: https://blog.monl.cc/
-    #   avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
-    #   descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
-    #   screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
+    - name: 月亮
+      link: https://blog.monl.cc/
+      avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
+      descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
+      screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
 
     - name: 极客蜂巢(GeekHive)
       link: https://www.gkhive.com/
@@ -182,6 +172,20 @@
       avatar: https://oyiso.cn/logo.png
       descr: The shortest answer is doing
       screenshot:
+
+- class_name: 失联中...🔗
+  link_list:
+    - name: 虹色轨迹🌠
+      link: https://illlli.com
+      avatar: https://illlli.com/assets/avatar.webp
+      descr: 做一颗星星，有棱有角，黑暗中闪闪发光🍭🍭🍭
+      screenshot: https://illlli.com/assets/illlli.webp
+
+    - name: Shine
+      link: https://blog.shineyu.cn/
+      avatar: https://blog.shineyu.cn/img/shineyu_avatar.webp
+      descr: 热爱生活点滴，分享时刻精彩。
+      screenshot: https://blog.shineyu.cn/img/website.webp
 
     - name: 林熙の博客
       link: https://www.linxiy.com/blog/
