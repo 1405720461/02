@@ -173,6 +173,12 @@
       descr: The shortest answer is doing
       screenshot:
 
+    - name: 林熙の博客
+      link: https://linxiy.ink
+      avatar: http://blog.foryi.cn/wp-content/uploads/2024/04/u13141086893834976047fm253app138fJPEG.jpeg
+      descr: 一位爱生活游戏的休闲博主
+      screenshot: http://blog.foryi.cn/wp-content/uploads/2024/04/Screenshot_20240409_134623_edit_336658757619983.jpg
+
 - class_name: 失联中...🔗
   link_list:
     - name: 虹色轨迹🌠
@@ -186,9 +192,3 @@
       avatar: https://blog.shineyu.cn/img/shineyu_avatar.webp
       descr: 热爱生活点滴，分享时刻精彩。
       screenshot: https://blog.shineyu.cn/img/website.webp
-
-    - name: 林熙の博客
-      link: https://www.linxiy.com/blog/
-      avatar: http://blog.foryi.cn/wp-content/uploads/2024/04/u13141086893834976047fm253app138fJPEG.jpeg
-      descr: 一位爱生活游戏的休闲博主
-      screenshot: http://blog.foryi.cn/wp-content/uploads/2024/04/Screenshot_20240409_134623_edit_336658757619983.jpg
