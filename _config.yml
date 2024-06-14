@@ -344,7 +344,8 @@ magnet:
 #live2d模型配置
 OhMyLive2d:
   enable: true
-  CDN: https://registry.npmmirror.com/oh-my-live2d/latest/files
+  CDN: /js/oh-my-live2d.js
+  # CDN: https://registry.npmmirror.com/oh-my-live2d/latest/files
   # CDN: https://registry.npmmirror.com/oh-my-live2d/0.13/files/dist/index.min.js
   option:
     # importType: 'cubism2' #  导入类型, 默认使用全量导入: complete , 可选值: complete, cubism2, cubism5
