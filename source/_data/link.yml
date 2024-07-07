@@ -185,6 +185,12 @@
       descr: 做一颗星星，有棱有角，黑暗中闪闪发光🍭🍭🍭
       screenshot: https://illlli.com/assets/illlli.webp
 
+    - name: 雨洛博客
+      link: blog.rain.ink
+      avatar: https://blog.rain.ink/wp-content/uploads/2024/07/1720074659-r-e1720095388541.jpg
+      descr: Everything that kills me makes me feel alive.
+      screenshot: https://blog.rain.ink/wp-content/uploads/2024/07/1720230898-shot.png
+
 - class_name: 失联中...🔗
   link_list:
     - name: Shine
