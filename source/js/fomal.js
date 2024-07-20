@@ -617,6 +617,7 @@ rmf.copyWordsLink = function () {
   document.execCommand("Copy");
   document.body.removeChild(txa);
 }
+
 rmf.switchReadMode = function () {
   const $body = document.body
   $body.classList.add('read-mode')
