@@ -122,5 +122,9 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/114.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/115.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/116.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/117.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/118.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/119.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/120.webp)
 
 {% endgallery %}
