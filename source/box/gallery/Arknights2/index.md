@@ -243,5 +243,6 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights2/235.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights2/236.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights2/237.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights2/238.webp)
 
 {% endgallery %}
