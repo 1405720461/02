@@ -197,6 +197,12 @@
       descr: 九月露湿，待君之前
       screenshot: https://pic.imgdb.cn/item/6695759ed9c307b7e901a478.png
 
+    - name: 圆弧派博客
+      link: https://www.iarc.top
+      avatar: https://www.iarc.top/favicon.ico
+      descr: 始于开源，终于完美
+      screenshot: https://file.iarc.top/uploads/2024/10/04/1728038241.jpg
+
 - class_name: 失联中...🔗
   link_list:
     - name: Shine
