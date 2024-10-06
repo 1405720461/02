@@ -143,12 +143,6 @@
       descr: 本站为共创型技术博客，开放对外注册成为作者并发布技术文章博客；同时也支持开源项目的免费推广，为软件开源尽自己的一份力量。
       screenshot:
 
-    - name: Aegcbx
-      link: https://uu.sssu.us/
-      avatar: https://uu.sssu.us/img/avatar.png
-      descr: 九月露湿，待君之前
-      screenshot: https://pic.imgdb.cn/item/649ad9d51ddac507cc40f140.png
-
     - name: 呆鱼
       link: https://daiyu.fun/
       avatar: https://daiyu.fun/img/avatar.png
@@ -210,3 +204,9 @@
       avatar: https://blog.shineyu.cn/img/shineyu_avatar.webp
       descr: 热爱生活点滴，分享时刻精彩。
       screenshot: https://blog.shineyu.cn/img/website.webp
+
+    - name: Aegcbx
+      link: https://uu.sssu.us/
+      avatar: https://uu.sssu.us/img/avatar.png
+      descr: 九月露湿，待君之前
+      screenshot: https://pic.imgdb.cn/item/649ad9d51ddac507cc40f140.png

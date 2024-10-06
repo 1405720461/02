@@ -20,7 +20,8 @@ const SimpleWisdomQuotes = [
     "从精神病院出来，听到旁边的路人说：又进来一个",
     "为什么要感到伤心呢，难道你的人生还不够可笑吗？",
     "自由二字本就条条框框，牢笼二字反而四面透风",
-    '我们面对着面说话，声音的传播需要时间，我在过去，你却在未来'
+    '我们面对着面说话，声音的传播需要时间，我在过去，你却在未来',
+    '错把陈醋当成墨，写尽半生纸上酸。更怕醋墨两相掺，半生苦涩半生酸。'
 ];
 
 //LOL英雄台词
@@ -69,8 +70,8 @@ const CartoonQuotes = [
 
 const quotesCollection = {
     SimpleWisdomQuotes,
-    // LOLQuotes,
-    // CartoonQuotes
+    LOLQuotes,
+    CartoonQuotes
 }
 
 // 用于存储当前正在遍历的集合和其索引
