@@ -126,5 +126,8 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/118.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/119.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/120.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/121.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/122.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/123.webp)
 
 {% endgallery %}
