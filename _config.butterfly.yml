@@ -955,12 +955,12 @@ inject:
     - <script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script> # js图标引入1
     - <script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script> # js图标引入2
     - <script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script> # js图标引入3
-    - <script async src="//at.alicdn.com/t/c/font_4092704_qp95889n2cm.js"></script> # 字体图标(自己)
+    - <script async src="/js/iconfont.js"></script> # 字体图标(自己)
     # - <script async src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script> # 新年元宝
     - <canvas id="universe"></canvas> # 星空画布
     - <canvas id="snow"></canvas> # 雪花画布
     # - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script> # 樱花飘落效果
-    - <script defer src="/js/wisdom.js"></script> # 弱智吧
+    - <script defer src="/js/live2d_chat.js"></script> # 弱智吧
     - <script defer src="/js/fomal.js"></script> # 主模块js
     - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
     # 底部音乐播放器

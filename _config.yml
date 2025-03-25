@@ -357,22 +357,29 @@ OhMyLive2d:
       items: |
         (defaultItems)=>{
           return [
-            defaultItems[0],
             {
               id: 'change',
               title: '箴言',
-              icon: 'icon-qiehuan',
+              icon: 'icon-chat',
               onClick(oml2d) {
                 oml2d.tipsMessage(getRandomQuote());
               }
             },
-            defaultItems[2]
+            defaultItems[2],
+            defaultItems[0]
           ];
         }
 
     mobileDisplay: false # 是否在移动端显示
     models:
-      - path: /live2d/兔兔-阿米娅.model3.json
+      - path: /live2d/Frieren/Frieren.model3.json
+        motionPreloadStrategy: IDLE # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
+        position: [-30, 0]
+        scale: 0.04
+        stageStyle:
+          width: 220
+          height: 308
+      - path: /live2d/兔兔/兔兔-阿米娅.model3.json
         position: [-30, 78] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
         scale: 0.08 # 模型的缩放比例 默认值: 0.1
         stageStyle:

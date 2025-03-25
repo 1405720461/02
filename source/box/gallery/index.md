@@ -9,7 +9,7 @@ comments: false
 <div class="gallery-group-main">
 {% galleryGroup '明日方舟' '博士，您还有许多事要处理，现在还不能休息哦。' '/box/gallery/Arknights1' /assets/images/Arknights/8.webp %}
 
-{% galleryGroup '明日方舟 - 岁相' '年、夕、令、重岳、黍' '/box/gallery/Arknights2' /assets/images/Arknights/1.webp %}
+{% galleryGroup '明日方舟 - 岁相' '年、夕、令、重岳、黍、余' '/box/gallery/Arknights2' /assets/images/Arknights/1.webp %}
 
 {% galleryGroup 'DARLING in the FRANXX' '呐，Darling，到时候一起来看吧。<br/>嗯，Darling，我们约定好了呦。' '/box/gallery/Darling' /assets/images/Darling/1.jpg %}
 
@@ -23,7 +23,7 @@ comments: false
 
 {% galleryGroup '青春猪头少年不会梦到兔女郎学姐' '人活着就是为了樱岛麻衣!!!' '/box/gallery/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai' /assets/images/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/1.jpg %}
 
-{% galleryGroup '狐妖小红娘' '苦情巨树啊，你听见了吗，如果我也已经爱上了他，我愿意用我们相识的一点一滴以及我的全部妖力来起誓，让我们来生相见吧！' '/box/gallery/Fox_Spirit_Matchmaker' /assets/images/Fox_Spirit_Matchmaker/1.jpg %}
+{% galleryGroup '狐妖小红娘' '如果我们能活着出去，万水千山，你愿意陪我一起看吗？' '/box/gallery/Fox_Spirit_Matchmaker' /assets/images/Fox_Spirit_Matchmaker/1.jpg %}
 
 {% galleryGroup '间谍过家家' '优雅！实在是太优雅了！' '/box/gallery/SPY×FAMILY' /assets/images/SPY×FAMILY/1.jpg %}
 
