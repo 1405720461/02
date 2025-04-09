@@ -40,5 +40,6 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/32.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/33.webp)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/34.webp)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai/35.webp)
 
 {% endgallery %}
