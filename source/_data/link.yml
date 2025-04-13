@@ -131,26 +131,20 @@
       descr: 懂滴滴代码の背锅狮
       screenshot: https://kiwifruit.asia/myBlog/assets/index.jpg
 
-    - name: 月亮
-      link: https://blog.monl.cc/
-      avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
-      descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
-      screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
-
     - name: 极客蜂巢(GeekHive)
       link: https://www.gkhive.com/
       avatar: https://web-1256739961.cos.ap-guangzhou.myqcloud.com/wp/2022/12/博客logo.png
       descr: 本站为共创型技术博客，开放对外注册成为作者并发布技术文章博客；同时也支持开源项目的免费推广，为软件开源尽自己的一份力量。
       screenshot:
 
-    - name: 呆鱼
-      link: https://daiyu.fun/
-      avatar: https://daiyu.fun/img/avatar.png
-      descr: Hello World！
-      screenshot: https://daiyu.fun/img/screenshot.png
+    - name: Yep.
+      link: https://blog.yep.vin/
+      avatar: https://blog.yep.vin/static/img/avatar.png
+      descr: 梦想成为庄稼地里的读书人.....
+      screenshot:
 
     - name: 栋dong的个人站点
-      link: https://dongdong741236.cn
+      link: https://itdong.me/
       avatar: https://dongdong741236.cn/wp-content/uploads/2022/12/cropped-栋.jpg
       descr: 乾坤未定，你我皆为牛马
       screenshot: https://dongdong741236.cn/wp-content/uploads/dongdong741236.cn_.jpg
@@ -167,29 +161,11 @@
       descr: The shortest answer is doing
       screenshot:
 
-    - name: 林熙の博客
-      link: https://linxiy.ink
-      avatar: https://www.linxiy.com/tx.webp
-      descr: 一位爱生活游戏的休闲博主
-      screenshot:
-
     - name: 虹色轨迹🌠
       link: https://illlli.com
       avatar: https://illlli.com/assets/avatar.webp
       descr: 做一颗星星，有棱有角，黑暗中闪闪发光🍭🍭🍭
       screenshot: https://illlli.com/assets/illlli.webp
-
-    - name: 雨洛博客
-      link: blog.rain.ink
-      avatar: https://blog.rain.ink/wp-content/uploads/2024/07/1720074659-r-e1720095388541.jpg
-      descr: Everything that kills me makes me feel alive.
-      screenshot: https://blog.rain.ink/wp-content/uploads/2024/07/1720230898-shot.png
-
-    - name: dimzone
-      link: dimzone.cn
-      avatar: https://pic.imgdb.cn/item/6692e0edd9c307b7e9d99261.jpg
-      descr: 九月露湿，待君之前
-      screenshot: https://pic.imgdb.cn/item/6695759ed9c307b7e901a478.png
 
     - name: 圆弧派博客
       link: https://www.iarc.top
@@ -210,3 +186,15 @@
       avatar: https://uu.sssu.us/img/avatar.png
       descr: 九月露湿，待君之前
       screenshot: https://pic.imgdb.cn/item/649ad9d51ddac507cc40f140.png
+
+    - name: 月亮
+      link: https://blog.monl.cc/
+      avatar: https://image.muerg.cn/2/2023/07/16/64b383ff8b832.jpeg
+      descr: 林，我一点都不遗憾没有在最好的时光遇到你因为遇到你之后最好的时光才开始
+      screenshot: https://image.muerg.cn/2/2023/07/16/64b38519cc45b.png
+
+    - name: 林熙の博客
+      link: https://linxiy.ink
+      avatar: https://www.linxiy.com/tx.webp
+      descr: 一位爱生活游戏的休闲博主
+      screenshot:
