@@ -41,5 +41,7 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/33.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/34.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/35.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/36.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/37.avif)
 
 {% endgallery %}
