@@ -440,5 +440,7 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights1/432.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights1/433.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights1/434.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights1/435.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/Arknights-img@main/Arknights1/436.avif)
 
 {% endgallery %}
