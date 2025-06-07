@@ -43,5 +43,10 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/35.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/36.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/37.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/38.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/39.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/40.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/41.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/Violet_Evergarden/42.avif)
 
 {% endgallery %}
