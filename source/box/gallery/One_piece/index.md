@@ -196,5 +196,12 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/188.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/189.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/190.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/191.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/192.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/193.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/194.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/195.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/196.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/197.avif)
 
 {% endgallery %}
