@@ -203,5 +203,7 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/195.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/196.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/197.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/198.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/199.avif)
 
 {% endgallery %}
