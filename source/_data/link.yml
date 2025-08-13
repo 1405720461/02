@@ -125,12 +125,6 @@
       descr: 欢迎一起学习
       screenshot:
 
-    - name: Kiwi Fruit
-      link: https://kiwifruit.asia/
-      avatar: https://kiwifruit.asia/myBlog/assets/head.jpg
-      descr: 懂滴滴代码の背锅狮
-      screenshot: https://kiwifruit.asia/myBlog/assets/index.jpg
-
     - name: 极客蜂巢(GeekHive)
       link: https://www.gkhive.com/
       avatar: https://web-1256739961.cos.ap-guangzhou.myqcloud.com/wp/2022/12/博客logo.png
@@ -175,6 +169,12 @@
       descr: 始于开源，终于完美
       screenshot: https://file.iarc.top/uploads/2024/10/04/1728038241.jpg
 
+    - name: 樊不烦博客
+      link: https://fanbu.fan/
+      avatar: https://fanbu.fan/favicon.png
+      descr: 樊不烦博客(FanBu.Fan)是川渝知名Seo个人日记资源教程分享平台。
+      screenshot: 
+
 - class_name: 失联中...🔗
   link_list:
     - name: Shine
@@ -200,3 +200,9 @@
       avatar: https://www.linxiy.com/tx.webp
       descr: 一位爱生活游戏的休闲博主
       screenshot:
+
+    - name: Kiwi Fruit
+      link: https://kiwifruit.asia/
+      avatar: https://kiwifruit.asia/myBlog/assets/head.jpg
+      descr: 懂滴滴代码の背锅狮
+      screenshot: https://kiwifruit.asia/myBlog/assets/index.jpg
