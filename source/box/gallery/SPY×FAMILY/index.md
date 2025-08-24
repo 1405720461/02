@@ -53,5 +53,6 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/SPY×FAMILY/45.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/SPY×FAMILY/46.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/SPY×FAMILY/47.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/SPY×FAMILY/48.avif)
 
 {% endgallery %}
