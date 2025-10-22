@@ -175,6 +175,12 @@
       descr: 樊不烦博客(FanBu.Fan)是川渝知名Seo个人日记资源教程分享平台。
       screenshot: 
 
+    - name: 阿叶Ayeez的小站
+      link: https://blog.Ayeez.cn
+      avatar: https://blog.ayeez.cn/imgs/photo.jpg
+      descr: 记录学习历程，记录美好生活
+      screenshot:
+
 - class_name: 失联中...🔗
   link_list:
     - name: Shine

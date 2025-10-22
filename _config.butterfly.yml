@@ -945,7 +945,7 @@ inject:
     - <style id="menu_shadow"></style> # 菜单义背景选发光样式
 
   bottom:
-    - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+    - <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> # jQuery
     - <script async src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.min.js"></script> # VUE
     - <script async src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.6/index.js"></script> # ElementUI
     - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 分享按钮依赖
@@ -1003,7 +1003,7 @@ CDN:
     # valine: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js
     # disqusjs: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqus.js
     # disqusjs_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/disqusjs/1.3.0/disqusjs.css
-    twikoo: https://cdn.staticfile.org/twikoo/1.6.8/twikoo.all.min.js
+    twikoo: https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.min.js
     # waline_js: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/waline/1.5.4/Waline.min.js
     # waline_css:
     # sharejs: https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js
@@ -1019,8 +1019,8 @@ CDN:
     instantpage: https://cdn.bootcdn.net/ajax/libs/instant.page/5.2.0/instantpage.min.js
     typed: https://cdn.jsdelivr.net/npm/typed.js@2.0.12
     # pangu:
-    fancybox_css_v4: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css
-    fancybox_v4: https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js
+    fancybox_css_v4: https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.29/fancybox.css
+    fancybox_v4: https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.29/fancybox.umd.js
     # medium_zoom: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/medium-zoom/1.0.6/medium-zoom.min.js
     # snackbar_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css
     # snackbar: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js
@@ -1141,7 +1141,7 @@ tag_plugins:
     placeholder: "/assets/coffee.png" #link_card标签默认的图标图片
   CDN:
     anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js #issues标签依赖
+    jquery: https://code.jquery.com/jquery-3.6.3.min.js #issues标签依赖
     issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/issues.js #issues标签依赖
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/tag_plugins.css
