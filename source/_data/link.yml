@@ -181,6 +181,12 @@
       descr: 记录学习历程，记录美好生活
       screenshot:
 
+    - name: Donghao小站
+      link: https://www.donghao.ltd/
+      avatar: https://img.donghao.ltd/img/touxiang.webp
+      descr: 所有打不倒你的难，最终都会变成你身上的光。
+      screenshot: https://img.donghao.ltd/img/%E5%8F%8B%E9%93%BE/blog.donghao.ltd.jpg
+
 - class_name: 失联中...🔗
   link_list:
     - name: Shine
