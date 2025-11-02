@@ -187,6 +187,12 @@
       descr: 所有打不倒你的难，最终都会变成你身上的光。
       screenshot: https://img.donghao.ltd/img/%E5%8F%8B%E9%93%BE/blog.donghao.ltd.jpg
 
+    - name: THW’s Blog
+      link: https://tianhw.top
+      avatar: https://image.tianhw.top/avatar.webp
+      descr: 前途似海，来日方长
+      screenshot: 
+
 - class_name: 失联中...🔗
   link_list:
     - name: Shine
