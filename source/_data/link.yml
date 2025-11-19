@@ -193,6 +193,12 @@
       descr: 前途似海，来日方长
       screenshot: 
 
+    - name: 坤哥个人博客
+      link: https://xnbjk.blog7788.xyz/
+      avatar: https://xnbjk.blog7788.xyz/static/webAvatar/admin1176270885901530.png
+      descr: 唤起工农千百万，不周山下红旗乱！
+      screenshot: https://xnbjk.blog7788.xyz/static/lovePhotoCover/11763450787700385.jpeg
+
 - class_name: 失联中...🔗
   link_list:
     - name: Shine
