@@ -317,6 +317,7 @@ comments: false
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/309.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/310.avif)
 ![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/311.avif)
+![](https://fastly.jsdelivr.net/gh/1405720461/images@master/One_piece/312.avif)
 
 
 {% endgallery %}
