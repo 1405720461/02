@@ -131,13 +131,13 @@
       descr: 本站为共创型技术博客，开放对外注册成为作者并发布技术文章博客；同时也支持开源项目的免费推广，为软件开源尽自己的一份力量。
       screenshot:
         
-    - name: Yeppioo
-      link: https://blog.yeppioo.vip/
-      avatar: https://blog.yeppioo.vip/static/img/avatar.png
+    - name: Yiiko
+      link: https://blog.yik.at/
+      avatar: https://blog.yik.at/static/img/avatar.png
       descr: 梦想成为庄稼地里的读书人.....
-      screenshot: https://blog.yeppioo.vip/static/img/screenshot.png
-      rss: https://blog.yeppioo.vip/atom.xml
-      sitemap: https://blog.yeppioo.vip/sitemap.xml
+      screenshot: https://blog.yik.at/static/img/screenshot.png
+      rss: https://blog.yik.at/atom.xml
+      sitemap: https://blog.yik.at/sitemap.xml
 
     - name: 栋dong的个人站点
       link: https://itdong.me/
