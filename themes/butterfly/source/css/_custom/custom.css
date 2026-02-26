@@ -207,11 +207,11 @@ center#name-container {
 }
 
 .menus_items .menus_item:nth-child(5) .menus_item_child {
-  left: -118px;
+  left: -58px;
 }
 
 .menus_items .menus_item:nth-child(6) .menus_item_child {
-  left: -58px;
+  left: -48px;
 }
 
 .menus_items .menus_item:nth-child(7) .menus_item_child {
@@ -3253,7 +3253,7 @@ hr:before {
 }
 
 
-/* 恋爱下面按钮样式 */
+/* 加密文章按钮样式 */
 .hbe-button {
   text-align: center !important;
   line-height: 40px;
@@ -3504,27 +3504,6 @@ hr:before {
   /* 切换背景按钮 */
   .custom_bg {
     width: 50% !important;
-  }
-
-  /* 手机适配恋爱小屋页面 */
-  .hbe-input {
-    min-width: 80% !important;
-  }
-
-  .hbe-input-xray {
-    padding-bottom: 3em !important;
-  }
-
-  .hbe-input-label-xray {
-    top: 0 !important;
-  }
-
-  .hbe-input-field-xray:focus+.hbe-input-label-xray {
-    top: 1em !important;
-  }
-
-  .hbe-input-label-content {
-    padding: 2em 0 !important;
   }
 
   /* 手机端不显示星星 */

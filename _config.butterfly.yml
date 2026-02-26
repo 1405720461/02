@@ -17,10 +17,9 @@ menu:
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     留言板: /comments/ || icon-liuyan || faa-tada
     友人帐: /social/link/ || icon-lianjie || faa-tada
-    旧时光: /social/time/ || icon-xianxingshalou || faa-tada
   个人 || icon-maoliang || faa-tada || hide:
+    旧时光: /personal/time/ || icon-xianxingshalou || faa-tada
     关于: /personal/about/ || icon-paperplane || faa-tada
-    恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
 
 # Code Blocks (代碼相關)
 # --------------------------------------

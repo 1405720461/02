@@ -328,6 +328,9 @@ magnet:
     - name: 恋爱
       display_name: 恋爱日常分享
       icon: 🧡
+    - name: AI
+      display_name: AI 笔记
+      icon: 🤖
 
   color_setting:
     text_color: black # 文字默认颜色
